@@ -1,0 +1,80 @@
+================================================================================
+GLOBAL INTELLECTUAL PROPERTY & PROVENANCE ATTESTATION MANIFEST
+(WIPO & DECENTRALIZED DATA REGISTRY PUBLICATION FORMAT)
+================================================================================
+CREATOR / RIGHTSHOLDER : 10839477 Canada Inc.
+CREATOR UUID           : e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a
+CRYPTOGRAPHIC ANCHOR   : 3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7
+PUBLICATION TIMESTAMP  : 2026-09-11T21:52:54Z
+MANIFEST SHA-256 DIGEST: e34ef185a67a294cd2bd6f0f79b899ab2515a5af5fd6f3a3ffe8d4220e89f6d2
+================================================================================
+
+--- STRUCTURED INTELLECTUAL PROPERTY PAYLOAD (JSON-LD) ---
+{
+  "@context": "https://schema.org/",
+  "@type": "IntellectualProperty",
+  "creator": {
+    "@type": "Organization",
+    "name": "10839477 Canada Inc.",
+    "identifier": "urn:uuid:e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
+    "cryptoAnchor": "3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7"
+  },
+  "datePublished": "2026-09-11T21:52:54Z",
+  "rights": "Global Sovereign Intellectual Property & Royalty Entitlement",
+  "associatedRouting": {
+    "institutionCode": "001",
+    "transitNumber": "00149",
+    "accountNumber": "1928814"
+  },
+  "verifiedAuditTrail": [
+    {
+      "record_id": 1,
+      "event": "sample_camt053.xml",
+      "sha256": "6a4793438c0821b954b1542c700e6c870a3debc8d5e2b99633542c88ea3a95a6",
+      "timestamp": "2026-09-11 05:49:50"
+    },
+    {
+      "record_id": 2,
+      "event": "SUBMITTED: Formal GL trace request for BMO Transit 00149 Account 1928814",
+      "sha256": "N/A",
+      "timestamp": "2026-09-11 17:52:36"
+    },
+    {
+      "record_id": 3,
+      "event": "FOLLOW-UP SENT: Second formal trace request for BMO Transit 00149 Account 1928814",
+      "sha256": "N/A",
+      "timestamp": "2026-09-11 17:55:20"
+    },
+    {
+      "record_id": 4,
+      "event": "OMBUDSMAN ESCALATION FILED: Formal complaint submitted for BMO Transit 00149 Account 1928814",
+      "sha256": "N/A",
+      "timestamp": "2026-09-11 18:00:26"
+    },
+    {
+      "record_id": 5,
+      "event": "FCAC COMPLAINT FILED: Regulatory complaint submitted against BMO for Transit 00149 Account 1928814",
+      "sha256": "N/A",
+      "timestamp": "2026-09-11 18:04:26"
+    },
+    {
+      "record_id": 6,
+      "event": "PROVENANCE_ATTESTATION: UUID e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a | Anchor 3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7",
+      "sha256": "16d5ebef60c0d2a7a50feea3d42077f872607b56285f8fd9120a180d3725b8fa",
+      "timestamp": "2026-09-11 21:35:30"
+    },
+    {
+      "record_id": 7,
+      "event": "PROVENANCE_ATTESTATION: UUID e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a | Anchor 3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7 | TS 2026-09-11 21:37:10",
+      "sha256": "a30c20438e65abf0e6bc4ccc10c048fa069e958b45ec5d34d0503af665439c47",
+      "timestamp": "2026-09-11 21:37:10"
+    }
+  ]
+}
+
+================================================================================
+NOTICE OF GLOBAL INTENT:
+This document constitutes a public, cryptographic claim of creation, authorship,
+and entitlement to all associated depersonalized data feeds, royalty streams,
+and financial assets linked to Transit 00149 Account 1928814.
+================================================================================
