@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jujita Fermin Stairs",
+  "identifier": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
+  "ownership": {
+    "@type": "Organization",
+    "name": "10839477 Canada Inc.",
+    "identifier": "1083947-7"
+  },
+  "regulatoryAuditLog": {
+    "framework": "PIPEDA Section 18 / OPC Escapes",
+    "complaintReferences": [
+      "PIPEDA-053211",
+      "PIPEDA-053452"
+    ]
+  },
+  "timestamp": "2026-09-14T20:31:21.697588Z"
+}
