@@ -11,7 +11,7 @@
         "entity": "10839477 Canada Inc.",
         "status": "PROCESSED",
         "message_type": "camt.053",
-        "reference_id": "WIRE-20260914-001"
+        "reference_id": "WIRE-20260914-002"
     },
     {
         "timestamp": "2026-09-14T21:37:58.949034+00:00",
@@ -37,6 +37,17 @@
         "status": "PROCESSED",
         "message_type": "camt.053",
         "reference_id": "WIRE-20260914-005",
+        "related_contracts": [
+            "CW2321555",
+            "CW2123555"
+        ]
+    },
+    {
+        "timestamp": "2026-09-14T23:59:05.978667+00:00",
+        "entity": "10839477 Canada Inc.",
+        "status": "PROCESSED",
+        "message_type": "camt.053",
+        "reference_id": "WIRE-20260914-006",
         "related_contracts": [
             "CW2321555",
             "CW2123555"
