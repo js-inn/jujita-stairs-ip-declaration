@@ -1,19 +1,11 @@
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Jujita Fermin Stairs",
-  "identifier": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
-  "ownership": {
-    "@type": "Organization",
-    "name": "10839477 Canada Inc.",
-    "identifier": "1083947-7"
-  },
-  "regulatoryAuditLog": {
-    "framework": "PIPEDA Section 18 / OPC Escapes",
-    "complaintReferences": [
-      "PIPEDA-053211",
-      "PIPEDA-053452"
+    "entity": "10839477 Canada Inc.",
+    "creator": "Jujita Fermin Stairs",
+    "creator_uuid": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
+    "crypto_anchor": "3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7",
+    "last_updated": "2026-09-14T23:52:06.556972+00:00",
+    "government_contracts": [
+        "CW2321555",
+        "CW2123555"
     ]
-  },
-  "timestamp": "2026-09-14T21:37:58.829704Z"
 }
