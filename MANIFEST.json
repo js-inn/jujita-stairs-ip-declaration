@@ -3,7 +3,7 @@
     "jurisdiction": "Canada (Federal)",
     "creator_uuid": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
     "cryptographic_anchor_uuid": "3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7",
-    "last_updated": "2026-09-15T00:53:41.872586+00:00",
+    "last_updated": "2026-09-15T01:18:48.109463+00:00",
     "related_contracts": [
         "CW2321555",
         "CW2123555"
@@ -11,6 +11,6 @@
     "ledger_proof": {
         "file": "wire_ledger.json",
         "hash_algorithm": "SHA-256",
-        "sha256": "b2e7d459a3f14563fb549d314e5e2671b75d05112c34b893f2b5c13962c07d2b"
+        "sha256": "fb417eabb0c436e6a2a92e65bd0e2430f90834d19adefc26619218a6bb08af6b"
     }
 }
