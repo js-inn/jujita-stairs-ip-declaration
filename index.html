@@ -93,6 +93,36 @@
       color: var(--accent);
       word-break: break-all;
     }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      background: #21262d;
+      color: var(--heading);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #30363d;
+      border-color: #8b949e;
+    }
+    .btn-primary {
+      background: #238636;
+      border-color: rgba(240,246,252,0.1);
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background: #2ea043;
+    }
     a {
       color: var(--accent);
       text-decoration: none;
@@ -148,6 +178,17 @@
       <div class="code-box" id="sha256">Loading...</div>
       <div style="margin-top: 12px; font-size: 0.85rem;">
         <strong>Last Synchronized:</strong> <span id="last-updated">Loading...</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Official Audit Certificate</h2>
+      <p style="font-size: 0.9rem; color: #8b949e; margin-top: 0;">
+        Download or inspect the automatically compiled ReportLab PDF audit document containing signed identity and ledger state.
+      </p>
+      <div class="btn-group">
+        <a href="audit_certificate.pdf" target="_blank" class="btn btn-primary">📄 Preview PDF Certificate</a>
+        <a href="audit_certificate.pdf" download="10839477_Canada_Inc_Audit_Certificate.pdf" class="btn">⬇ Download PDF</a>
       </div>
     </div>
 
