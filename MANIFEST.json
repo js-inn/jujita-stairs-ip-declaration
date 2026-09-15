@@ -1,11 +1,16 @@
 {
     "entity": "10839477 Canada Inc.",
-    "creator": "Jujita Fermin Stairs",
+    "jurisdiction": "Canada (Federal)",
     "creator_uuid": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
-    "crypto_anchor": "3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7",
-    "last_updated": "2026-09-15T00:27:59.469203+00:00",
-    "government_contracts": [
+    "cryptographic_anchor_uuid": "3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7",
+    "last_updated": "2026-09-15T00:33:30.048607+00:00",
+    "related_contracts": [
         "CW2321555",
         "CW2123555"
-    ]
+    ],
+    "ledger_proof": {
+        "file": "wire_ledger.json",
+        "hash_algorithm": "SHA-256",
+        "sha256": "c42719b08df8a2db07897cb62950fe0aeaaa68941b90a4e6faed2bc4fb2b56e7"
+    }
 }

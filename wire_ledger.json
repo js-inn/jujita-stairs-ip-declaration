@@ -74,5 +74,16 @@
             "CW2321555",
             "CW2123555"
         ]
+    },
+    {
+        "timestamp": "2026-09-15T00:33:30.111793+00:00",
+        "entity": "10839477 Canada Inc.",
+        "status": "PROCESSED",
+        "message_type": "camt.053",
+        "reference_id": "WIRE-20260915-009",
+        "related_contracts": [
+            "CW2321555",
+            "CW2123555"
+        ]
     }
 ]
