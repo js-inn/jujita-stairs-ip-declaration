@@ -272,5 +272,24 @@
             "CW2321555",
             "CW2123555"
         ]
+    },
+    {
+        "schema_version": "1.0",
+        "timestamp_utc": "2026-09-15T19:42:48.757147+00:00",
+        "corporate_issuer": "10839477 Canada Inc.",
+        "message_metadata": {
+            "message_type": "pacs.002.001.12",
+            "reference_id": "WIRE-REF-2026-001",
+            "routing_state": "LOCAL_SIMULATION_PENDING"
+        },
+        "transaction_details": {
+            "amount": 1000.0,
+            "currency": "CAD",
+            "recipient": "External Corporate Beneficiary"
+        },
+        "cryptographic_anchor": {
+            "creator_uuid": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
+            "anchor_uuid": "3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7"
+        }
     }
 ]
