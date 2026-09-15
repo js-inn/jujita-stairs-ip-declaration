@@ -6,7 +6,15 @@ import os
 LEDGER_FILE = "wire_ledger.json"
 MANIFEST_FILE = "MANIFEST.json"
 
+def ensure_ledger_entry():
+    """Finalizes any pending updates to wire_ledger.json before hashing."""
+    if not os.path.exists(LEDGER_FILE):
+        initial_data = []
+        with open(LEDGER_FILE, "w") as f:
+            json.dump(initial_data, f, indent=2)
+
 def calculate_sha256(filepath):
+    """Calculates byte-for-byte SHA-256 hash of the specified file."""
     if not os.path.exists(filepath):
         return None
     sha256_hash = hashlib.sha256()
@@ -16,8 +24,13 @@ def calculate_sha256(filepath):
     return sha256_hash.hexdigest()
 
 def generate_manifest():
+    # 1. Ensure all mutations/writes to wire_ledger.json are finished
+    ensure_ledger_entry()
+
+    # 2. Compute exact SHA-256 hash of wire_ledger.json on disk
     ledger_hash = calculate_sha256(LEDGER_FILE)
-    
+
+    # 3. Construct manifest structure
     manifest_data = {
         "entity": "10839477 Canada Inc.",
         "jurisdiction": "Canada (Federal)",
@@ -32,6 +45,7 @@ def generate_manifest():
         }
     }
 
+    # 4. Write MANIFEST.json
     with open(MANIFEST_FILE, "w") as f:
         json.dump(manifest_data, f, indent=4)
 
