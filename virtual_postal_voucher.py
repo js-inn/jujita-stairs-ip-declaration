@@ -86,7 +86,6 @@ def generate_virtual_cashout(virtual_card_uid, payout_amount=50.00, postal_outle
     print(f"==================================================\n")
 
 if __name__ == "__main__":
-    # Pull the exact virtual card UID you just created from the database
     conn = sqlite3.connect(DB_FILE)
     cursor = conn.cursor()
     cursor.execute("SELECT recipient_card FROM octopus_transactions WHERE recipient_card LIKE 'VCARD-%' ORDER BY block_index DESC LIMIT 1")
