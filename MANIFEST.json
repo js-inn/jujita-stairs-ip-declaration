@@ -11,7 +11,7 @@
   "ledger_proof": {
     "file": "wire_ledger.json",
     "hash_algorithm": "SHA-256",
-    "sha256": "0d99632eb520453f9dca34ab7ad21a10618e5bfde7687e0251ac12dadd84453a"
+    "sha256": "48ced840ffb0dacf1d16ac417513f180d28c6b5c77a15f5db32092f9d88b2d70"
   },
   "ledger_hash": "48ced840ffb0dacf1d16ac417513f180d28c6b5c77a15f5db32092f9d88b2d70"
 }
