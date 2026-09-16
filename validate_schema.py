@@ -84,6 +84,10 @@ class T4AOASReturnType(BaseModel):
         return self.slips
 
     @property
+    def Slips(self) -> List[T4AOASSlip]:
+        return self.slips
+
+    @property
     def T4A_OASSummary(self) -> T4AOASSummary:
         return self.summary
 
