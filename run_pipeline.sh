@@ -28,3 +28,7 @@ python export_audit_package.py
 echo "=================================================="
 echo " ✅ AUDIT PIPELINE COMPLETED SUCCESSFULLY"
 echo "=================================================="
+
+# [4/6] Parse T661 XSD Schema & Validate Submission
+python3 parse_t661.py
+python3 validate_t661.py
