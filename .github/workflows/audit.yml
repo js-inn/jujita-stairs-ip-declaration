@@ -1,68 +1,47 @@
-name: Corporate Identity & Ledger Audit
+name: Corporate Identity & Tax Audit Integrity CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
 
 jobs:
-  audit-schema-and-integrity:
+  audit-verify:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
 
-      - name: Validate JSON Syntax
-        run: |
-          python -c "import json; json.load(open('MANIFEST.json'))"
-          python -c "import json; json.load(open('wire_ledger.json'))"
-          echo "✓ JSON syntax is valid for MANIFEST.json and wire_ledger.json"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas pydantic
 
-      - name: Verify SHA-256 Ledger Hash
-        run: |
-          python -c "
-          import json, hashlib
+    - name: Initialize Taxonomy & Audit Database
+      run: |
+        python update_taxonomy.py
+        python audit_logger.py
+        python log_payload_hash.py
 
-          with open('MANIFEST.json') as f:
-              manifest = json.load(f)
+    - name: Execute Cryptographic Integrity Verification
+      run: |
+        python verify_integrity.py
 
-          expected_hash = manifest.get('ledger_proof', {}).get('sha256')
-          if not expected_hash:
-              raise ValueError('SHA-256 hash missing from MANIFEST.json')
+    - name: Export Audit Manifests
+      run: |
+        python export_audit_package.py
 
-          sha256_hash = hashlib.sha256()
-          with open('wire_ledger.json', 'rb') as f:
-              for chunk in iter(lambda: f.read(4096), b''):
-                  sha256_hash.update(chunk)
-          
-          actual_hash = sha256_hash.hexdigest()
-          
-          if actual_hash != expected_hash:
-              raise ValueError(f'Hash mismatch! Manifest: {expected_hash} | Actual: {actual_hash}')
-
-          print(f'✓ SHA-256 ledger integrity verified: {actual_hash}')
-          "
-
-      - name: Validate Required Identity Keys
-        run: |
-          python -c "
-          import json
-
-          with open('MANIFEST.json') as f:
-              data = json.load(f)
-
-          required_keys = ['entity', 'creator_uuid', 'cryptographic_anchor_uuid', 'related_contracts']
-          missing = [k for k in required_keys if k not in data]
-
-          if missing:
-              raise KeyError(f'MANIFEST.json is missing required key(s): {missing}')
-
-          print('✓ Required corporate identity keys present')
-          "
+    - name: Upload Audit Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: audit-manifests-${{ github.sha }}
+        path: |
+          audit_export_*.csv
+          audit_export_*.json
