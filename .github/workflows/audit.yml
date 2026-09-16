@@ -14,10 +14,5 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Generate t661_part7.xml dynamically
-        run: |
-          # Replace this with your actual generation script or command
-          python generate_xml.py
-
       - name: Run Tax Audit Pipeline
         run: python parse_t661.py
