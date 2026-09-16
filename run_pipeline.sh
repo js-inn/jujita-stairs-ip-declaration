@@ -32,3 +32,7 @@ echo "=================================================="
 # [4/6] Parse T661 XSD Schema & Validate Submission
 python3 parse_t661.py
 python3 validate_t661.py
+
+# [5/6] Parse T5013 Schedule 12 XSD Schema & Validate Submission
+python3 parse_schedule12.py
+python3 validate_schedule12.py

@@ -1,12 +1,12 @@
-tax_audit_log.db
-audit_export_*.csv
-audit_export_*.json
-*.bak
-.gradle/
-build/
+# XML Data and Schemas
+*.xml
+*.xsd
+
+# Local Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Python Cache
 __pycache__/
-app/
-build/
-.gradle/
-*.gradle.kts
-gradle.properties
+*.pyc
