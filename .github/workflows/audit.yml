@@ -16,9 +16,8 @@ jobs:
 
       - name: Generate t661_part7.xml dynamically
         run: |
-          # Add your command or script here to generate t661_part7.xml
-          # Example: python generate_xml.py
-          echo "Generating XML placeholder or running generation script..."
+          # Replace this with your actual generation script or command
+          python generate_xml.py
 
       - name: Run Tax Audit Pipeline
         run: python parse_t661.py
