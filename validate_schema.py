@@ -76,6 +76,14 @@ class T4AOASReturnType(BaseModel):
     slips: List[T4AOASSlip] = Field(default_factory=list, alias="T4A_OASSlip")
 
     @property
+    def Summary(self) -> T4AOASSummary:
+        return self.summary
+
+    @property
+    def Slip(self) -> List[T4AOASSlip]:
+        return self.slips
+
+    @property
     def T4A_OASSummary(self) -> T4AOASSummary:
         return self.summary
 
@@ -121,6 +129,14 @@ class Submission(BaseModel):
     @property
     def Return(self) -> List[T4AOASReturnChoiceType]:
         return self.returns
+
+    @property
+    def T550(self) -> Optional[T4AOASReturnType]:
+        """Provides backward-compatible T550 attribute mapping for audit_logger."""
+        for ret in self.returns:
+            if ret.t4a_oas:
+                return ret.t4a_oas
+        return None
 
 
 SubmissionModel = Submission
