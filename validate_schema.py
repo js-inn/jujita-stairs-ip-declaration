@@ -132,10 +132,12 @@ class Submission(BaseModel):
 
     @property
     def T550(self) -> Optional[T4AOASReturnType]:
-        """Provides backward-compatible T550 attribute mapping for audit_logger."""
+        """Maps T550 directly to the inner T4AOASReturnType object or first available return."""
         for ret in self.returns:
-            if ret.t4a_oas:
+            if getattr(ret, "t4a_oas", None):
                 return ret.t4a_oas
+            if isinstance(ret, T4AOASReturnType):
+                return ret
         return None
 
 
