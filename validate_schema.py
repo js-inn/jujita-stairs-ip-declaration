@@ -135,6 +135,10 @@ class T4AOASSummary(BaseModel):
         return self.total_gross_pay
 
     @property
+    def TotalAmount(self) -> float:
+        return self.total_gross_pay
+
+    @property
     def TotalTaxDeducted(self) -> float:
         return self.total_tax_deducted
 
