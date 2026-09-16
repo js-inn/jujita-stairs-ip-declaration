@@ -29,6 +29,26 @@ class TransmitterType(BaseModel):
         pattern=r"^[EF]$"
     )
 
+    @property
+    def TransmitterNumber(self) -> str:
+        return self.submitter_acct_num
+
+    @property
+    def TransmitterName(self) -> str:
+        return self.transmitter_name
+
+    @property
+    def ContactName(self) -> str:
+        return self.contact_name
+
+    @property
+    def ContactPhone(self) -> str:
+        return self.contact_phone
+
+    @property
+    def LanguageCode(self) -> str:
+        return self.language_code
+
     @field_validator("contact_phone", mode="before")
     @classmethod
     def format_phone(cls, v: str) -> str:
@@ -52,6 +72,22 @@ class T4AOASSlip(BaseModel):
     gross_pay: float = Field(default=0.0, alias="GrossPay", ge=0.0)
     tax_deducted: float = Field(default=0.0, alias="TaxDeducted", ge=0.0)
 
+    @property
+    def RecipientSIN(self) -> str:
+        return self.recipient_sin
+
+    @property
+    def BusinessNumber(self) -> str:
+        return self.bn
+
+    @property
+    def GrossPay(self) -> float:
+        return self.gross_pay
+
+    @property
+    def TaxDeducted(self) -> float:
+        return self.tax_deducted
+
     @field_validator("recipient_sin")
     @classmethod
     def mask_sin_for_audit(cls, v: str) -> str:
@@ -67,6 +103,22 @@ class T4AOASSummary(BaseModel):
     total_slips: int = Field(default=0, alias="TotalSlips", ge=0)
     total_gross_pay: float = Field(default=0.0, alias="TotalGrossPay", ge=0.0)
     total_tax_deducted: float = Field(default=0.0, alias="TotalTaxDeducted", ge=0.0)
+
+    @property
+    def BusinessNumber(self) -> str:
+        return self.bn
+
+    @property
+    def TotalSlips(self) -> int:
+        return self.total_slips
+
+    @property
+    def TotalGrossPay(self) -> float:
+        return self.total_gross_pay
+
+    @property
+    def TotalTaxDeducted(self) -> float:
+        return self.total_tax_deducted
 
 
 class T4AOASReturnType(BaseModel):
