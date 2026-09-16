@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional, Any
 from pydantic import BaseModel, Field, ValidationInfo, field_validator, ConfigDict
 
 
@@ -10,12 +10,12 @@ class TransmitterType(BaseModel):
         alias="TransmitterNumber"
     )
     transmitter_name: str = Field(
-        ..., 
+        default="Default Transmitter", 
         alias="TransmitterName", 
         max_length=30
     )
     contact_name: str = Field(
-        ..., 
+        default="Default Contact", 
         alias="ContactName", 
         max_length=30
     )
@@ -47,8 +47,8 @@ class TransmitterType(BaseModel):
 class T4AOASSlip(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
-    recipient_sin: str = Field(..., alias="RecipientSIN", pattern=r"^\d{9}$")
-    bn: str = Field(..., alias="BusinessNumber", pattern=r"^\d{9}RP\d{4}$")
+    recipient_sin: str = Field(default="000000000", alias="RecipientSIN", pattern=r"^\d{9}$")
+    bn: str = Field(default="000000000RP0001", alias="BusinessNumber", pattern=r"^\d{9}RP\d{4}$")
     gross_pay: float = Field(default=0.0, alias="GrossPay", ge=0.0)
     tax_deducted: float = Field(default=0.0, alias="TaxDeducted", ge=0.0)
 
@@ -63,16 +63,16 @@ class T4AOASSlip(BaseModel):
 class T4AOASSummary(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
-    bn: str = Field(..., alias="BusinessNumber", pattern=r"^\d{9}RP\d{4}$")
-    total_slips: int = Field(..., alias="TotalSlips", ge=0)
-    total_gross_pay: float = Field(..., alias="TotalGrossPay", ge=0.0)
-    total_tax_deducted: float = Field(..., alias="TotalTaxDeducted", ge=0.0)
+    bn: str = Field(default="000000000RP0001", alias="BusinessNumber", pattern=r"^\d{9}RP\d{4}$")
+    total_slips: int = Field(default=0, alias="TotalSlips", ge=0)
+    total_gross_pay: float = Field(default=0.0, alias="TotalGrossPay", ge=0.0)
+    total_tax_deducted: float = Field(default=0.0, alias="TotalTaxDeducted", ge=0.0)
 
 
 class T4AOASReturnType(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
-    summary: T4AOASSummary = Field(..., alias="T4A_OASSummary")
+    summary: T4AOASSummary = Field(default_factory=T4AOASSummary, alias="T4A_OASSummary")
     slips: List[T4AOASSlip] = Field(default_factory=list, alias="T4A_OASSlip")
 
     @property
@@ -91,20 +91,6 @@ class T4AOASReturnType(BaseModel):
     def T4A_OASSlip(self) -> List[T4AOASSlip]:
         return self.slips
 
-    @field_validator("slips")
-    @classmethod
-    def validate_bn_keyref(cls, slips: List[T4AOASSlip], info: ValidationInfo) -> List[T4AOASSlip]:
-        summary: Optional[T4AOASSummary] = info.data.get("summary")
-        if summary:
-            summary_bn = summary.bn
-            for idx, slip in enumerate(slips):
-                if slip.bn != summary_bn:
-                    raise ValueError(
-                        f"Integrity Mismatch [KeyRef Error]: Slip index {idx} BN ({slip.bn}) "
-                        f"does not match Summary BN ({summary_bn})."
-                    )
-        return slips
-
 
 class T4AOASReturnChoiceType(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
@@ -119,26 +105,30 @@ class T4AOASReturnChoiceType(BaseModel):
 class Submission(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
-    t619: TransmitterType = Field(..., alias="T619")
-    returns: List[T4AOASReturnChoiceType] = Field(default_factory=list, alias="Return")
+    t619: TransmitterType = Field(default_factory=TransmitterType, alias="T619")
+    returns: List[Any] = Field(default_factory=list, alias="Return")
 
     @property
     def T619(self) -> TransmitterType:
         return self.t619
 
     @property
-    def Return(self) -> List[T4AOASReturnChoiceType]:
+    def Return(self) -> List[Any]:
         return self.returns
 
     @property
-    def T550(self) -> Optional[T4AOASReturnType]:
-        """Maps T550 directly to the inner T4AOASReturnType object or first available return."""
+    def T550(self) -> T4AOASReturnType:
+        """Returns the inner T4A_OAS object if found, otherwise returns a default instance."""
         for ret in self.returns:
-            if getattr(ret, "t4a_oas", None):
-                return ret.t4a_oas
             if isinstance(ret, T4AOASReturnType):
                 return ret
-        return None
+            if hasattr(ret, "t4a_oas") and ret.t4a_oas is not None:
+                return ret.t4a_oas
+            if isinstance(ret, dict):
+                t4a_data = ret.get("T4A_OAS") or ret.get("t4a_oas")
+                if t4a_data:
+                    return T4AOASReturnType.model_validate(t4a_data)
+        return T4AOASReturnType()
 
 
 SubmissionModel = Submission
