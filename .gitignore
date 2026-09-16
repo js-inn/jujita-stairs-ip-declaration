@@ -5,3 +5,8 @@ audit_export_*.json
 .gradle/
 build/
 __pycache__/
+app/
+build/
+.gradle/
+*.gradle.kts
+gradle.properties
