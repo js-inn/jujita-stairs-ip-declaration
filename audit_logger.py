@@ -30,9 +30,10 @@ def init_db(db_path="tax_audit_log.db"):
         );
 
         CREATE TABLE IF NOT EXISTS tax_categories (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            tax_code TEXT UNIQUE,
-            description TEXT
+            tax_code TEXT PRIMARY KEY,
+            tax_description TEXT NOT NULL,
+            jurisdiction TEXT NOT NULL,
+            authority TEXT NOT NULL
         );
     """)
     conn.commit()
@@ -45,7 +46,6 @@ def log_submission(model, xml_file_path, ref_num, tax_code, db_path="tax_audit_l
 
     t619 = model.t619
     returns = model.returns[0].model_dump() if model.returns else {}
-    # Extract summary and slips based on schema structure
     t4a = returns.get("T4A_OAS", {})
     summary = t4a.get("T4A_OASSummary", {})
     slips = t4a.get("T4A_OASSlip", [])
