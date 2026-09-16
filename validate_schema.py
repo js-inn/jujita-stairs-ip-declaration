@@ -109,6 +109,7 @@ class T4AOASSummary(BaseModel):
 
     bn: str = Field(default="000000000RP0001", alias="BusinessNumber", pattern=r"^\d{9}RP\d{4}$")
     payor_name: str = Field(default="Default Payor", alias="PayorName")
+    payor_acct_num: str = Field(default="000000000RP0001", alias="PayorAccountableNumber")
     total_slips: int = Field(default=0, alias="TotalSlips", ge=0)
     total_gross_pay: float = Field(default=0.0, alias="TotalGrossPay", ge=0.0)
     total_tax_deducted: float = Field(default=0.0, alias="TotalTaxDeducted", ge=0.0)
@@ -120,6 +121,10 @@ class T4AOASSummary(BaseModel):
     @property
     def PayorName(self) -> str:
         return self.payor_name
+
+    @property
+    def PayorAccountableNumber(self) -> str:
+        return self.payor_acct_num
 
     @property
     def TotalSlips(self) -> int:
