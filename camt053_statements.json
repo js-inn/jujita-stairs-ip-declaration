@@ -1,0 +1,39 @@
+[
+    {
+        "schema_version": "camt.053.001.10",
+        "timestamp_utc": "2026-09-15T19:45:52.354588+00:00",
+        "corporate_holder": "10839477 Canada Inc.",
+        "statement_metadata": {
+            "statement_id": "BMO-CAMT053-20260915-001",
+            "electronic_sequence_number": 1,
+            "creation_date_time": "2026-09-15T19:45:52.354606+00:00"
+        },
+        "balance_summary": {
+            "opening_balance": {
+                "amount": 0.0,
+                "currency": "CAD",
+                "type": "OPBD"
+            },
+            "closing_balance": {
+                "amount": 5000.0,
+                "currency": "CAD",
+                "type": "CLBD"
+            }
+        },
+        "statement_entries": [
+            {
+                "entry_reference": "ENT-2026-09-001",
+                "amount": 5000.0,
+                "currency": "CAD",
+                "credit_debit_indicator": "CRDT",
+                "status": "BOOK",
+                "bank_transaction_code": "DTCT-ICDT",
+                "remittance_information": "Initial corporate capitalization and liquidity anchor"
+            }
+        ],
+        "cryptographic_anchor": {
+            "creator_uuid": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
+            "anchor_uuid": "3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7"
+        }
+    }
+]

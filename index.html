@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10839477 Canada Inc. | Cryptographic Public Audit Dashboard</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --heading: #f0f6fc;
+      --accent: #58a6ff;
+      --green: #3fb950;
+      --mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      color: var(--heading);
+      font-size: 1.5rem;
+      margin: 0 0 8px 0;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(63, 185, 80, 0.15);
+      color: var(--green);
+      border: 1px solid rgba(63, 185, 80, 0.4);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      color: var(--heading);
+      font-size: 1.1rem;
+      margin-top: 0;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media(max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .field-label {
+      font-size: 0.8rem;
+      color: #8b949e;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .field-value {
+      color: var(--heading);
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-top: 4px;
+      word-break: break-all;
+    }
+    .code-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px;
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--accent);
+      word-break: break-all;
+    }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      background: #21262d;
+      color: var(--heading);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #30363d;
+      border-color: #8b949e;
+    }
+    .btn-primary {
+      background: #238636;
+      border-color: rgba(240,246,252,0.1);
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background: #2ea043;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #8b949e;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>10839477 Canada Inc.</h1>
+      <span class="badge">✓ PUBLIC PROVENANCE ANCHOR LIVE</span>
+    </header>
+
+    <div class="card">
+      <h2>Corporate Identity & Jurisdiction</h2>
+      <div class="grid">
+        <div>
+          <div class="field-label">Legal Entity</div>
+          <div class="field-value" id="entity">Loading...</div>
+        </div>
+        <div>
+          <div class="field-label">Jurisdiction</div>
+          <div class="field-value" id="jurisdiction">Loading...</div>
+        </div>
+        <div>
+          <div class="field-label">Creator UUID</div>
+          <div class="field-value" id="creator-uuid">Loading...</div>
+        </div>
+        <div>
+          <div class="field-label">Cryptographic Anchor UUID</div>
+          <div class="field-value" id="anchor-uuid">Loading...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Anchored Government Contracts</h2>
+      <div class="field-value" id="contracts">Loading...</div>
+    </div>
+
+    <div class="card">
+      <h2>Ledger SHA-256 Proof (`wire_ledger.json`)</h2>
+      <div class="field-label" style="margin-bottom: 6px;">Current Hash Digest</div>
+      <div class="code-box" id="sha256">Loading...</div>
+      <div style="margin-top: 12px; font-size: 0.85rem;">
+        <strong>Last Synchronized:</strong> <span id="last-updated">Loading...</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Official Audit Certificate</h2>
+      <p style="font-size: 0.9rem; color: #8b949e; margin-top: 0;">
+        Download or inspect the automatically compiled ReportLab PDF audit document containing signed identity and ledger state.
+      </p>
+      <div class="btn-group">
+        <a href="audit_certificate.pdf" target="_blank" class="btn btn-primary">📄 Preview PDF Certificate</a>
+        <a href="audit_certificate.pdf" download="10839477_Canada_Inc_Audit_Certificate.pdf" class="btn">⬇ Download PDF</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Public Repositories & Declarations</h2>
+      <ul>
+        <li><a href="MANIFEST.json" target="_blank">View Raw MANIFEST.json</a></li>
+        <li><a href="wire_ledger.json" target="_blank">View Raw ISO 20022 wire_ledger.json</a></li>
+        <li><a href="IP_CLAIM.md" target="_blank">View Statutory IP Declaration (IP_CLAIM.md)</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      Public Web Graph Node | Cryptographically Verified for 10839477 Canada Inc.
+    </footer>
+  </div>
+
+  <script>
+    async function loadManifest() {
+      try {
+        const response = await fetch('MANIFEST.json?cachebust=' + new Date().getTime());
+        if (!response.ok) throw new Error("Manifest not found");
+        const data = await response.json();
+
+        document.getElementById('entity').textContent = data.entity || 'N/A';
+        document.getElementById('jurisdiction').textContent = data.jurisdiction || 'N/A';
+        document.getElementById('creator-uuid').textContent = data.creator_uuid || 'N/A';
+        document.getElementById('anchor-uuid').textContent = data.cryptographic_anchor_uuid || 'N/A';
+        document.getElementById('last-updated').textContent = data.last_updated ? new Date(data.last_updated).toUTCString() : 'N/A';
+        
+        if (data.related_contracts && Array.isArray(data.related_contracts)) {
+          document.getElementById('contracts').textContent = data.related_contracts.join(' | ');
+        } else {
+          document.getElementById('contracts').textContent = 'None Specified';
+        }
+
+        if (data.ledger_proof && data.ledger_proof.sha256) {
+          document.getElementById('sha256').textContent = data.ledger_proof.sha256;
+        } else {
+          document.getElementById('sha256').textContent = 'Hash unavailable';
+        }
+      } catch (err) {
+        console.error("Error fetching MANIFEST.json:", err);
+      }
+    }
+    loadManifest();
+  </script>
+</body>
+</html>
