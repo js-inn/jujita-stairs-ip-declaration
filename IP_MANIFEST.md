@@ -21,7 +21,7 @@
   * **Efficiency Range:** 93% to 95% nominal operating efficiency.
   * **Torque Envelope:** $>1,400\text{ Nm}$ continuous/peak takeoff profiles.
   * **Environmental Survival Rating:** $-50^\circ\text{C}$ extreme cold-soak startup and transient load capability.
-* **Engineering Validations:** Isolation of copper winding thermal coefficients ($R_s(T)$), wide-bandgap (SiC/GaN) inverter switching loss mapping, and mechanical viscosity friction variance.
+* **Engineering Validations:** Isolation of copper winding thermal coefficients, wide-bandgap (SiC/GaN) inverter switching loss mapping, and mechanical viscosity friction variance.
 
 ---
 
