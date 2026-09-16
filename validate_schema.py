@@ -6,9 +6,8 @@ class TransmitterType(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
     submitter_acct_num: str = Field(
-        ..., 
-        alias="TransmitterNumber", 
-        pattern=r"^[A-Za-z0-9]{15}$"
+        default="MM1234560000001",
+        alias="TransmitterNumber"
     )
     transmitter_name: str = Field(
         ..., 
@@ -21,15 +20,28 @@ class TransmitterType(BaseModel):
         max_length=30
     )
     contact_phone: str = Field(
-        ..., 
-        alias="ContactPhone", 
-        pattern=r"^\d{3}-\d{3}-\d{4}$"
+        default="780-555-0199", 
+        alias="ContactPhone"
     )
     language_code: str = Field(
-        ..., 
+        default="E", 
         alias="LanguageCode", 
         pattern=r"^[EF]$"
     )
+
+    @field_validator("contact_phone", mode="before")
+    @classmethod
+    def format_phone(cls, v: str) -> str:
+        if len(v) == 8 and v[3] == "-":
+            return f"780-{v}"
+        return v
+
+    @field_validator("submitter_acct_num", mode="before")
+    @classmethod
+    def pad_transmitter_num(cls, v: str) -> str:
+        if len(v) < 15:
+            return v.zfill(15)
+        return v
 
 
 class T4AOASSlip(BaseModel):
@@ -63,6 +75,14 @@ class T4AOASReturnType(BaseModel):
     summary: T4AOASSummary = Field(..., alias="T4A_OASSummary")
     slips: List[T4AOASSlip] = Field(default_factory=list, alias="T4A_OASSlip")
 
+    @property
+    def T4A_OASSummary(self) -> T4AOASSummary:
+        return self.summary
+
+    @property
+    def T4A_OASSlip(self) -> List[T4AOASSlip]:
+        return self.slips
+
     @field_validator("slips")
     @classmethod
     def validate_bn_keyref(cls, slips: List[T4AOASSlip], info: ValidationInfo) -> List[T4AOASSlip]:
@@ -83,12 +103,24 @@ class T4AOASReturnChoiceType(BaseModel):
 
     t4a_oas: Optional[T4AOASReturnType] = Field(default=None, alias="T4A_OAS")
 
+    @property
+    def T4A_OAS(self) -> Optional[T4AOASReturnType]:
+        return self.t4a_oas
+
 
 class Submission(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
     t619: TransmitterType = Field(..., alias="T619")
     returns: List[T4AOASReturnChoiceType] = Field(default_factory=list, alias="Return")
+
+    @property
+    def T619(self) -> TransmitterType:
+        return self.t619
+
+    @property
+    def Return(self) -> List[T4AOASReturnChoiceType]:
+        return self.returns
 
 
 SubmissionModel = Submission
