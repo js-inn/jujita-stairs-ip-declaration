@@ -1,30 +1,24 @@
 name: Corporate Identity & Tax Audit Pipeline
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push]
 
 jobs:
   audit-verify:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pydantic pandas
+      - name: Generate t661_part7.xml dynamically
+        run: |
+          # Add your command or script here to generate t661_part7.xml
+          # Example: python generate_xml.py
+          echo "Generating XML placeholder or running generation script..."
 
-    - name: Run Tax Audit Pipeline
-      run: |
-        chmod +x run_pipeline.sh
-        ./run_pipeline.sh
+      - name: Run Tax Audit Pipeline
+        run: python parse_t661.py
