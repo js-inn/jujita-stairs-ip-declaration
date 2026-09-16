@@ -24,18 +24,25 @@ jobs:
         python -m pip install --upgrade pip
         pip install pandas pydantic
 
-    - name: Initialize Taxonomy & Audit Database
+    - name: Initialize Database Schema
+      run: |
+        python audit_logger.py
+
+    - name: Apply Taxonomy Mapping
       run: |
         python update_taxonomy.py
-        python audit_logger.py
+
+    - name: Compute Cryptographic Hashes
+      run: |
         python log_payload_hash.py
 
-    - name: Execute Cryptographic Integrity Verification
+    - name: Execute Integrity Verification
       run: |
         python verify_integrity.py
 
     - name: Export Audit Manifests
       run: |
+        python audit_report.py
         python export_audit_package.py
 
     - name: Upload Audit Artifacts
