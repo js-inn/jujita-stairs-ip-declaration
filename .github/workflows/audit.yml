@@ -1,10 +1,10 @@
-name: Corporate Identity & Tax Audit Integrity CI
+name: Corporate Identity & Tax Audit Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
   audit-verify:
@@ -14,7 +14,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up Python 3.11
+    - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
@@ -22,33 +22,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pandas pydantic
+        pip install pydantic pandas
 
-    - name: Initialize Database Schema
+    - name: Run Tax Audit Pipeline
       run: |
-        python audit_logger.py
-
-    - name: Apply Taxonomy Mapping
-      run: |
-        python update_taxonomy.py
-
-    - name: Compute Cryptographic Hashes
-      run: |
-        python log_payload_hash.py
-
-    - name: Execute Integrity Verification
-      run: |
-        python verify_integrity.py
-
-    - name: Export Audit Manifests
-      run: |
-        python audit_report.py
-        python export_audit_package.py
-
-    - name: Upload Audit Artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: audit-manifests-${{ github.sha }}
-        path: |
-          audit_export_*.csv
-          audit_export_*.json
+        chmod +x run_pipeline.sh
+        ./run_pipeline.sh
