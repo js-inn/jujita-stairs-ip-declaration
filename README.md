@@ -1,2 +1,8 @@
-# jujita-stairs-ip-declaration
-Public Master IP Declaration for Jujita Fermin Stairs &amp; 10839477 Canada Inc. Binding UUID e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a &amp; Crypto Anchor 3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7.
+# Edge Tax Audit Engine & Cryptographic Integrity Pipeline
+
+A lightweight, audit-compliant tax ingestion, verification, and reporting pipeline designed to run on local edge environments (including Termux/Android). The engine processes Canadian tax payloads (T619/T550), validates incoming XML structures against schema rules, maps line items against a 55-category taxonomy, and enforces immutable SHA-256 payload integrity verification.
+
+---
+
+## Architecture Overview
+
