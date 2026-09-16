@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<Submission xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.cra-arc.gc.ca/xmlns/t619/1-0-1">
+  <T619>
+    <sbmt_ref_num>00000001</sbmt_ref_num>
+    <trans_nbr>001</trans_nbr>
+    <trans_name>Systems &amp; Integration Corp</trans_name>
+    <CNTC>
+      <cntc_name>Alex Mercer</cntc_name>
+      <cntc_phone>555-0199</cntc_phone>
+      <cntc_email>alex@example.com</cntc_email>
+    </CNTC>
+  </T619>
+  <T550>
+    <T550Slip>
+      <rcpt_name>Jane Doe</rcpt_name>
+      <sin>123456789</sin>
+      <amt>150.25</amt>
+    </T550Slip>
+    <T550Slip>
+      <rcpt_name>John Smith</rcpt_name>
+      <sin>987654321</sin>
+      <amt>200.25</amt>
+    </T550Slip>
+    <T550Summary>
+      <pyr_name>Enterprise Logistics Ltd</pyr_name>
+      <pyr_acc_num>ACC-9988776655</pyr_acc_num>
+      <tot_slips>2</tot_slips>
+      <tot_amt>350.50</tot_amt>
+    </T550Summary>
+  </T550>
+</Submission>

@@ -1,0 +1,7 @@
+tax_audit_log.db
+audit_export_*.csv
+audit_export_*.json
+*.bak
+.gradle/
+build/
+__pycache__/
