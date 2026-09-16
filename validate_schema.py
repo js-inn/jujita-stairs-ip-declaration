@@ -23,6 +23,10 @@ class TransmitterType(BaseModel):
         default="780-555-0199", 
         alias="ContactPhone"
     )
+    contact_email: str = Field(
+        default="admin@example.com",
+        alias="ContactEmail"
+    )
     language_code: str = Field(
         default="E", 
         alias="LanguageCode", 
@@ -44,6 +48,10 @@ class TransmitterType(BaseModel):
     @property
     def ContactPhone(self) -> str:
         return self.contact_phone
+
+    @property
+    def ContactEmail(self) -> str:
+        return self.contact_email
 
     @property
     def LanguageCode(self) -> str:
