@@ -1,6 +1,6 @@
 import sqlite3
 import xml.etree.ElementTree as ET
-from xml_parser import cra_xml_to_pydantic
+from xml_parser import parse_cra_xml
 
 def init_db(db_path="tax_audit_log.db"):
     conn = sqlite3.connect(db_path)
@@ -43,9 +43,12 @@ def log_submission(model, xml_file_path, ref_num, tax_code, db_path="tax_audit_l
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
-    t619 = model.t619_submission
-    summary = model.summary_record
-    slips = model.slips
+    t619 = model.t619
+    returns = model.returns[0].model_dump() if model.returns else {}
+    # Extract summary and slips based on schema structure
+    t4a = returns.get("T4A_OAS", {})
+    summary = t4a.get("T4A_OASSummary", {})
+    slips = t4a.get("T4A_OASSlip", [])
 
     cursor.execute("""
         INSERT OR REPLACE INTO submissions (
@@ -54,12 +57,12 @@ def log_submission(model, xml_file_path, ref_num, tax_code, db_path="tax_audit_l
         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (
         ref_num,
-        t619.TransmitterName,
-        t619.ContactEmail,
-        summary.PayorName,
-        summary.PayorAccountableNumber,
-        summary.TotalSlips,
-        summary.TotalAmount,
+        t619.transmitter_name,
+        t619.contact_phone,
+        summary.get("bn", "N/A"),
+        t619.submitter_acct_num,
+        summary.get("total_slips", 0),
+        summary.get("total_gross_pay", 0.0),
         tax_code,
         ""
     ))
@@ -70,7 +73,7 @@ def log_submission(model, xml_file_path, ref_num, tax_code, db_path="tax_audit_l
     cursor.execute("DELETE FROM slips WHERE submission_id = ?", (submission_id,))
 
     slip_records = [
-        (submission_id, slip.RecipientName, slip.RecipientSIN, slip.Amount)
+        (submission_id, slip.get("recipient_sin", "N/A"), slip.get("sin", "N/A"), slip.get("gross_pay", 0.0))
         for slip in slips
     ]
 
@@ -85,5 +88,5 @@ def log_submission(model, xml_file_path, ref_num, tax_code, db_path="tax_audit_l
 
 if __name__ == "__main__":
     xml_path = "cra_submission.xml"
-    model = cra_xml_to_pydantic(xml_path)
+    model = parse_cra_xml(xml_path)
     log_submission(model, xml_file_path=xml_path, ref_num="CRA-T550-2026-001", tax_code="FED_CORP_TAX")
