@@ -1,0 +1,27 @@
+{
+  "manifest_version": "1.0.0",
+  "project": {
+    "name": "Jujita Project Manifest",
+    "slug": "jujita-stairs-ip-declaration",
+    "description": "Decentralized software manifest and cryptographic asset registry.",
+    "category": "Infrastructure / Web3",
+    "version": "1.0.0",
+    "author": "Jujita Fermin Stairs"
+  },
+  "networks": [
+    {
+      "chain_id": 56,
+      "name": "BNB Smart Chain Mainnet",
+      "currency": "BNB",
+      "rpc_url": "https://bsc-dataseed.binance.org/"
+    }
+  ],
+  "contracts": {
+    "registry": "0x0000000000000000000000000000000000000000"
+  },
+  "audit": {
+    "status": "self-audited",
+    "repository": "https://github.com/jujita-stairs/jujita-stairs-ip-declaration"
+  }
+}
+
