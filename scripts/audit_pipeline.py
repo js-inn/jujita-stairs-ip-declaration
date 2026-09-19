@@ -7,10 +7,10 @@ from datetime import datetime, UTC
 
 DB_PATH = "local_audit.db"
 MANIFEST_PATH = "manifests/dapp-manifest.json"
-DATA_DIR = "data"  # Directory for incoming multi-institution datasets
+DATA_DIR = "data"
 
 def init_db():
-    """Initialize the local SQLite ledger database with audit and dataset tables."""
+    """Initialize the local SQLite ledger database with dedicated relational schema columns."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
@@ -24,13 +24,17 @@ def init_db():
         )
     ''')
     
-    # Financial/Prospectus parsed records table
+    # Refined IP and financial records table with dedicated columns
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS parsed_records (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             source_institution TEXT,
-            record_identifier TEXT,
-            payload_data TEXT,
+            ip_id TEXT,
+            asset_title TEXT,
+            asset_class TEXT,
+            valuation REAL,
+            compliance_standard TEXT,
+            status TEXT,
             ingested_at TEXT
         )
     ''')
@@ -73,11 +77,10 @@ def log_to_ledger(manifest_hash):
     print(f"[LEDGER] Audit record anchored to local SQLite database at {timestamp}")
 
 def parse_financial_datasets():
-    """Scan the data directory for multi-institution CSV files and ingest them."""
+    """Scan the data directory for CSV files and map them to dedicated columns."""
     if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR)
         print(f"[INFO] Created '{DATA_DIR}/' directory for incoming datasets.")
-        print(f"[INFO] Place CSV prospectus files inside '{DATA_DIR}/' to parse them automatically.")
         return
 
     files = [f for f in os.listdir(DATA_DIR) if f.endswith('.csv')]
@@ -96,22 +99,35 @@ def parse_financial_datasets():
         with open(file_path, mode='r', encoding='utf-8') as csv_file:
             reader = csv.DictReader(csv_file)
             for row in reader:
-                record_id = row.get('id', row.get('reference', 'UNKNOWN'))
+                ip_id = row.get('ip_id', row.get('id', 'UNKNOWN'))
+                asset_title = row.get('asset_title', '')
+                asset_class = row.get('asset_class', '')
+                try:
+                    valuation = float(row.get('valuation', 0))
+                except ValueError:
+                    valuation = 0.0
+                compliance_standard = row.get('compliance_standard', '')
+                status = row.get('status', '')
+
                 cursor.execute('''
-                    INSERT INTO parsed_records (source_institution, record_identifier, payload_data, ingested_at)
-                    VALUES (?, ?, ?, ?)
-                ''', (institution_name, str(record_id), json.dumps(row), datetime.now(UTC).isoformat()))
+                    INSERT INTO parsed_records (
+                        source_institution, ip_id, asset_title, asset_class, 
+                        valuation, compliance_standard, status, ingested_at
+                    )
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                ''', (
+                    institution_name, ip_id, asset_title, asset_class, 
+                    valuation, compliance_standard, status, datetime.now(UTC).isoformat()
+                ))
                 ingested_count += 1
 
     conn.commit()
     conn.close()
-    print(f"[PARSER] Successfully ingested {ingested_count} records from multi-institution datasets.")
+    print(f"[PARSER] Successfully ingested {ingested_count} records into dedicated SQL columns.")
 
 if __name__ == "__main__":
-    print("Initializing Expanded Local Audit & Parsing Pipeline...")
+    print("Initializing Refined Schema Audit & Parsing Pipeline...")
     init_db()
     h = audit_manifest()
     log_to_ledger(h)
     parse_financial_datasets()
-
-
