@@ -2,7 +2,7 @@ import urllib.request
 import json
 import sqlite3
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 
 RPC_NODES = [
     {"name": "PublicNode", "url": "https://ethereum-rpc.publicnode.com"},
@@ -79,7 +79,7 @@ def audit_nodes():
             latency = round((time.time() - start_time) * 1000, 2)
             print(f"  -> CONNECTION FAILED ({latency}ms): {e}")
             
-        ingested_timestamp = datetime.utcnow().isoformat()
+        ingested_timestamp = datetime.now(timezone.utc).isoformat()
         cursor.execute('''
             INSERT INTO parsed_records 
             (source_institution, ip_id, asset_title, asset_class, valuation, compliance_standard, status, ingested_at)
