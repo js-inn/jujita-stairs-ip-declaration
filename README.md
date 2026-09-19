@@ -1,3 +1,22 @@
+# Jujita Stairs IP Declaration & Manifest Registry
+
+A decentralized software manifest, identity attestation, and cryptographic asset registry anchored on the blockchain. 
+
+## Overview
+
+The `jujita-stairs-ip-declaration` repository serves as the official source of truth for tracking project manifests, cryptographic provenance identifiers, and decentralized protocol metadata. It is structured to support seamless integration with Web3 ecosystems, multi-institution financial audit pipelines, and decentralized application (dApp) directories.
+
+---
+
+## Repository Structure
+
+```text
+jujita-stairs-ip-declaration/
+├── manifests/
+│   └── dapp-manifest.json     # Core project metadata and ecosystem schema
+├── contracts/                 # Smart contract modules and registry interfaces
+├── scripts/                   # Python utility scripts and local ledger audit pipelines
+└── README.md                  # Project documentation and architecture guide
 # Jujita Stairs IP Declaration & COTS Architecture
 
 **Principal Custodian:** Jujita Fermin Stairs  
