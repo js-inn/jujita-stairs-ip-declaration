@@ -1,0 +1,88 @@
+{
+  "provenanceHash": "a39e3e16bc8662ec65ab07a5d1d1919d6330373b742f51b3886281385ab52df9",
+  "algorithm": "SHA-256",
+  "manifest": {
+    "@context": "https://schema.org",
+    "@type": "DataCatalog",
+    "name": "Decentralized IP Declaration and Asset Registry",
+    "creator": "10839477 Canada Inc.",
+    "publisher": "Jujita Fermin Stairs",
+    "jurisdiction": "Edmonton, Alberta, Canada",
+    "provenanceAnchorId": "urn:uuid:806dad26-5bb4-4432-9d9c-98c7b313482f",
+    "timestamp": "2026-09-19T12:28:51.879889+00:00",
+    "totalAssets": 7,
+    "totalValuation": 1545000.0,
+    "assets": [
+      {
+        "source_institution": "sample_institution",
+        "ip_id": "UUID-101",
+        "asset_title": "IP-Declaration-Core",
+        "asset_class": "Software-Manifest",
+        "valuation": 250000.0,
+        "compliance_standard": "ISO-20022",
+        "status": "ACTIVE",
+        "ingested_at": "2026-09-19T12:26:28.476980+00:00"
+      },
+      {
+        "source_institution": "sample_institution",
+        "ip_id": "UUID-102",
+        "asset_title": "Interledger-Payment-Stream",
+        "asset_class": "Protocol-Module",
+        "valuation": 120000.0,
+        "compliance_standard": "ILP-STREAM",
+        "status": "VERIFIED",
+        "ingested_at": "2026-09-19T12:26:28.477594+00:00"
+      },
+      {
+        "source_institution": "sample_institution",
+        "ip_id": "UUID-103",
+        "asset_title": "SQLite-Audit-Pipeline",
+        "asset_class": "Automation-Script",
+        "valuation": 85000.0,
+        "compliance_standard": "CUSTOM-SQL",
+        "status": "DRAFT",
+        "ingested_at": "2026-09-19T12:26:28.477670+00:00"
+      },
+      {
+        "source_institution": "global_bank_corp",
+        "ip_id": "UUID-201",
+        "asset_title": "Cross-Border-Messaging-Gateway",
+        "asset_class": "Payment-Protocol",
+        "valuation": 500000.0,
+        "compliance_standard": "ISO-20022",
+        "status": "ACTIVE",
+        "ingested_at": "2026-09-19T12:26:28.477977+00:00"
+      },
+      {
+        "source_institution": "global_bank_corp",
+        "ip_id": "UUID-202",
+        "asset_title": "Legacy-SWIFT-Adapter",
+        "asset_class": "Bridge-Module",
+        "valuation": 175000.0,
+        "compliance_standard": "SWIFT-MT",
+        "status": "VERIFIED",
+        "ingested_at": "2026-09-19T12:26:28.478032+00:00"
+      },
+      {
+        "source_institution": "fintech_ledger_inc",
+        "ip_id": "UUID-301",
+        "asset_title": "Offline-SmartCard-Engine",
+        "asset_class": "Hardware-Token",
+        "valuation": 320000.0,
+        "compliance_standard": "CUSTOM-SQL",
+        "status": "ACTIVE",
+        "ingested_at": "2026-09-19T12:26:28.478270+00:00"
+      },
+      {
+        "source_institution": "fintech_ledger_inc",
+        "ip_id": "UUID-302",
+        "asset_title": "Streaming-Royalty-Module",
+        "asset_class": "Protocol-Module",
+        "valuation": 95000.0,
+        "compliance_standard": "ILP-STREAM",
+        "status": "PENDING",
+        "ingested_at": "2026-09-19T12:26:28.478321+00:00"
+      }
+    ]
+  }
+}
