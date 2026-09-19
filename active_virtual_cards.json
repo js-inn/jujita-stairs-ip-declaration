@@ -1,0 +1,54 @@
+{
+    "corporate_entity": "10839477 Canada Inc.",
+    "jurisdiction": "Alberta, Canada",
+    "active_cards": [
+        {
+            "card_identifier": "CARD-UID-ALPHA-99",
+            "issuer": "10839477 Canada Inc.",
+            "current_balance_cad": 9.5,
+            "status": "ACTIVE_SOVEREIGN_NODE"
+        },
+        {
+            "card_identifier": "CARD-UID-BETA-44",
+            "issuer": "10839477 Canada Inc.",
+            "current_balance_cad": 15.5,
+            "status": "ACTIVE_SOVEREIGN_NODE"
+        },
+        {
+            "card_identifier": "CARD-UID-GAMMA-77",
+            "issuer": "10839477 Canada Inc.",
+            "current_balance_cad": 25.0,
+            "status": "ACTIVE_SOVEREIGN_NODE"
+        },
+        {
+            "card_identifier": "INITIAL-CAPITAL-POOL",
+            "issuer": "10839477 Canada Inc.",
+            "current_balance_cad": -100.0,
+            "status": "ACTIVE_SOVEREIGN_NODE"
+        },
+        {
+            "card_identifier": "NODE-PARTNER-EDMONTON-02",
+            "issuer": "10839477 Canada Inc.",
+            "current_balance_cad": 15.0,
+            "status": "ACTIVE_SOVEREIGN_NODE"
+        },
+        {
+            "card_identifier": "POSTAL-NODE-YEG-CP-042",
+            "issuer": "10839477 Canada Inc.",
+            "current_balance_cad": -50.0,
+            "status": "ACTIVE_SOVEREIGN_NODE"
+        },
+        {
+            "card_identifier": "SHOPPERS-DRUG-MART-EDMONTON-CITY-CENTRE-10255-101-ST",
+            "issuer": "10839477 Canada Inc.",
+            "current_balance_cad": -25.0,
+            "status": "ACTIVE_SOVEREIGN_NODE"
+        },
+        {
+            "card_identifier": "VCARD-JUJITA-STAIRS-A9A55F37",
+            "issuer": "10839477 Canada Inc.",
+            "current_balance_cad": 360.0,
+            "status": "ACTIVE_SOVEREIGN_NODE"
+        }
+    ]
+}

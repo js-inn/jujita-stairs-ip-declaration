@@ -1,0 +1,18 @@
+name: Corporate Identity & Tax Audit Pipeline
+
+on: [push]
+
+jobs:
+  audit-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Tax Audit Pipeline
+        run: python parse_t661.py

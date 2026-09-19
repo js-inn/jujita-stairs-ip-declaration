@@ -1,0 +1,31 @@
+[
+  {
+    "submission_ref": "CRA-T550-2026-001",
+    "transmitter_name": "Systems & Integration Corp",
+    "contact_email": "alex@example.com",
+    "payor_name": "Enterprise Logistics Ltd",
+    "payor_account_num": "ACC-9988776655",
+    "tax_code": "FED_CORP_TAX",
+    "tax_description": "Federal \u2013 Corporation Tax Payments",
+    "jurisdiction": "Federal",
+    "authority": "CRA",
+    "total_slips": 2,
+    "total_amount": 350.5,
+    "payload_hash": "de19e22604b2ec37405c77ec79bc5e8d64b28a8c714a509c25a5e769fa90add4",
+    "created_at": "2026-09-16 00:50:33",
+    "slips": [
+      {
+        "submission_ref": "CRA-T550-2026-001",
+        "recipient_name": "Jane Doe",
+        "masked_sin": "***-***-789",
+        "amount": 150.25
+      },
+      {
+        "submission_ref": "CRA-T550-2026-001",
+        "recipient_name": "John Smith",
+        "masked_sin": "***-***-321",
+        "amount": 200.25
+      }
+    ]
+  }
+]
