@@ -1,0 +1,3 @@
+ip_id,asset_title,asset_class,valuation,compliance_standard,status
+UUID-201,Cross-Border-Messaging-Gateway,Payment-Protocol,500000,ISO-20022,ACTIVE
+UUID-202,Legacy-SWIFT-Adapter,Bridge-Module,175000,SWIFT-MT,VERIFIED

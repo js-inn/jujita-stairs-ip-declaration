@@ -1,0 +1,3 @@
+ip_id,asset_title,asset_class,valuation,compliance_standard,status
+UUID-301,Offline-SmartCard-Engine,Hardware-Token,320000,CUSTOM-SQL,ACTIVE
+UUID-302,Streaming-Royalty-Module,Protocol-Module,95000,ILP-STREAM,PENDING

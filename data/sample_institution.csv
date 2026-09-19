@@ -1,0 +1,4 @@
+ip_id,asset_title,asset_class,valuation,compliance_standard,status
+UUID-101,IP-Declaration-Core,Software-Manifest,250000,ISO-20022,ACTIVE
+UUID-102,Interledger-Payment-Stream,Protocol-Module,120000,ILP-STREAM,VERIFIED
+UUID-103,SQLite-Audit-Pipeline,Automation-Script,85000,CUSTOM-SQL,DRAFT
