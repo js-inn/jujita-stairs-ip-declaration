@@ -195,6 +195,70 @@
       <h2>Anchored Government Contracts</h2>
       <div class="field-value" id="contracts">Loading...</div>
     </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10839477 Canada Inc. | Master IP Declaration & Financial Audit</title>
+  <style>
+    /* --- 1. Custom Noto Sans Font Faces --- */
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:100;font-display:swap;src:url(/assets/NotoSans-Thin-Csve6XFa.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:100;font-display:swap;src:url(/assets/NotoSans-ThinItalic-DPXzDgvR.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:200;font-display:swap;src:url(/assets/NotoSans-ExtraLight-ChU-r-p0.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:200;font-display:swap;src:url(/assets/NotoSans-ExtraLightItalic-Dz9o-FPl.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:300;font-display:swap;src:url(/assets/NotoSans-Light-CpwMVblg.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:300;font-display:swap;src:url(/assets/NotoSans-LightItalic-CsLfRXdT.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/NotoSans-Regular-CF_EggQ_.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:400;font-display:swap;src:url(/assets/NotoSans-Italic-NApRWGLz.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:500;font-display:swap;src:url(/assets/NotoSans-Medium-Bv7gQBcq.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:500;font-display:swap;src:url(/assets/NotoSans-MediumItalic-C3JJj-j2.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:600;font-display:swap;src:url(/assets/NotoSans-SemiBold-Dwv8M6YL.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:600;font-display:swap;src:url(/assets/NotoSans-SemiBoldItalic-Xq9NoTBu.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/NotoSans-Bold-DwlQfr5s.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:700;font-display:swap;src:url(/assets/NotoSans-BoldItalic-Cw3cBBZk.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:800;font-display:swap;src:url(/assets/NotoSans-ExtraBold-DQrEOsut.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:800;font-display:swap;src:url(/assets/NotoSans-ExtraBoldItalic-Rb6Ek7yU.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:900;font-display:swap;src:url(/assets/NotoSans-Black-BAaSzCx2.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:900;font-display:swap;src:url(/assets/NotoSans-BlackItalic-Dgf3JTe4.woff2) format("woff2")}
+
+    /* --- 2. Phone Input Component Styles --- */
+    :root{--PhoneInput-color--focus:#03b2cb;--PhoneInputInternationalIconPhone-opacity:.8;--PhoneInputInternationalIconGlobe-opacity:.65;--PhoneInputCountrySelect-marginRight:.35em;--PhoneInputCountrySelectArrow-width:.3em;--PhoneInputCountrySelectArrow-marginLeft:var(--PhoneInputCountrySelect-marginRight);--PhoneInputCountrySelectArrow-borderWidth:1px;--PhoneInputCountrySelectArrow-opacity:.45;--PhoneInputCountrySelectArrow-color:currentColor;--PhoneInputCountrySelectArrow-color--focus:var(--PhoneInput-color--focus);--PhoneInputCountrySelectArrow-transform:rotate(45deg);--PhoneInputCountryFlag-aspectRatio:1.5;--PhoneInputCountryFlag-height:1em;--PhoneInputCountryFlag-borderWidth:1px;--PhoneInputCountryFlag-borderColor:rgba(0,0,0,.5);--PhoneInputCountryFlag-borderColor--focus:var(--PhoneInput-color--focus);--PhoneInputCountryFlag-backgroundColor--loading:rgba(0,0,0,.1)}
+    .PhoneInput{display:flex;align-items:center}
+    .PhoneInputInput{flex:1;min-width:0}
+    .PhoneInputCountryIcon{width:calc(var(--PhoneInputCountryFlag-height) * var(--PhoneInputCountryFlag-aspectRatio));height:var(--PhoneInputCountryFlag-height)}
+    .PhoneInputCountryIcon--square{width:var(--PhoneInputCountryFlag-height)}
+    .PhoneInputCountryIcon--border{background-color:var(--PhoneInputCountryFlag-backgroundColor--loading);box-shadow:0 0 0 var(--PhoneInputCountryFlag-borderWidth) var(--PhoneInputCountryFlag-borderColor),inset 0 0 0 var(--PhoneInputCountryFlag-borderWidth) var(--PhoneInputCountryFlag-borderColor)}
+    .PhoneInputCountryIconImg{display:block;width:100%;height:100%}
+    .PhoneInputInternationalIconPhone{opacity:var(--PhoneInputInternationalIconPhone-opacity)}
+    .PhoneInputInternationalIconGlobe{opacity:var(--PhoneInputInternationalIconGlobe-opacity)}
+    .PhoneInputCountry{position:relative;align-self:stretch;display:flex;align-items:center;margin-right:var(--PhoneInputCountrySelect-marginRight)}
+    .PhoneInputCountrySelect{position:absolute;top:0;left:0;height:100%;width:100%;z-index:1;border:0;opacity:0;cursor:pointer}
+    .PhoneInputCountrySelect[disabled],.PhoneInputCountrySelect[readonly]{cursor:default}
+    .PhoneInputCountrySelectArrow{display:block;content:"";width:var(--PhoneInputCountrySelectArrow-width);height:var(--PhoneInputCountrySelectArrow-width);margin-left:var(--PhoneInputCountrySelectArrow-marginLeft);border-style:solid;border-color:var(--PhoneInputCountrySelectArrow-color);border-top-width:0;border-bottom-width:var(--PhoneInputCountrySelectArrow-borderWidth);border-left-width:0;border-right-width:var(--PhoneInputCountrySelectArrow-borderWidth);transform:var(--PhoneInputCountrySelectArrow-transform);opacity:var(--PhoneInputCountrySelectArrow-opacity)}
+    .PhoneInputCountrySelect:focus+.PhoneInputCountryIcon+.PhoneInputCountrySelectArrow{opacity:1;color:var(--PhoneInputCountrySelectArrow-color--focus)}
+
+    /* --- 3. Font Awesome Core Toolkit --- */
+    :root,:host{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free"}
+    .svg-inline--fa{display:inline-block;height:1em;overflow:visible;vertical-align:-.125em}
+
+    /* --- 4. Tailwind Reset & Base Utilities --- */
+    *, :before, :after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
+    html, :host { line-height: 1.5; -webkit-text-size-adjust: 100%; font-family: Noto Sans, sans-serif; }
+    body { margin: 0; line-height: inherit; background-color: #f9fafb; color: #111827; }
+    .container { width: 100%; margin-right: auto; margin-left: auto; padding-right: 1rem; padding-left: 1rem; max-width: 992px; }
+    
+    /* --- 5. Slack-Style Attachment Component Styles --- */
+    .attachment_compat { margin-left: 4px; display: flex; }
+    .attachment_compat .message_column { display: inline-block; vertical-align: top; font-size: .9375rem; line-height: 1.375rem; }
+    .attachment_compat .message_column.column_border { margin-left: 4px; width: 5px; background-color: #e8e8e8; flex: none; }
+    .attachment_compat .message_column.column_content { width: 100%; }
+    .attachment_compat .message_row { width: 100%; padding: 0 12px; margin: 12px 0; }
+    .attachment_compat .compat_group { max-width: 600px; width: 100%; margin: .4rem 0; }
+    .attachment_compat .inline_attachment { border-radius: 0; margin: 0; padding: 4px 0; }
+    .attachment_compat .inline_attachment .compat_title { font-weight: 700; font-size: 1rem; color: #1f2937; }
+  </style>
+</head>
 
     <div class="card">
       <h2>Ledger SHA-256 Proof (`wire_ledger.json`)</h2>
