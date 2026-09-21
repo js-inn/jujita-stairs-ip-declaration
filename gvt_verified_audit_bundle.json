@@ -1,0 +1,70 @@
+{
+  "data": {
+    "framework": "GVT Sovereign Financial Audit Framework",
+    "primary_operator": "Jujita Fermin Stairs",
+    "primary_entity": "10839477 Canada Inc.",
+    "business_number": "749810883RC0001",
+    "linked_contracts": [
+      "CW2321555",
+      "CW2123555"
+    ],
+    "corporate_hierarchy": [
+      {
+        "node_id": "GVT-PARENT-01",
+        "entity_name": "Jujita Fermin Stairs / Master Sovereign",
+        "business_number": "N/A",
+        "status": "Active Master Node",
+        "associated_contracts": "N/A",
+        "notes": "Overarching sovereign architectural control"
+      },
+      {
+        "node_id": "CORP-10839477",
+        "entity_name": "10839477 Canada Inc.",
+        "business_number": "749810883RC0001",
+        "status": "Active Primary Operating",
+        "associated_contracts": "CW2321555, CW2123555",
+        "notes": "Tied to official CRA records and procurement contracts"
+      },
+      {
+        "node_id": "CORP-10811467",
+        "entity_name": "10811467 Canada Inc.",
+        "business_number": "Pending",
+        "status": "IP Global Declaration Integration",
+        "associated_contracts": "N/A",
+        "notes": "Referenced in IP global declaration framework"
+      },
+      {
+        "node_id": "INST-17996829",
+        "entity_name": "17996829 Canada Institute",
+        "business_number": "Pending",
+        "status": "Deferred / Floating Shell",
+        "associated_contracts": "N/A",
+        "notes": "Awaiting capital transfer and resource allocation"
+      }
+    ],
+    "registry_cross_checks": [
+      {
+        "entity_number": "10839477",
+        "registry_type": "Federal Corporation (CBCA)",
+        "expected_bn": "749810883RC0001",
+        "status": "Active",
+        "verification_note": "Tied to CRA BN and active federal contracts CW2321555 / CW2123555"
+      },
+      {
+        "entity_number": "10811467",
+        "registry_type": "Federal Corporation (CBCA)",
+        "expected_bn": "Pending",
+        "status": "IP Global Declaration",
+        "verification_note": "Listed in global intellectual property declaration framework"
+      },
+      {
+        "entity_number": "17996829",
+        "registry_type": "Federal / Institute Shell",
+        "expected_bn": "Pending",
+        "status": "Floating / Deferred",
+        "verification_note": "Institutional shell awaiting capital transfer and asset binding"
+      }
+    ]
+  },
+  "hmac_sha256_signature": "840163a5161369edd4b7ab8f525ecc9922b68bc5f12f6016a71de012b0169c62"
+}
