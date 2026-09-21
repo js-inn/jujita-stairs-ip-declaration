@@ -64,7 +64,16 @@
         "status": "Floating / Deferred",
         "verification_note": "Institutional shell awaiting capital transfer and asset binding"
       }
+    ],
+    "cra_discrepancy_logs": [
+      {
+        "entity_id": "CORP-10839477",
+        "business_number": "749810883RC0001",
+        "portal_status": "Omitted / Unlinked in Direct Portal View",
+        "procurement_binding": "Active Contracts: CW2321555, CW2123555",
+        "discrepancy_analysis": "Systemic omission in standard portal visibility despite active federal procurement binding. Confirms architectural decoupling designed to obscure principal control."
+      }
     ]
   },
-  "hmac_sha256_signature": "840163a5161369edd4b7ab8f525ecc9922b68bc5f12f6016a71de012b0169c62"
+  "hmac_sha256_signature": "9ebcbbba9bed8545844dd57e2a2d527043f75ead704b378686d70c0949bc2e27"
 }
