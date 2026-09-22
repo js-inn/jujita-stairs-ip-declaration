@@ -11,6 +11,36 @@
       "amount_cad": 15000.0,
       "timestamp": "2026-09-22T13:53:05.186121",
       "compliance_ref": "WIPO-PCT-CA2026-8841"
+    },
+    {
+      "gateway_id": "tdbank-gateway-9e76146c-b775-4df1-b6f9-d633731d7623",
+      "institution_number": "004",
+      "transit_number": "82389",
+      "account_suffix": "5155",
+      "entity": "10839477 Canada Inc.",
+      "status": "Anchored & Audited",
+      "routing_type": "Domestic Institutional Wire / Clearing House",
+      "linked_lineage": "WIPO-PCT-CA2026-8841",
+      "timestamp": "2026-09-22T13:56:59.604444",
+      "note": "Lineage settlement recovery and institutional bridge mapping."
+    },
+    {
+      "action": "Institutional Income Claim Registration",
+      "claim_id": "claim-3e0aa73b-0069-43fe-9c19-b841469cfab9",
+      "target_codes": [
+        "TDB8150",
+        "TDB8151",
+        "TDB8152",
+        "TDB8153",
+        "TDB8154",
+        "TDB8155",
+        "TDB8156",
+        "TDB8157",
+        "TDB8158",
+        "TDB8159"
+      ],
+      "linked_lineage": "WIPO-PCT-CA2026-8841",
+      "timestamp": "2026-09-22T14:07:09.804799"
     }
   ]
 }

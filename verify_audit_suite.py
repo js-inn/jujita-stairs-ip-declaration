@@ -18,7 +18,9 @@ files_to_check = [
     "octopus_ledger.json",
     "postal_payout_manifest.json",
     "bridge_activity.json",
-    "sibling_financial_bridge.json"
+    "sibling_financial_bridge.json",
+    "tdb_income_claim_manifest.json",
+    "tdbank_lineage_bridge.json"
 ]
 
 print("=== STARTING COMPREHENSIVE REPOSITORY VERIFICATION ===")
