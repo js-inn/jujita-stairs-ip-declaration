@@ -41,6 +41,13 @@
       ],
       "linked_lineage": "WIPO-PCT-CA2026-8841",
       "timestamp": "2026-09-22T14:07:09.804799"
+    },
+    {
+      "action": "Questrade Brokerage Income Claim Registration",
+      "claim_id": "questrade-claim-c43f1cfd-33a5-4f63-952f-6c76f8386207",
+      "target_institution": "Questrade, Inc.",
+      "linked_lineage": "WIPO-PCT-CA2026-8841",
+      "timestamp": "2026-09-22T14:24:02.589012"
     }
   ]
 }

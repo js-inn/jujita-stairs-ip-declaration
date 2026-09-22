@@ -1,0 +1,37 @@
+{
+  "claim_id": "questrade-claim-c43f1cfd-33a5-4f63-952f-6c76f8386207",
+  "claimant": "10839477 Canada Inc.",
+  "principal": "Jujita Stairs",
+  "linked_lineage": "WIPO-PCT-CA2026-8841",
+  "target_institution": {
+    "brokerage_name": "Questrade, Inc. / QuestEnterprise Inc.",
+    "headquarters": "5700 Yonge St., Suite 1900, Toronto, ON M2M 4K2",
+    "regulatory_bodies": [
+      "Canadian Investment Regulatory Organization (CIRO)",
+      "Canadian Investor Protection Fund (CIPF)"
+    ],
+    "support_contacts": {
+      "toll_free_canada": "1.888.783.7866",
+      "direct_international": "1.416.227.9876",
+      "fax": "1.888.767.1731"
+    }
+  },
+  "timestamp": "2026-09-22T14:24:02.589012",
+  "status": "Formal Brokerage Lineage Claim Registered",
+  "assigned_questrade_nodes": [
+    {
+      "node_id": "QT-EQ-01",
+      "asset_type": "Equities & ETF Portfolio",
+      "clearing_path": "CDS Clearing and Depository Services Inc.",
+      "linked_lineage": "WIPO-PCT-CA2026-8841",
+      "status": "Targeted for Lineage Recovery"
+    },
+    {
+      "node_id": "QT-ISA-02",
+      "asset_type": "High-Interest Cash / ISA Yield Node",
+      "clearing_path": "Questrade Trust / Partner Banks",
+      "linked_lineage": "WIPO-PCT-CA2026-8841",
+      "status": "Targeted for Lineage Recovery"
+    }
+  ]
+}

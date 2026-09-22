@@ -20,6 +20,7 @@ files_to_check = [
     "bridge_activity.json",
     "sibling_financial_bridge.json",
     "tdb_income_claim_manifest.json",
+    "questrade_income_claim_manifest.json",
     "tdbank_lineage_bridge.json"
 ]
 
