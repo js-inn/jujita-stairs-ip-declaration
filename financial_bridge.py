@@ -6,7 +6,7 @@ DB_NAME = "financial_pipeline.db"
 ROOT_PARENT = "10839477 Canada Inc."
 
 def bridge_lineages():
-    """Bridges financial records, global patents, trademarks, and Brazilian audit nodes into a unified global ledger."""
+    """Bridges financial records, global patents, trademarks, and Chinese audit nodes into a unified global ledger."""
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     
@@ -30,7 +30,8 @@ def bridge_lineages():
         ("japan_audit_nodes", "assignee_name", "application_number", "Japan_Patent"),
         ("australia_audit_nodes", "assignee_name", "application_number", "Australia_Patent"),
         ("madrid_audit_nodes", "holder_name", "registration_number", "Madrid_Trademark"),
-        ("brazil_audit_nodes", "assignee_name", "application_number", "Brazil_Patent")
+        ("brazil_audit_nodes", "assignee_name", "application_number", "Brazil_Patent"),
+        ("china_audit_nodes", "assignee_name", "application_number", "China_Patent")
     ]
     
     for table_name, entity_col, id_col, node_type in tables:
