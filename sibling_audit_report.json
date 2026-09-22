@@ -1,0 +1,80 @@
+{
+  "status": "Complete",
+  "findings": [
+    {
+      "file": "./essay.txt",
+      "sha256": "4802725cf9f029a08d1013e632c2988894508dfde9575724b9940f098b28222c",
+      "size_bytes": 523
+    },
+    {
+      "file": "./RecoveryKey.txt",
+      "sha256": "2d7a2ac14c9e6b03d6227fe10d63f7211feaa9eebd462a6ff2b11739e5d578b9",
+      "size_bytes": 32
+    },
+    {
+      "file": "./scripts.txt",
+      "sha256": "f5bfac0f3b5470bcf3f1262268ab22f8c51ad43243868b1861b41444b15d251f",
+      "size_bytes": 1020
+    },
+    {
+      "file": "./test_mitigation.py.txt",
+      "sha256": "0a0c595700840a6b62e85be8368abfb74b76c358d5ac2eb1053c057b4a0fdd32",
+      "size_bytes": 679
+    },
+    {
+      "file": "./google-services.json",
+      "sha256": "116b2408ea6276969242dda41f3d55ee3190f01c185d5c55d096bfb839ca7ad7",
+      "size_bytes": 1014
+    },
+    {
+      "file": "./BMO_Payment_Trace_FollowUp.txt",
+      "sha256": "672a8e092b26d350ee59f0af05b9a46fa145193b6190de1d3b69c4eb0f188ae5",
+      "size_bytes": 1531
+    },
+    {
+      "file": "./BMO_Ombudsman_Escalation.txt",
+      "sha256": "03c2e22f31b7132d0d97b44c630c3e3372ca627c5e76104f0ee3e0e2d18bff2f",
+      "size_bytes": 2146
+    },
+    {
+      "file": "./README.md",
+      "sha256": "dce027520445d1a3390eaf020d2c1520abbd911be7f2a0b959acda052a7cd5cd",
+      "size_bytes": 4854
+    },
+    {
+      "file": "./Webforms_notsubmitted.xml",
+      "sha256": "73b4d71206004864b538532c9b6e11f48e4d6b3332c785356da497dba3402352",
+      "size_bytes": 3371
+    },
+    {
+      "file": "./FCAC_Regulatory_Complaint.txt",
+      "sha256": "a32aef229e9d71994eb2ea924419fe30a3b73d4d0da05a551650f4cac0522286",
+      "size_bytes": 2564
+    },
+    {
+      "file": "./Global_IP_Manifest_WIPO_Format.txt",
+      "sha256": "232b77fedec4dea19ee1f1b25bfe46b0119645833613ee6ef756427716a7145a",
+      "size_bytes": 3310
+    },
+    {
+      "file": "./signed_essay_bundle.txt",
+      "sha256": "74ed9901e7261858f4e72ef9d931ad8afea1c02f2c5827f59fe7ea00a1c1a9af",
+      "size_bytes": 798
+    },
+    {
+      "file": "./Webforms_notsubmitted (1).xml",
+      "sha256": "66cd78282c521abcfa29710284f8a964a8ada927737a1e5a6402a9b2e13979d9",
+      "size_bytes": 3371
+    },
+    {
+      "file": "./Public_Distribution_Ledger.txt",
+      "sha256": "d5df5726650a2025b58a7793fce288a7ca1e6595341c95970faeae6337aba103",
+      "size_bytes": 4075
+    },
+    {
+      "file": "./crypto-mitigation/SKILL.md",
+      "sha256": "e0364a0b0b57aaaa9e259ca24e8e973cbe2c2baf548be734a74b6a303f8791a1",
+      "size_bytes": 1321
+    }
+  ]
+}

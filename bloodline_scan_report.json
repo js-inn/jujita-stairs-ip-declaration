@@ -1,0 +1,71 @@
+{
+  "status": "Complete",
+  "matches": [
+    {
+      "file": "./BMO_Payment_Trace_FollowUp.txt",
+      "line": 6,
+      "keyword": "entity",
+      "content": "PRIMARY ENTITY: 10839477 Canada Inc."
+    },
+    {
+      "file": "./BMO_Ombudsman_Escalation.txt",
+      "line": 5,
+      "keyword": "entity",
+      "content": "COMPLAINANT ENTITY: 10839477 Canada Inc."
+    },
+    {
+      "file": "./README.md",
+      "line": 4,
+      "keyword": "entity",
+      "content": "**Corporate Entity:** 10839477 Canada Inc."
+    },
+    {
+      "file": "./README.md",
+      "line": 23,
+      "keyword": "entity",
+      "content": "CORPORATE ENTITY: 10839477 Canada Inc."
+    },
+    {
+      "file": "./README.md",
+      "line": 76,
+      "keyword": "WIPO",
+      "content": "Event     : GLOBAL_IP_MANIFEST_WIPO: SHA256(e34ef185a67a294c...) | UUID e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a | TS 2026-09-11 21:54:27"
+    },
+    {
+      "file": "./FCAC_Regulatory_Complaint.txt",
+      "line": 5,
+      "keyword": "entity",
+      "content": "COMPLAINANT ENTITY: 10839477 Canada Inc."
+    },
+    {
+      "file": "./FCAC_Regulatory_Complaint.txt",
+      "line": 19,
+      "keyword": "origin",
+      "content": "The following immutable timestamps and logs originate from local database records (bank_statements.db):"
+    },
+    {
+      "file": "./Global_IP_Manifest_WIPO_Format.txt",
+      "line": 3,
+      "keyword": "WIPO",
+      "content": "(WIPO & DECENTRALIZED DATA REGISTRY PUBLICATION FORMAT)"
+    },
+    {
+      "file": "./Public_Distribution_Ledger.txt",
+      "line": 5,
+      "keyword": "entity",
+      "content": "CORPORATE ENTITY: 10839477 Canada Inc."
+    },
+    {
+      "file": "./Public_Distribution_Ledger.txt",
+      "line": 58,
+      "keyword": "WIPO",
+      "content": "Event     : GLOBAL_IP_MANIFEST_WIPO: SHA256(e34ef185a67a294c...) | UUID e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a | TS 2026-09-11 21:54:27"
+    },
+    {
+      "file": "./sibling_audit_report.json",
+      "line": 55,
+      "keyword": "WIPO",
+      "content": "\"file\": \"./Global_IP_Manifest_WIPO_Format.txt\","
+    }
+  ]
+}
