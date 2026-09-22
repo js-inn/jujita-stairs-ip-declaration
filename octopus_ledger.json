@@ -1,28 +1,16 @@
-[
+{
+  "ledger_id": "octo-b2ddb21d-88b0-4daa-9bef-33801a474cac",
+  "architecture": "Octopus 2.0 Offline Smart Card",
+  "last_updated": "2026-09-22T13:46:55.397616",
+  "nodes_active": 1,
+  "cash_to_digital_events": [
     {
-        "index": 0,
-        "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "timestamp": "2026-09-15T20:12:19.532967+00:00",
-        "sender_card": "POSTAL-NODE-YEG-CP-042",
-        "recipient_card": "INITIAL-CAPITAL-POOL",
-        "amount": 100.0,
-        "currency": "CAD",
-        "nonce": 1,
-        "hash": "f7eae3da4d8e8968f356f86c099464a959235e75a999dda78dddf09085710b04",
-        "corporate_issuer": "10839477 Canada Inc.",
-        "creator_uuid": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a"
-    },
-    {
-        "index": 1,
-        "previous_hash": "f7eae3da4d8e8968f356f86c099464a959235e75a999dda78dddf09085710b04",
-        "timestamp": "2026-09-15T20:12:19.533559+00:00",
-        "sender_card": "CARD-UID-ALPHA-99",
-        "recipient_card": "CARD-UID-BETA-44",
-        "amount": 15.5,
-        "currency": "CAD",
-        "nonce": 2,
-        "hash": "1188bb6077f43bf3c6af244c4f95422bfbd68894b3869a32de6e361ddad1ab0d",
-        "corporate_issuer": "10839477 Canada Inc.",
-        "creator_uuid": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a"
+      "event_id": "octo-txn-b3571fc6-f452-4d7e-817c-d72fc1e3aa81",
+      "type": "Cash-to-Digital Retail Conversion",
+      "amount_cad": 250.0,
+      "location": "Postal Network Terminal - Edmonton Node",
+      "timestamp": "2026-09-22T13:53:05.186121",
+      "status": "anchored"
     }
-]
+  ]
+}
