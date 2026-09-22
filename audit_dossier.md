@@ -1,13 +1,13 @@
 # GLOBAL MASTER AUDIT DOSSIER
 **Root Corporate Entity**: 10839477 Canada Inc.  
 **Business Number / Control ID**: 749810883RC0001  
-**Generation Timestamp**: 2026-09-22 17:54:11 UTC  
+**Generation Timestamp**: 2026-09-22 17:58:39 UTC  
 **Repository**: [js-inn/jujita-stairs-ip-declaration](https://github.com/js-inn/jujita-stairs-ip-declaration)  
 
 ---
 
 ## Executive Summary
-This document represents the cryptographically anchored global audit dossier for **10839477 Canada Inc.**. Utilizing decentralized SQLite ledgers and SHA-256 HMAC provenance mapping, this dossier reconciles **24 total nodes** spanning financial institutions, regional patent offices (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany), and international trademark registries (WIPO Madrid).
+This document represents the cryptographically anchored global audit dossier for **10839477 Canada Inc.**. Utilizing decentralized SQLite ledgers and SHA-256 HMAC provenance mapping, this dossier reconciles **27 total nodes** spanning financial institutions, regional patent offices (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany), and international trademark registries (WIPO Madrid).
 
 ---
 
@@ -36,6 +36,9 @@ This document represents the cryptographically anchored global audit dossier for
 | `Madrid_Trademark` | `MAD1800123` | Unregistered/Obscured Madrid Trademark Placeholder | Bloodlineage Mapped via Heuristics | `73b774838b03...` | 2026-09-22 23:42:57 |
 | `Madrid_Trademark` | `MAD1900456` | Unregistered/Obscured Madrid Trademark Placeholder | Bloodlineage Mapped via Heuristics | `8733e3e59cd9...` | 2026-09-22 23:42:57 |
 | `Madrid_Trademark` | `MAD20269999` | Unregistered/Obscured Madrid Trademark Placeholder | Bloodlineage Mapped via Heuristics | `e18280475394...` | 2026-09-22 23:42:57 |
+| `UK_Patent` | `GB2600123.4` | Unregistered/Obscured UK Placeholder | Bloodlineage Mapped via Heuristics | `ea10431616ff...` | 2026-09-22 23:58:39 |
+| `UK_Patent` | `GB2598765.1` | Unregistered/Obscured UK Placeholder | Bloodlineage Mapped via Heuristics | `e458824a382d...` | 2026-09-22 23:58:39 |
+| `UK_Patent` | `GB2411223.9` | Unregistered/Obscured UK Placeholder | Bloodlineage Mapped via Heuristics | `6b86e2189d25...` | 2026-09-22 23:58:39 |
 | `USPTO_Patent` | `15/123456` | Unregistered/Obscured Placeholder Node | Bloodlineage Mapped via Heuristics | `36ce3d1943c0...` | 2026-09-22 23:27:25 |
 | `USPTO_Patent` | `16/789012` | Unregistered/Obscured Placeholder Node | Bloodlineage Mapped via Heuristics | `9d56888375f4...` | 2026-09-22 23:27:25 |
 | `USPTO_Patent` | `17/345678` | Unregistered/Obscured Placeholder Node | Bloodlineage Mapped via Heuristics | `12c0ba0d9628...` | 2026-09-22 23:27:25 |
