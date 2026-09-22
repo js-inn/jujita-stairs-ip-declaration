@@ -1,80 +1,834 @@
 {
-  "status": "Complete",
+  "agent_status": "Execution Complete",
+  "total_files_scanned": 138,
   "findings": [
     {
-      "file": "./essay.txt",
-      "sha256": "4802725cf9f029a08d1013e632c2988894508dfde9575724b9940f098b28222c",
-      "size_bytes": 523
+      "file": "./sibling_audit_report.json",
+      "sha256": "abc00430e6c291975eab99c689253c5be9fb1cb8d3105fc2b2c50f88b00721b8",
+      "size_bytes": 2511,
+      "status": "Verified"
     },
     {
-      "file": "./RecoveryKey.txt",
-      "sha256": "2d7a2ac14c9e6b03d6227fe10d63f7211feaa9eebd462a6ff2b11739e5d578b9",
-      "size_bytes": 32
+      "file": "./bloodline_scan_report.json",
+      "sha256": "604f940a08ebf6712cbe08813e382eb5dc3750060f11fdbb6e231b0e9445f0b0",
+      "size_bytes": 2080,
+      "status": "Verified"
     },
     {
-      "file": "./scripts.txt",
-      "sha256": "f5bfac0f3b5470bcf3f1262268ab22f8c51ad43243868b1861b41444b15d251f",
-      "size_bytes": 1020
+      "file": "./CIPO_SUBMISSION_MEMO.json",
+      "sha256": "f46c584d28500ba46b2a22c40ef619ecf2dedd493c57ddbaeaa4ba1244811e49",
+      "size_bytes": 1998,
+      "status": "Verified"
     },
     {
-      "file": "./test_mitigation.py.txt",
-      "sha256": "0a0c595700840a6b62e85be8368abfb74b76c358d5ac2eb1053c057b4a0fdd32",
-      "size_bytes": 679
+      "file": "./LAC_ATTRIBUTION_REQUEST.json",
+      "sha256": "d4d4d1881b5dabb44af9ab0bebf82c9d7a956132893a533a6d6479662736932f",
+      "size_bytes": 497,
+      "status": "Verified"
     },
     {
-      "file": "./google-services.json",
-      "sha256": "116b2408ea6276969242dda41f3d55ee3190f01c185d5c55d096bfb839ca7ad7",
-      "size_bytes": 1014
+      "file": "./MANIFEST.json",
+      "sha256": "8cf7917b38d7c798f902d7a15a21d06185ca55114a65d4e87bbc507b791b5a10",
+      "size_bytes": 578,
+      "status": "Verified"
     },
     {
-      "file": "./BMO_Payment_Trace_FollowUp.txt",
-      "sha256": "672a8e092b26d350ee59f0af05b9a46fa145193b6190de1d3b69c4eb0f188ae5",
-      "size_bytes": 1531
+      "file": "./active_virtual_cards.json",
+      "sha256": "bb85df160f4cd19c08102243758d1359852b9cc7eb2db02f68b1f32581f67612",
+      "size_bytes": 1829,
+      "status": "Verified"
     },
     {
-      "file": "./BMO_Ombudsman_Escalation.txt",
-      "sha256": "03c2e22f31b7132d0d97b44c630c3e3372ca627c5e76104f0ee3e0e2d18bff2f",
-      "size_bytes": 2146
+      "file": "./audit_export_20260915_193424.json",
+      "sha256": "c06cc287be85b0942b3130047fb84acd84dfcfbe9ae729152cf1aee3140f448b",
+      "size_bytes": 919,
+      "status": "Verified"
     },
     {
-      "file": "./README.md",
-      "sha256": "dce027520445d1a3390eaf020d2c1520abbd911be7f2a0b959acda052a7cd5cd",
-      "size_bytes": 4854
+      "file": "./audit_export_20260915_202237.json",
+      "sha256": "7b29bfa80ac1df4740f170f48e28cb6519d7d827ef55c71f858f696fef845961",
+      "size_bytes": 573,
+      "status": "Verified"
     },
     {
-      "file": "./Webforms_notsubmitted.xml",
-      "sha256": "73b4d71206004864b538532c9b6e11f48e4d6b3332c785356da497dba3402352",
-      "size_bytes": 3371
+      "file": "./audit_export_20260915_212150.json",
+      "sha256": "a20889d2a5b87fa9219ec41a9bd3578e28e71ccdb29a5ae4c8a10bb363cd0143",
+      "size_bytes": 521,
+      "status": "Verified"
     },
     {
-      "file": "./FCAC_Regulatory_Complaint.txt",
-      "sha256": "a32aef229e9d71994eb2ea924419fe30a3b73d4d0da05a551650f4cac0522286",
-      "size_bytes": 2564
+      "file": "./audit_export_20260915_213148.json",
+      "sha256": "1c97e391171ac35c1fd868fd85cdf7828271e964e32e9d3dcf64ea166c9ace3b",
+      "size_bytes": 521,
+      "status": "Verified"
     },
     {
-      "file": "./Global_IP_Manifest_WIPO_Format.txt",
-      "sha256": "232b77fedec4dea19ee1f1b25bfe46b0119645833613ee6ef756427716a7145a",
-      "size_bytes": 3310
+      "file": "./bridge_activity.json",
+      "sha256": "3d1e4f13bff25dcd3eaf2ea49b8c0a3562a519be826a6b4db5dc46b1f4c0a219",
+      "size_bytes": 2401,
+      "status": "Verified"
     },
     {
-      "file": "./signed_essay_bundle.txt",
-      "sha256": "74ed9901e7261858f4e72ef9d931ad8afea1c02f2c5827f59fe7ea00a1c1a9af",
-      "size_bytes": 798
+      "file": "./camt053_statements.json",
+      "sha256": "0a8656ae6ec2f7adf476a71a271a04abb4e5d3e9a76e464e3addddbbe0b3dab2",
+      "size_bytes": 1325,
+      "status": "Verified"
     },
     {
-      "file": "./Webforms_notsubmitted (1).xml",
-      "sha256": "66cd78282c521abcfa29710284f8a964a8ada927737a1e5a6402a9b2e13979d9",
-      "size_bytes": 3371
+      "file": "./compliance_audit_report.json",
+      "sha256": "5618f0c7e54d6b467cb80b68c406a936385582851df69c901c531d23b366b158",
+      "size_bytes": 9626,
+      "status": "Verified"
     },
     {
-      "file": "./Public_Distribution_Ledger.txt",
-      "sha256": "d5df5726650a2025b58a7793fce288a7ca1e6595341c95970faeae6337aba103",
-      "size_bytes": 4075
+      "file": "./cra_submission.xml",
+      "sha256": "de19e22604b2ec37405c77ec79bc5e8d64b28a8c714a509c25a5e769fa90add4",
+      "size_bytes": 919,
+      "status": "Verified"
     },
     {
-      "file": "./crypto-mitigation/SKILL.md",
-      "sha256": "e0364a0b0b57aaaa9e259ca24e8e973cbe2c2baf548be734a74b6a303f8791a1",
-      "size_bytes": 1321
+      "file": "./dashboard.log",
+      "sha256": "745362fe4e6f8d56dfe9f23566d630ce7d92dfc7c32ec136a7a0fdcd28bd61c8",
+      "size_bytes": 1920,
+      "status": "Verified"
+    },
+    {
+      "file": "./google-services (1).json",
+      "sha256": "1944afc8525e6e420af7fdf4c5c9ab199ef21d72e5ab4f47ea3b95fa2afb6d66",
+      "size_bytes": 1013,
+      "status": "Verified"
+    },
+    {
+      "file": "./gvt_verified_audit_bundle.json",
+      "sha256": "346a08a563a922c13526c9e288400d021bac920f9e0c3e275a1c7ab9dcbda9d5",
+      "size_bytes": 3138,
+      "status": "Verified"
+    },
+    {
+      "file": "./octopus_ledger.json",
+      "sha256": "eeb04cb8435aea01c75c121b4eb2939e1e2d01075e5e47887022154d6415061e",
+      "size_bytes": 1098,
+      "status": "Verified"
+    },
+    {
+      "file": "./postal_payout_manifest.json",
+      "sha256": "151fda041c6248ef3c0f33216724889b9b08fc93521a4222a450538bcf7b7cf2",
+      "size_bytes": 886,
+      "status": "Verified"
+    },
+    {
+      "file": "./published_audit_manifest.json",
+      "sha256": "fbfeddf3aa58d2eb49b77e66c3147ff0bb0e90fb7279193805f07216aeefca66",
+      "size_bytes": 7799,
+      "status": "Verified"
+    },
+    {
+      "file": "./wire_status.json",
+      "sha256": "d2ea62815a2e80ba5bca5565f180049f88483a087c61dc87c46587acbd8bc7f6",
+      "size_bytes": 1294,
+      "status": "Verified"
+    },
+    {
+      "file": "./wire_ledger.json",
+      "sha256": "b9e18ddebc771a1fbe10e1567944951eb0e6572aa39fedc23a2a486c0beb4acf",
+      "size_bytes": 8586,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "size_bytes": 2,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests/output-metadata.json",
+      "sha256": "9ca877bd0d0f39969a95a7fa819989850338bd4e3583820c6228143682781815",
+      "size_bytes": 200,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_manifests/debug/processDebugManifest/output-metadata.json",
+      "sha256": "148417edd542389b41cf8ca36bc707aef3f4f3c1089152adce582dfd1bbedab1",
+      "size_bytes": 393,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/mergeDebugResources.json",
+      "sha256": "db85c3b5451f200120d99e65c884fa46043133dddd91bd6d02a1b9dce5955890",
+      "size_bytes": 635734,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-af.json",
+      "sha256": "90d4c208ea9bf052167e3bc2d4d7d55f3d0ab423636de25681125aff96b3490b",
+      "size_bytes": 6767,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-am.json",
+      "sha256": "6373548fecd69824489790f122aeef04334693e41d7b50cd4dcc4b804442aa08",
+      "size_bytes": 6742,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ar.json",
+      "sha256": "286a1ae2dbb1814033f1a75593a8d06a68aaa8d25c294c0d731feb00395a61ba",
+      "size_bytes": 6763,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-as.json",
+      "sha256": "c81a8ab70bbc8b0a44b59e0fa23c9848ec85e0232c04a55787fdfc153fdda6de",
+      "size_bytes": 6778,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-az.json",
+      "sha256": "ee2bb302d37f0d3b0ceb4a1b07dd26d9540605c87159b059d058684d16d0ff77",
+      "size_bytes": 6778,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-b+sr+Latn.json",
+      "sha256": "36347756f9032eb8db33fe42d600757ab0b3b089694ae0b4e5c64a0dc892fe58",
+      "size_bytes": 6857,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-be.json",
+      "sha256": "bb11bd2c5dc64349f646fc7467b8c979012217aa44601ea8837b9f511f50c237",
+      "size_bytes": 6775,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-bg.json",
+      "sha256": "5ba2c9878db8a962a372a4ec41cb02040310451c45995e2c0534e25ccb5ae3c0",
+      "size_bytes": 6780,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-bn.json",
+      "sha256": "2f670cd773cf23c4a37fdae753ac420cc3111a04dab86f1978d9190651f26a8e",
+      "size_bytes": 6779,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-bs.json",
+      "sha256": "05b9928a6eb7670b28879bb0cc68a1fe8be0c6bcb651a4c1fcda80396047bf67",
+      "size_bytes": 6771,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ca.json",
+      "sha256": "3edb6cc27fc40ebfbe7799bd9d2312f982ca428bc3feb78b7552f83f5dd545c1",
+      "size_bytes": 6776,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-cs.json",
+      "sha256": "3323d84c34a58e1b16aad1017b00cd74e1c9830e9eb5e609ef4e92d459cbbb7a",
+      "size_bytes": 6773,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-da.json",
+      "sha256": "dae89de0a1b0d8ccd998088455cdd0a9ee519c075096899d63a1cc75d9891726",
+      "size_bytes": 6762,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-de.json",
+      "sha256": "fd0af1e656253a7f7d2417f800c20bb40b600af67c649fbb44cb575bdab8c8fb",
+      "size_bytes": 6776,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-el.json",
+      "sha256": "db74f925d72fddb721d07e2edd1a39035ac05bd45105e0916741468c8ec15d2d",
+      "size_bytes": 6782,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-en-rAU.json",
+      "sha256": "43e92318c4ec3dbb26722233c5b8d9088ddd31868811316d3bc0ea888a1e3897",
+      "size_bytes": 4642,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-en-rCA.json",
+      "sha256": "faf08851ee7801305ee401bae29bdd326f227d719c199a95f88d99a919624613",
+      "size_bytes": 4642,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-en-rGB.json",
+      "sha256": "69ba9197429cf8e0b699e4846379c135299df2b0ac63516f47f8a4c9f423e023",
+      "size_bytes": 6809,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-en-rIN.json",
+      "sha256": "36aa8e48dd66162ede9c7aeffbd45bfdbccce2eec6bc98c7782ced4029127646",
+      "size_bytes": 4642,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-en-rXC.json",
+      "sha256": "67a5f13e341b08a8962124e23bccf01ce68c8c5bf67ac88666aad5bcb2cb09d1",
+      "size_bytes": 4719,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-es-rUS.json",
+      "sha256": "9d26636718b158d08c29aba6230d54ebaa8c9806fc08104fa21f50fc20194f24",
+      "size_bytes": 6820,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-es.json",
+      "sha256": "8c823564986465105782659510b502e3b4caea4b1bc3f634591dd3b7347b0138",
+      "size_bytes": 6774,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-et.json",
+      "sha256": "94036271a0dde49f024a4e3216b8734c14c547f31885ebbf02860d59bdfd3edb",
+      "size_bytes": 6770,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-eu.json",
+      "sha256": "e20588450fe29823012761bc38be65453e7c120609fee9152a136be0a06d63b7",
+      "size_bytes": 6771,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-fa.json",
+      "sha256": "44105028b2bd9ae206952561309517808c1a8269348eb980658a81b6c329a8bb",
+      "size_bytes": 6770,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-fi.json",
+      "sha256": "6e4bdd1008ea360cc916b6469da9c9f4574722bcdafb6fca5b5fa32605c5deea",
+      "size_bytes": 6766,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-fr-rCA.json",
+      "sha256": "366cde6701712cff43f051fdb563c02f58778ed10c3fbf971bca964575e2a7f7",
+      "size_bytes": 6830,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-fr.json",
+      "sha256": "170497786cd2e73db765809b7e898c22d0c2d5bd86248e857cb03a1f2ac1e929",
+      "size_bytes": 6778,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-gl.json",
+      "sha256": "c41de77cb8598078cb61bcdc8e4f6e588a209aca8ccd362608f9e1117a8b3fa7",
+      "size_bytes": 6774,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-gu.json",
+      "sha256": "5d486ec95a513e2611260cf3775f08f92299cd85382ffaba73104d080da3ad90",
+      "size_bytes": 6768,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-h720dp-v13.json",
+      "sha256": "c422c9a5e3d6d4ca767b8e041a66c05f966d13e6dd78c5eeb0363d4b9ff2df88",
+      "size_bytes": 712,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-hdpi-v4.json",
+      "sha256": "8137f444d1a606fb9e8dd5ee924babde484808a5592e10834f867abdd1a50f82",
+      "size_bytes": 741,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-hi.json",
+      "sha256": "d89efe72ec984b0e947b46bbd7ffaea29ea960ac42e3ac26ebc5da94794a5d3c",
+      "size_bytes": 6776,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-hr.json",
+      "sha256": "ee2ce03b693fbd905fb009b4ac4948a35cd9c7471615b5f0099f43569a2e9d16",
+      "size_bytes": 6770,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-hu.json",
+      "sha256": "401ed8c920253d69b5960938491e2edc6688c3b3d666256279bab54d80bbd642",
+      "size_bytes": 6776,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-hy.json",
+      "sha256": "9d4be70a1822bc33e9179d0577612068c395321d2e11210b944e6b21dada566a",
+      "size_bytes": 6770,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-in.json",
+      "sha256": "e407d9b379383a5e2bc7a4ab0edeed25038a06e099e3eecc4f2bc845dc9b0030",
+      "size_bytes": 6770,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-is.json",
+      "sha256": "dda474241d8c875b1b55ba4113300cd134618fce30dca0764db04076bcc5dcb8",
+      "size_bytes": 6768,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-it.json",
+      "sha256": "bbe0bbbebcbd616f8ca9c7e8d9f3fb0d94fd04d5141a2190fa62a3769f246f75",
+      "size_bytes": 6771,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-iw.json",
+      "sha256": "9fc020ada903071ca5775e0611326ab7154687307c065da2828fbf5d59753538",
+      "size_bytes": 6760,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ja.json",
+      "sha256": "e0e18eae1285e83b14b686184a74901e67ea5950adb9169b7b428ac987b735c1",
+      "size_bytes": 6742,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ka.json",
+      "sha256": "9289858640c72bf638c31a22c80c966900a3549f564eff3d73d3c5e5c29c74ef",
+      "size_bytes": 6772,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-kk.json",
+      "sha256": "8300a993bcc5dc4825c196a2461b6a88eb93e496eef628f853291ad7b4c54e07",
+      "size_bytes": 6769,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-km.json",
+      "sha256": "adb07797fb2fcf3d4bbc23947a9dfe3b07aacfc75c3d4812f703f7cdbb90fad3",
+      "size_bytes": 6763,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-kn.json",
+      "sha256": "9c6014883ecb8937b30d15434de5eebcafede1d1d13b792674627faab1e9b937",
+      "size_bytes": 6776,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ko.json",
+      "sha256": "7938173a7cae5c75368b8d3de37906a05a22e24a8d28afc739678ee6700e81c3",
+      "size_bytes": 6735,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ky.json",
+      "sha256": "d23c0b8c4f626b76104828b335e2aa28ae6455c375889c1dd86e83d6192c6621",
+      "size_bytes": 6776,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-land.json",
+      "sha256": "75ddc4ba4e3e4f660c4a4149c7c7ec01fdc4e309443aecd6a990c028108e2fea",
+      "size_bytes": 718,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-large-v4.json",
+      "sha256": "a33df18db9d59aa0d41b5543fcd53c529e6445ec790844a8fc5a76f8cee6a519",
+      "size_bytes": 827,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ldltr-v21.json",
+      "sha256": "4718487c930a695d600e5b0eae1f1e3dd8366922dbd10d5775626a2e589a4528",
+      "size_bytes": 709,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-lo.json",
+      "sha256": "785bdd7055d2966d956f3fc03502a82220ca9275f528f0ce66ec9997ef1f0aca",
+      "size_bytes": 6764,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-lt.json",
+      "sha256": "1f263e37aebb7a3a4302bde08afe445414802310140c26477e8c6140b35e5a71",
+      "size_bytes": 6782,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-lv.json",
+      "sha256": "65929fec5b66ba35f70ed7f7b7185f682d527a871babeacb8367bcaff74321ca",
+      "size_bytes": 6794,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-mk.json",
+      "sha256": "1b3bdee1cf1b94a05e08046bdc7dc8da7999d8f4ee034992fa5aff03dbecc9fa",
+      "size_bytes": 6774,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ml.json",
+      "sha256": "08a76dd172f5713adc23471f16896fa77ff20aa63ba2759661ec2c9d07e2741a",
+      "size_bytes": 6784,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-mn.json",
+      "sha256": "198c5ac2427eb965cc8926f5f67aca42f724f19937e23ce37e355a34557f86ad",
+      "size_bytes": 6772,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-mr.json",
+      "sha256": "21c35dc4a5414612cb1cc9c4daedc147c01bdd86644e53e7cfa186c27264a92d",
+      "size_bytes": 6776,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ms.json",
+      "sha256": "cfe59f7c4f415dff042a63abf44a3ec68b99215289167b747b94ad37c68968ee",
+      "size_bytes": 6774,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-my.json",
+      "sha256": "21bdf24137a5bcd6fed0ee83112dbbd7402d538dc0de212d6022f533c5a253e9",
+      "size_bytes": 6784,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-nb.json",
+      "sha256": "61aa6735fc309a056598abf05844ce83a671bcc853a9a5156f100145fdbd06b4",
+      "size_bytes": 6761,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ne.json",
+      "sha256": "689f3fcc452f753604137dd84f32016a56b60b46566505548566cb990ee2fa14",
+      "size_bytes": 6783,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-night-v8.json",
+      "sha256": "dfd0b90d4028a507a4f1509c0d8fe616a21058b30b703b47f0ca0316325aa3a9",
+      "size_bytes": 811,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-nl.json",
+      "sha256": "642925452e216ec757820c1d64a4f8301785b639bff4c6873be0783ec98b9f0a",
+      "size_bytes": 6774,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-or.json",
+      "sha256": "ac098431aabd2d0a1be15c36aa447858630b1f0651c2fede3562e3112fb863cb",
+      "size_bytes": 6784,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-pa.json",
+      "sha256": "875edc3b1143e2a2809f84ecac1c62fbe983cfea27334b3dc4a67d20c9c7d90b",
+      "size_bytes": 6769,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-pl.json",
+      "sha256": "272812de128f76bade8d05c37d7a82629ee3d4e7be99afac09dc2b650f86eb4c",
+      "size_bytes": 6765,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-port.json",
+      "sha256": "612f5cba8f516fd02f0824eb59869dd5c71bd32d61bc0a7dc7adf3c6eeec3f6a",
+      "size_bytes": 688,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-pt-rBR.json",
+      "sha256": "4f22968abc3bb9e3bb2d683872eea383c86fafce1416cdb94bc1ad9a287beea6",
+      "size_bytes": 6822,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-pt-rPT.json",
+      "sha256": "984c2d6c3100cbf139a9614dae032ba7b6155fc204c7597e9e9b9b352582b29a",
+      "size_bytes": 6820,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-pt.json",
+      "sha256": "e93960d61fec40983f263a7aff0cf13758165e443369e3d39598fe8e768c85ff",
+      "size_bytes": 4614,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ro.json",
+      "sha256": "f4ce5916c6c31891cc00e18b5cf8b0e01226aefe6425b1532b34179eb4f2c411",
+      "size_bytes": 6778,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ru.json",
+      "sha256": "6c61a282405ecb7243d6ed6b81d808421deb516a87e16e5dc40f6b82452f8c91",
+      "size_bytes": 6773,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-si.json",
+      "sha256": "49c767735efedaa4b9f43ee89d207bb062199f0e25c7d79da426f97463320f93",
+      "size_bytes": 6776,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sk.json",
+      "sha256": "9515ca0ccfdd294791d9caae0f327b0329b5b096f70d657d53c10dc50566559a",
+      "size_bytes": 6773,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sl.json",
+      "sha256": "3bc8c35e5cb2572ffad45b6f54ec1ca85838c8238f4f1f0c0a428499bbc2e6aa",
+      "size_bytes": 6773,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sq.json",
+      "sha256": "1b762855f103b816b6a16ddad760b4b429aa93b7dd23941da6fc7ca31c0cfc03",
+      "size_bytes": 6772,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sr.json",
+      "sha256": "e95448a3d8290789890c5cd12436cd277b452bd33ad8418e431b3e2d124d5af5",
+      "size_bytes": 6773,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sv.json",
+      "sha256": "9ce7d7622acad72cf719f5d5461d84d0d4a0e13b3d5aa84e361ba3830c58a64d",
+      "size_bytes": 6765,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sw.json",
+      "sha256": "94463143a08ea88b58d6877310699e48a135680af4c8ba5048d10a04c3e09e91",
+      "size_bytes": 6771,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-sw600dp-v13.json",
+      "sha256": "a7d7e6e5979512e91c4654e0d2512dabb45f6adf71fddba3bdf74c81e4322edd",
+      "size_bytes": 821,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ta.json",
+      "sha256": "d340922f3e9526a7068fb4861cff03fa21bfa4f50a4902c3e8772d36e7308642",
+      "size_bytes": 6781,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-te.json",
+      "sha256": "244c486c06f8b95b9fa329a650a027b36c44063fcd3f69c36a926646cccbb76c",
+      "size_bytes": 6782,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-th.json",
+      "sha256": "d237b21e795486cc52b8f5f1d5dc34188e9eb85f07bcaeb27410b66b1766a6b3",
+      "size_bytes": 6764,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-tl.json",
+      "sha256": "f3ab76224d1377bf2d3ae3e28b08f819fbac82bd46c7b74d0257dd0d8bad6a7d",
+      "size_bytes": 6778,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-tr.json",
+      "sha256": "8fe77baaa6c347a279937332c62ab790194e91bff85733e0b73e3a7cd4e6e795",
+      "size_bytes": 6770,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-uk.json",
+      "sha256": "f721e8a9904ef76f018e7912e1bd30cad4d3a527f0cd181cce714f3c31aa0dfc",
+      "size_bytes": 6776,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-ur.json",
+      "sha256": "6b230c29a656bc5d9ae6afd1ecd1943a8370200fb9e1b0b735b7f77fb84e371f",
+      "size_bytes": 6777,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-uz.json",
+      "sha256": "d3cee8223974829f947b768b4b2c1b2b0036b74ce9909dab3ea27f1e36a4dfcd",
+      "size_bytes": 6770,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v16.json",
+      "sha256": "27d3e4adebb52bdc2589e890f9ac76fb357c3f5f609c3dfb5b89e8ac09151077",
+      "size_bytes": 725,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v17.json",
+      "sha256": "1bc90eb09a8abd2537b675f5b29d5e6698787c096bf7cd9fc4bd3bf4d93ed0b1",
+      "size_bytes": 1049,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v18.json",
+      "sha256": "c4fc79284e8d1d81e7fda6dc8d0ae2eb7219abbba0f65476296a0fc14e098521",
+      "size_bytes": 683,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v21.json",
+      "sha256": "7507d3d946c9a1decb99b34e4f62af3ea04280622b4447f5820452121a743a5b",
+      "size_bytes": 7269,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v22.json",
+      "sha256": "1c88e664e1f99caf637a8e1855d35c3d8f326fc5c2d217020011c05ce541d808",
+      "size_bytes": 777,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v23.json",
+      "sha256": "763d28a7e7a4ba3eadb37acc0e82886b365d423d771427cb0937fbc13d6a2454",
+      "size_bytes": 991,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v24.json",
+      "sha256": "5cf5edfeee7e14e3fcef4536fd9e6b7f9a8feb61e5a4b798a990fca9d5de0020",
+      "size_bytes": 701,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v25.json",
+      "sha256": "5196f9dc41f9678f5fd21a4ef3f5d12f4135783e2f0f364226c163fcc7c5c4cf",
+      "size_bytes": 776,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v26.json",
+      "sha256": "5cbce555f0a4ee1ee4f71eb07991eba5d53fe34e029641da5696bf7ac8bb97f5",
+      "size_bytes": 815,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-v28.json",
+      "sha256": "2e9ede3ffbb9f892b7eeb9097c9622ded88c66bc6fe5e135348733cb8d8393c2",
+      "size_bytes": 777,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-vi.json",
+      "sha256": "03c92e52b9bb2dd9a7c64629d7f6a1d22d274bc3bd0de57be0377cb17b7b8f8a",
+      "size_bytes": 6772,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-watch-v20.json",
+      "sha256": "c528e2f306b05b9e569c06be494d9f0ed5d0986d6e1de37e9ddfabde2042c13f",
+      "size_bytes": 2140,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-watch-v21.json",
+      "sha256": "ea32f3f2690f40159ffb132ac85da12c8aa421274422e714a4ce46d4cdb79231",
+      "size_bytes": 785,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-xlarge-v4.json",
+      "sha256": "831cc07c27100613aef3de9297edb4f0c61b72ec96921e5e057457a4ae2b77da",
+      "size_bytes": 783,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-zh-rCN.json",
+      "sha256": "214424c18d6cd9bf33fd89ec5e4224fb89ee4cf5963f51d624af8754b9f49701",
+      "size_bytes": 6779,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-zh-rHK.json",
+      "sha256": "f4c2241f4b44e139b7ec2cb999d25928bb20a86a59e14246970a2a66036c8c6a",
+      "size_bytes": 6780,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-zh-rTW.json",
+      "sha256": "567140f1e2e80e505e32dcb245f118e243ce0b4c2a82a0913c01d607c3a39e22",
+      "size_bytes": 6777,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values-zu.json",
+      "sha256": "dccc163963cd4082be1b81ffe2d4b0dd4bac4a18802baf5796cf0576a7f54ed9",
+      "size_bytes": 6773,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/values.json",
+      "sha256": "91c1e871c4a753a1ceb3db6d75781f8004cf78b6ce4f2156f053d0b60d6fab9e",
+      "size_bytes": 49267,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/single/mergeDebugResources.json",
+      "sha256": "bca88b373604f6cbc1dd1e8a1e9e4329bc2517ef66f964e9289dc42238a93f93",
+      "size_bytes": 186,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size_bytes": 2,
+      "status": "Verified"
+    },
+    {
+      "file": "./app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/output-metadata.json",
+      "sha256": "0cb6ef82de8c2d2a55c6ee2d9ac9dd3c9b0c0f1972939538749b6d08b8deeabb",
+      "size_bytes": 395,
+      "status": "Verified"
+    },
+    {
+      "file": "./manifests/dapp-manifest.json",
+      "sha256": "dac41cfd6831da9de7b97daccba547edffae4936a19f37cd84b433b8b77bb3dc",
+      "size_bytes": 715,
+      "status": "Verified"
+    },
+    {
+      "file": "./manifests/portfolio-provenance-manifest.json",
+      "sha256": "acb8a6064091e30996a916749c0add11a6c364cbbd16bc509037eb9b8a9ca3c9",
+      "size_bytes": 3062,
+      "status": "Verified"
     }
   ]
 }
