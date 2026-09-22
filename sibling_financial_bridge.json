@@ -1,0 +1,8 @@
+{
+  "primary_entity": "10839477 Canada Inc.",
+  "lineage_source": "WIPO Global IP Infrastructure & Local Sibling Engine",
+  "linked_family_nodes": 2,
+  "financial_ledger_id": "wire-0e8d76fd-109b-459d-b583-8e654f5241de",
+  "standard_alignment": "ISO 20022 (pacs.008 mapped)",
+  "status": "Bridge active - Family nodes bound to payment routing layer"
+}
