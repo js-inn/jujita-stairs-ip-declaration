@@ -6,7 +6,7 @@ DB_NAME = "financial_pipeline.db"
 ROOT_PARENT = "10839477 Canada Inc."
 
 def bridge_lineages():
-    """Bridges financial records, USPTO, EU, and JPO patent audit nodes into a unified global ledger."""
+    """Bridges financial records, USPTO, EU, JPO, and IP Australia audit nodes into a unified global ledger."""
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     
@@ -79,6 +79,20 @@ def bridge_lineages():
                 ''', ("Japan_Patent", app_num, assignee, status, anchor))
     except Exception as e:
         print(f"[*] Japan nodes integration note: {e}")
+
+    # Fetch Australia patent records
+    try:
+        cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='australia_audit_nodes'")
+        if cursor.fetchone():
+            cursor.execute("SELECT application_number, assignee_name, bloodlineage_status, cryptographic_anchor FROM australia_audit_nodes")
+            for app_num, assignee, status, anchor in cursor.fetchall():
+                cursor.execute('''
+                    INSERT OR IGNORE INTO unified_ip_financial_ledger 
+                    (node_type, identifier, entity_name, bloodlineage_status, master_anchor)
+                    VALUES (?, ?, ?, ?, ?)
+                ''', ("Australia_Patent", app_num, assignee, status, anchor))
+    except Exception as e:
+        print(f"[*] Australia nodes integration note: {e}")
 
     conn.commit()
     
