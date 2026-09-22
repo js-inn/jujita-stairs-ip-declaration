@@ -1,0 +1,39 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "submission_type": "CIPO_COPYRIGHT_REGISTRATION_NOTICE",
+    "target_authority": "Canadian Intellectual Property Office (CIPO) / Innovation, Science and Economic Development Canada (ISED)",
+    "timestamp_utc": "2026-09-15T18:52:33Z",
+    "corporate_entity": {
+        "legal_name": "10839477 Canada Inc.",
+        "jurisdiction": "Canada (Federal)",
+        "ownership_structure": "Sole Individual with Significant Control (100%)",
+        "corporate_identifier": "10839477"
+    },
+    "creator_provenance": {
+        "author_name": "Jujita Fermin Stairs",
+        "creator_uuid": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
+        "location": "Edmonton, Alberta, Canada"
+    },
+    "cryptographic_anchors": {
+        "anchor_uuid": "3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7",
+        "git_repository": "https://github.com/js-inn/jujita-stairs-ip-declaration",
+        "ledger_hash": "48ced840ffb0dacf"
+    },
+    "ip_declaration_payload": {
+        "title_of_work": "Jujita Stairs Intellectual Property Declaration & System Logic Architecture",
+        "category_of_work": "Literary Work (Source Code, System Architecture Blueprints, and Technical Documentation)",
+        "included_manifest_files": [
+            "IP_CLAIM.md",
+            "MANIFEST.json",
+            "LAC_ATTRIBUTION_REQUEST.json",
+            "wire_ledger.json",
+            "check_corp.py"
+        ],
+        "declaration_summary": "Formal assertion of exclusive copyright, architecture logic, and operational frameworks owned by 10839477 Canada Inc. and authored by Jujita Fermin Stairs."
+    },
+    "administrative_instructions": {
+        "cipo_portal": "ISED / CIPO Online Services Portal",
+        "filing_category": "Registration of a Copyright in a Work",
+        "filing_notes": "Include Creator UUID e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a and Anchor UUID 3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7 in the applicant reference or repository description."
+    }
+}

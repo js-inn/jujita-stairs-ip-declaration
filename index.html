@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10839477 Canada Inc. | Cryptographic Public Audit Dashboard</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --heading: #f0f6fc;
+      --accent: #58a6ff;
+      --green: #3fb950;
+      --mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      color: var(--heading);
+      font-size: 1.5rem;
+      margin: 0 0 8px 0;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(63, 185, 80, 0.15);
+      color: var(--green);
+      border: 1px solid rgba(63, 185, 80, 0.4);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      color: var(--heading);
+      font-size: 1.1rem;
+      margin-top: 0;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media(max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .field-label {
+      font-size: 0.8rem;
+      color: #8b949e;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .field-value {
+      color: var(--heading);
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-top: 4px;
+      word-break: break-all;
+    }
+    .code-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px;
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--accent);
+      word-break: break-all;
+    }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      background: #21262d;
+      color: var(--heading);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #30363d;
+      border-color: #8b949e;
+    }
+    .btn-primary {
+      background: #238636;
+      border-color: rgba(240,246,252,0.1);
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background: #2ea043;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #8b949e;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>10839477 Canada Inc.</h1>
+      <span class="badge">✓ PUBLIC PROVENANCE ANCHOR LIVE</span>
+    </header>
+
+    <div class="card">
+      <h2>Corporate Identity & Jurisdiction</h2>
+      <div class="grid">
+        <div>
+          <div class="field-label">Legal Entity</div>
+          <div class="field-value" id="entity">Loading...</div>
+        </div>
+        <div>
+          <div class="field-label">Jurisdiction</div>
+          <div class="field-value" id="jurisdiction">Loading...</div>
+        </div>
+        <div>
+          <div class="field-label">Creator UUID</div>
+          <div class="field-value" id="creator-uuid">Loading...</div>
+        </div>
+        <div>
+          <div class="field-label">Cryptographic Anchor UUID</div>
+          <div class="field-value" id="anchor-uuid">Loading...</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10839477 Canada Inc. | Master IP Declaration & Financial Audit</title>
+  <style>
+    /* --- 1. Tailwind Reset & Base Utilities --- */
+    *, :before, :after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
+    html, :host { line-height: 1.5; -webkit-text-size-adjust: 100%; font-family: Noto Sans, sans-serif; }
+    body { margin: 0; line-height: inherit; background-color: #f9fafb; color: #111827; }
+    .container { width: 100%; margin-right: auto; margin-left: auto; padding-right: 1rem; padding-left: 1rem; max-width: 992px; }
+    
+    /* --- 2. Slack-Style Attachment Component Styles --- */
+    .attachment_compat { margin-left: 4px; display: flex; }
+    .attachment_compat .message_column { display: inline-block; vertical-align: top; font-size: .9375rem; line-height: 1.375rem; }
+    .attachment_compat .message_column.column_border { margin-left: 4px; width: 5px; background-color: #e8e8e8; flex: none; }
+    .attachment_compat .message_column.column_content { width: 100%; }
+    .attachment_compat .message_row { width: 100%; padding: 0 12px; margin: 12px 0; }
+    .attachment_compat .compat_group { max-width: 600px; width: 100%; margin: .4rem 0; }
+    .attachment_compat .inline_attachment { border-radius: 0; margin: 0; padding: 4px 0; }
+    .attachment_compat .inline_attachment .compat_title { font-weight: 700; font-size: 1rem; color: #1f2937; }
+  </style>
+</head>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Anchored Government Contracts</h2>
+      <div class="field-value" id="contracts">Loading...</div>
+    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10839477 Canada Inc. | Master IP Declaration & Financial Audit</title>
+  <style>
+    /* --- 1. Custom Noto Sans Font Faces --- */
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:100;font-display:swap;src:url(/assets/NotoSans-Thin-Csve6XFa.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:100;font-display:swap;src:url(/assets/NotoSans-ThinItalic-DPXzDgvR.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:200;font-display:swap;src:url(/assets/NotoSans-ExtraLight-ChU-r-p0.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:200;font-display:swap;src:url(/assets/NotoSans-ExtraLightItalic-Dz9o-FPl.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:300;font-display:swap;src:url(/assets/NotoSans-Light-CpwMVblg.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:300;font-display:swap;src:url(/assets/NotoSans-LightItalic-CsLfRXdT.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/NotoSans-Regular-CF_EggQ_.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:400;font-display:swap;src:url(/assets/NotoSans-Italic-NApRWGLz.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:500;font-display:swap;src:url(/assets/NotoSans-Medium-Bv7gQBcq.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:500;font-display:swap;src:url(/assets/NotoSans-MediumItalic-C3JJj-j2.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:600;font-display:swap;src:url(/assets/NotoSans-SemiBold-Dwv8M6YL.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:600;font-display:swap;src:url(/assets/NotoSans-SemiBoldItalic-Xq9NoTBu.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/NotoSans-Bold-DwlQfr5s.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:700;font-display:swap;src:url(/assets/NotoSans-BoldItalic-Cw3cBBZk.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:800;font-display:swap;src:url(/assets/NotoSans-ExtraBold-DQrEOsut.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:800;font-display:swap;src:url(/assets/NotoSans-ExtraBoldItalic-Rb6Ek7yU.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:normal;font-weight:900;font-display:swap;src:url(/assets/NotoSans-Black-BAaSzCx2.woff2) format("woff2")}
+    @font-face{font-family:Noto Sans;font-style:italic;font-weight:900;font-display:swap;src:url(/assets/NotoSans-BlackItalic-Dgf3JTe4.woff2) format("woff2")}
+
+    /* --- 2. Phone Input Component Styles --- */
+    :root{--PhoneInput-color--focus:#03b2cb;--PhoneInputInternationalIconPhone-opacity:.8;--PhoneInputInternationalIconGlobe-opacity:.65;--PhoneInputCountrySelect-marginRight:.35em;--PhoneInputCountrySelectArrow-width:.3em;--PhoneInputCountrySelectArrow-marginLeft:var(--PhoneInputCountrySelect-marginRight);--PhoneInputCountrySelectArrow-borderWidth:1px;--PhoneInputCountrySelectArrow-opacity:.45;--PhoneInputCountrySelectArrow-color:currentColor;--PhoneInputCountrySelectArrow-color--focus:var(--PhoneInput-color--focus);--PhoneInputCountrySelectArrow-transform:rotate(45deg);--PhoneInputCountryFlag-aspectRatio:1.5;--PhoneInputCountryFlag-height:1em;--PhoneInputCountryFlag-borderWidth:1px;--PhoneInputCountryFlag-borderColor:rgba(0,0,0,.5);--PhoneInputCountryFlag-borderColor--focus:var(--PhoneInput-color--focus);--PhoneInputCountryFlag-backgroundColor--loading:rgba(0,0,0,.1)}
+    .PhoneInput{display:flex;align-items:center}
+    .PhoneInputInput{flex:1;min-width:0}
+    .PhoneInputCountryIcon{width:calc(var(--PhoneInputCountryFlag-height) * var(--PhoneInputCountryFlag-aspectRatio));height:var(--PhoneInputCountryFlag-height)}
+    .PhoneInputCountryIcon--square{width:var(--PhoneInputCountryFlag-height)}
+    .PhoneInputCountryIcon--border{background-color:var(--PhoneInputCountryFlag-backgroundColor--loading);box-shadow:0 0 0 var(--PhoneInputCountryFlag-borderWidth) var(--PhoneInputCountryFlag-borderColor),inset 0 0 0 var(--PhoneInputCountryFlag-borderWidth) var(--PhoneInputCountryFlag-borderColor)}
+    .PhoneInputCountryIconImg{display:block;width:100%;height:100%}
+    .PhoneInputInternationalIconPhone{opacity:var(--PhoneInputInternationalIconPhone-opacity)}
+    .PhoneInputInternationalIconGlobe{opacity:var(--PhoneInputInternationalIconGlobe-opacity)}
+    .PhoneInputCountry{position:relative;align-self:stretch;display:flex;align-items:center;margin-right:var(--PhoneInputCountrySelect-marginRight)}
+    .PhoneInputCountrySelect{position:absolute;top:0;left:0;height:100%;width:100%;z-index:1;border:0;opacity:0;cursor:pointer}
+    .PhoneInputCountrySelect[disabled],.PhoneInputCountrySelect[readonly]{cursor:default}
+    .PhoneInputCountrySelectArrow{display:block;content:"";width:var(--PhoneInputCountrySelectArrow-width);height:var(--PhoneInputCountrySelectArrow-width);margin-left:var(--PhoneInputCountrySelectArrow-marginLeft);border-style:solid;border-color:var(--PhoneInputCountrySelectArrow-color);border-top-width:0;border-bottom-width:var(--PhoneInputCountrySelectArrow-borderWidth);border-left-width:0;border-right-width:var(--PhoneInputCountrySelectArrow-borderWidth);transform:var(--PhoneInputCountrySelectArrow-transform);opacity:var(--PhoneInputCountrySelectArrow-opacity)}
+    .PhoneInputCountrySelect:focus+.PhoneInputCountryIcon+.PhoneInputCountrySelectArrow{opacity:1;color:var(--PhoneInputCountrySelectArrow-color--focus)}
+
+    /* --- 3. Font Awesome Core Toolkit --- */
+    :root,:host{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free"}
+    .svg-inline--fa{display:inline-block;height:1em;overflow:visible;vertical-align:-.125em}
+
+    /* --- 4. Tailwind Reset & Base Utilities --- */
+    *, :before, :after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
+    html, :host { line-height: 1.5; -webkit-text-size-adjust: 100%; font-family: Noto Sans, sans-serif; }
+    body { margin: 0; line-height: inherit; background-color: #f9fafb; color: #111827; }
+    .container { width: 100%; margin-right: auto; margin-left: auto; padding-right: 1rem; padding-left: 1rem; max-width: 992px; }
+    
+    /* --- 5. Slack-Style Attachment Component Styles --- */
+    .attachment_compat { margin-left: 4px; display: flex; }
+    .attachment_compat .message_column { display: inline-block; vertical-align: top; font-size: .9375rem; line-height: 1.375rem; }
+    .attachment_compat .message_column.column_border { margin-left: 4px; width: 5px; background-color: #e8e8e8; flex: none; }
+    .attachment_compat .message_column.column_content { width: 100%; }
+    .attachment_compat .message_row { width: 100%; padding: 0 12px; margin: 12px 0; }
+    .attachment_compat .compat_group { max-width: 600px; width: 100%; margin: .4rem 0; }
+    .attachment_compat .inline_attachment { border-radius: 0; margin: 0; padding: 4px 0; }
+    .attachment_compat .inline_attachment .compat_title { font-weight: 700; font-size: 1rem; color: #1f2937; }
+  </style>
+</head>
+
+    <div class="card">
+      <h2>Ledger SHA-256 Proof (`wire_ledger.json`)</h2>
+      <div class="field-label" style="margin-bottom: 6px;">Current Hash Digest</div>
+      <div class="code-box" id="sha256">Loading...</div>
+      <div style="margin-top: 12px; font-size: 0.85rem;">
+        <strong>Last Synchronized:</strong> <span id="last-updated">Loading...</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Official Audit Certificate</h2>
+      <p style="font-size: 0.9rem; color: #8b949e; margin-top: 0;">
+        Download or inspect the automatically compiled ReportLab PDF audit document containing signed identity and ledger state.
+      </p>
+      <div class="btn-group">
+        <a href="audit_certificate.pdf" target="_blank" class="btn btn-primary">📄 Preview PDF Certificate</a>
+        <a href="audit_certificate.pdf" download="10839477_Canada_Inc_Audit_Certificate.pdf" class="btn">⬇ Download PDF</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Public Repositories & Declarations</h2>
+      <ul>
+        <li><a href="MANIFEST.json" target="_blank">View Raw MANIFEST.json</a></li>
+        <li><a href="wire_ledger.json" target="_blank">View Raw ISO 20022 wire_ledger.json</a></li>
+        <li><a href="IP_CLAIM.md" target="_blank">View Statutory IP Declaration (IP_CLAIM.md)</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      Public Web Graph Node | Cryptographically Verified for 10839477 Canada Inc.
+    </footer>
+  </div>
+
+  <script>
+    async function loadManifest() {
+      try {
+        const response = await fetch('MANIFEST.json?cachebust=' + new Date().getTime());
+        if (!response.ok) throw new Error("Manifest not found");
+        const data = await response.json();
+
+        document.getElementById('entity').textContent = data.entity || 'N/A';
+        document.getElementById('jurisdiction').textContent = data.jurisdiction || 'N/A';
+        document.getElementById('creator-uuid').textContent = data.creator_uuid || 'N/A';
+        document.getElementById('anchor-uuid').textContent = data.cryptographic_anchor_uuid || 'N/A';
+        document.getElementById('last-updated').textContent = data.last_updated ? new Date(data.last_updated).toUTCString() : 'N/A';
+        
+        if (data.related_contracts && Array.isArray(data.related_contracts)) {
+          document.getElementById('contracts').textContent = data.related_contracts.join(' | ');
+        } else {
+          document.getElementById('contracts').textContent = 'None Specified';
+        }
+
+        if (data.ledger_proof && data.ledger_proof.sha256) {
+          document.getElementById('sha256').textContent = data.ledger_proof.sha256;
+        } else {
+          document.getElementById('sha256').textContent = 'Hash unavailable';
+        }
+      } catch (err) {
+        console.error("Error fetching MANIFEST.json:", err);
+      }
+    }
+    loadManifest();
+  </script>
+
+        <section class="gvt-card" style="margin-top: 20px; padding: 20px; background: var(--card); border: 1px solid var(--border); border-radius: 8px;">
+            <h3 style="color: var(--heading);">Sovereign Corporate Hierarchy & Entity Mapping</h3>
+            <p style="color: var(--text); font-size: 13px;">Authenticated via GVT Framework | Primary BN: 749810883RC0001</p>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: var(--text); text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border);">
+                            <th style="padding: 8px;">Node ID</th>
+                            <th style="padding: 8px;">Entity Name</th>
+                            <th style="padding: 8px;">Business Number</th>
+                            <th style="padding: 8px;">Status</th>
+                            <th style="padding: 8px;">Contracts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><code>GVT-PARENT-01</code></td>
+            <td><strong>Jujita Fermin Stairs / Master Sovereign</strong></td>
+            <td>N/A</td>
+            <td><span class="badge">Active Master Node</span></td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td><code>CORP-10839477</code></td>
+            <td><strong>10839477 Canada Inc.</strong></td>
+            <td>749810883RC0001</td>
+            <td><span class="badge">Active Primary Operating</span></td>
+            <td>CW2321555, CW2123555</td>
+        </tr>
+        
+        <tr>
+            <td><code>CORP-10811467</code></td>
+            <td><strong>10811467 Canada Inc.</strong></td>
+            <td>Pending</td>
+            <td><span class="badge">IP Global Declaration Integration</span></td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td><code>INST-17996829</code></td>
+            <td><strong>17996829 Canada Institute</strong></td>
+            <td>Pending</td>
+            <td><span class="badge">Deferred / Floating Shell</span></td>
+            <td>N/A</td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        </body>
+        
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10839477 Canada Inc. - Master IP Declaration & Financial Audit</title>
+  <style>
+    /* Paste your CSS styles here */
+    .attachment_compat {
+      margin-left: 4px;
+      display: flex;
+    }
+    .attachment_compat .message_column {
+      display: inline-block;
+      vertical-align: top;
+      font-size: .9375rem;
+      line-height: 1.375rem;
+    }
+    /* ... rest of your CSS rules ... */
+  </style>
+</head>
+<body>
+  <div class="attachment_compat">
+    <div class="compat_group has_border">
+      <div class="inline_attachment">
+        <div class="message_row">
+          <div class="message_holder">
+            <div class="compat_title">Institutional Audit Ledger & Cryptographic Provenance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <section class="gvt-card" style="margin-top: 20px; padding: 20px; background: var(--card); border: 1px solid var(--border); border-radius: 8px;">
+            <h3 style="color: var(--heading);">Sovereign Corporate Hierarchy & Entity Mapping</h3>
+            <p style="color: var(--text); font-size: 13px;">Authenticated via GVT Framework | Primary BN: 749810883RC0001</p>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: var(--text); text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border);">
+                            <th style="padding: 8px;">Node ID</th>
+                            <th style="padding: 8px;">Entity Name</th>
+                            <th style="padding: 8px;">Business Number</th>
+                            <th style="padding: 8px;">Status</th>
+                            <th style="padding: 8px;">Contracts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><code>GVT-PARENT-01</code></td>
+            <td><strong>Jujita Fermin Stairs / Master Sovereign</strong></td>
+            <td>N/A</td>
+            <td><span class="badge">Active Master Node</span></td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td><code>CORP-10839477</code></td>
+            <td><strong>10839477 Canada Inc.</strong></td>
+            <td>749810883RC0001</td>
+            <td><span class="badge">Active Primary Operating</span></td>
+            <td>CW2321555, CW2123555</td>
+        </tr>
+        
+        <tr>
+            <td><code>CORP-10811467</code></td>
+            <td><strong>10811467 Canada Inc.</strong></td>
+            <td>Pending</td>
+            <td><span class="badge">IP Global Declaration Integration</span></td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td><code>INST-17996829</code></td>
+            <td><strong>17996829 Canada Institute</strong></td>
+            <td>Pending</td>
+            <td><span class="badge">Deferred / Floating Shell</span></td>
+            <td>N/A</td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        </body>
+        
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10839477 Canada Inc. | Master IP Declaration & Financial Audit</title>
+  <style>
+    /* --- 1. Tailwind Reset & Base Utilities --- */
+    *, :before, :after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
+    html, :host { line-height: 1.5; -webkit-text-size-adjust: 100%; font-family: Noto Sans, sans-serif; }
+    body { margin: 0; line-height: inherit; background-color: #f9fafb; color: #111827; }
+    .container { width: 100%; margin-right: auto; margin-left: auto; padding-right: 1rem; padding-left: 1rem; max-width: 992px; }
+    
+    /* --- 2. Slack-Style Attachment Component Styles --- */
+    .attachment_compat { margin-left: 4px; display: flex; }
+    .attachment_compat .message_column { display: inline-block; vertical-align: top; font-size: .9375rem; line-height: 1.375rem; }
+    .attachment_compat .message_column.column_border { margin-left: 4px; width: 5px; background-color: #e8e8e8; flex: none; }
+    .attachment_compat .message_column.column_content { width: 100%; }
+    .attachment_compat .message_row { width: 100%; padding: 0 12px; margin: 12px 0; }
+    .attachment_compat .compat_group { max-width: 600px; width: 100%; margin: .4rem 0; }
+    .attachment_compat .inline_attachment { border-radius: 0; margin: 0; padding: 4px 0; }
+    .attachment_compat .inline_attachment .compat_title { font-weight: 700; font-size: 1rem; color: #1f2937; }
+  </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10839477 Canada Inc. | Master IP Declaration & Financial Audit</title>
+  <style>
+    /* --- 1. Font Awesome 6 Core Toolkit --- */
+    :root,:host{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free";--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Free";--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}
+    svg:not(:root).svg-inline--fa,svg:not(:host).svg-inline--fa{overflow:visible;box-sizing:content-box}
+    .svg-inline--fa{display:var(--fa-display,inline-block);height:1em;overflow:visible;vertical-align:-.125em}
+    .fa-spin{animation:fa-spin 2s linear infinite}
+    @keyframes fa-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+    /* --- 2. Tailwind Reset & Base Utilities --- */
+    *, :before, :after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
+    html, :host { line-height: 1.5; -webkit-text-size-adjust: 100%; font-family: Noto Sans, sans-serif; }
+    body { margin: 0; line-height: inherit; background-color: #f9fafb; color: #111827; }
+    .container { width: 100%; margin-right: auto; margin-left: auto; padding-right: 1rem; padding-left: 1rem; max-width: 992px; }
+    
+    /* --- 3. Slack-Style Attachment Component Styles --- */
+    .attachment_compat { margin-left: 4px; display: flex; }
+    .attachment_compat .message_column { display: inline-block; vertical-align: top; font-size: .9375rem; line-height: 1.375rem; }
+    .attachment_compat .message_column.column_border { margin-left: 4px; width: 5px; background-color: #e8e8e8; flex: none; }
+    .attachment_compat .message_column.column_content { width: 100%; }
+    .attachment_compat .message_row { width: 100%; padding: 0 12px; margin: 12px 0; }
+    .attachment_compat .compat_group { max-width: 600px; width: 100%; margin: .4rem 0; }
+    .attachment_compat .inline_attachment { border-radius: 0; margin: 0; padding: 4px 0; }
+    .attachment_compat .inline_attachment .compat_title { font-weight: 700; font-size: 1rem; color: #1f2937; }
+  </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10839477 Canada Inc. | Master IP Declaration & Financial Audit</title>
+  <style>
+    /* --- 1. Phone Input Component Styles --- */
+    :root{--PhoneInput-color--focus:#03b2cb;--PhoneInputInternationalIconPhone-opacity:.8;--PhoneInputInternationalIconGlobe-opacity:.65;--PhoneInputCountrySelect-marginRight:.35em;--PhoneInputCountrySelectArrow-width:.3em;--PhoneInputCountrySelectArrow-marginLeft:var(--PhoneInputCountrySelect-marginRight);--PhoneInputCountrySelectArrow-borderWidth:1px;--PhoneInputCountrySelectArrow-opacity:.45;--PhoneInputCountrySelectArrow-color:currentColor;--PhoneInputCountrySelectArrow-color--focus:var(--PhoneInput-color--focus);--PhoneInputCountrySelectArrow-transform:rotate(45deg);--PhoneInputCountryFlag-aspectRatio:1.5;--PhoneInputCountryFlag-height:1em;--PhoneInputCountryFlag-borderWidth:1px;--PhoneInputCountryFlag-borderColor:rgba(0,0,0,.5);--PhoneInputCountryFlag-borderColor--focus:var(--PhoneInput-color--focus);--PhoneInputCountryFlag-backgroundColor--loading:rgba(0,0,0,.1)}
+    .PhoneInput{display:flex;align-items:center}
+    .PhoneInputInput{flex:1;min-width:0}
+    .PhoneInputCountryIcon{width:calc(var(--PhoneInputCountryFlag-height) * var(--PhoneInputCountryFlag-aspectRatio));height:var(--PhoneInputCountryFlag-height)}
+    .PhoneInputCountryIcon--square{width:var(--PhoneInputCountryFlag-height)}
+    .PhoneInputCountryIcon--border{background-color:var(--PhoneInputCountryFlag-backgroundColor--loading);box-shadow:0 0 0 var(--PhoneInputCountryFlag-borderWidth) var(--PhoneInputCountryFlag-borderColor),inset 0 0 0 var(--PhoneInputCountryFlag-borderWidth) var(--PhoneInputCountryFlag-borderColor)}
+    .PhoneInputCountryIconImg{display:block;width:100%;height:100%}
+    .PhoneInputInternationalIconPhone{opacity:var(--PhoneInputInternationalIconPhone-opacity)}
+    .PhoneInputInternationalIconGlobe{opacity:var(--PhoneInputInternationalIconGlobe-opacity)}
+    .PhoneInputCountry{position:relative;align-self:stretch;display:flex;align-items:center;margin-right:var(--PhoneInputCountrySelect-marginRight)}
+    .PhoneInputCountrySelect{position:absolute;top:0;left:0;height:100%;width:100%;z-index:1;border:0;opacity:0;cursor:pointer}
+    .PhoneInputCountrySelect[disabled],.PhoneInputCountrySelect[readonly]{cursor:default}
+    .PhoneInputCountrySelectArrow{display:block;content:"";width:var(--PhoneInputCountrySelectArrow-width);height:var(--PhoneInputCountrySelectArrow-width);margin-left:var(--PhoneInputCountrySelectArrow-marginLeft);border-style:solid;border-color:var(--PhoneInputCountrySelectArrow-color);border-top-width:0;border-bottom-width:var(--PhoneInputCountrySelectArrow-borderWidth);border-left-width:0;border-right-width:var(--PhoneInputCountrySelectArrow-borderWidth);transform:var(--PhoneInputCountrySelectArrow-transform);opacity:var(--PhoneInputCountrySelectArrow-opacity)}
+    .PhoneInputCountrySelect:focus+.PhoneInputCountryIcon+.PhoneInputCountrySelectArrow{opacity:1;color:var(--PhoneInputCountrySelectArrow-color--focus)}
+
+    /* --- 2. Font Awesome Core Toolkit --- */
+    :root,:host{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free"}
+    .svg-inline--fa{display:inline-block;height:1em;overflow:visible;vertical-align:-.125em}
+
+    /* --- 3. Tailwind Reset & Base Utilities --- */
+    *, :before, :after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
+    html, :host { line-height: 1.5; -webkit-text-size-adjust: 100%; font-family: Noto Sans, sans-serif; }
+    body { margin: 0; line-height: inherit; background-color: #f9fafb; color: #111827; }
+    .container { width: 100%; margin-right: auto; margin-left: auto; padding-right: 1rem; padding-left: 1rem; max-width: 992px; }
+    
+    /* --- 4. Slack-Style Attachment Component Styles --- */
+    .attachment_compat { margin-left: 4px; display: flex; }
+    .attachment_compat .message_column { display: inline-block; vertical-align: top; font-size: .9375rem; line-height: 1.375rem; }
+    .attachment_compat .message_column.column_border { margin-left: 4px; width: 5px; background-color: #e8e8e8; flex: none; }
+    .attachment_compat .message_column.column_content { width: 100%; }
+    .attachment_compat .message_row { width: 100%; padding: 0 12px; margin: 12px 0; }
+    .attachment_compat .compat_group { max-width: 600px; width: 100%; margin: .4rem 0; }
+    .attachment_compat .inline_attachment { border-radius: 0; margin: 0; padding: 4px 0; }
+    .attachment_compat .inline_attachment .compat_title { font-weight: 700; font-size: 1rem; color: #1f2937; }
+  </style>
+</head>
+
+    /* --- 1. Custom Lato Font Faces --- */
+    @font-face{font-family:Lato;font-style:normal;font-weight:100;font-display:swap;src:url(/assets/LatoLatin-Hairline-BWt8Lj7E.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:italic;font-weight:100;font-display:swap;src:url(/assets/LatoLatin-HairlineItalic-D3NkIJa8.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:normal;font-weight:200;font-display:swap;src:url(/assets/LatoLatin-Thin-jwV_mC10.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:italic;font-weight:200;font-display:swap;src:url(/assets/LatoLatin-ThinItalic-CewUIZRw.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:normal;font-weight:300;font-display:swap;src:url(/assets/LatoLatin-Light-DsRQ298x.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:italic;font-weight:300;font-display:swap;src:url(/assets/LatoLatin-LightItalic-cKSPh19N.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/LatoLatin-Regular-Dmlz1U0B.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:italic;font-weight:400;font-display:swap;src:url(/assets/LatoLatin-Italic-CmbMggN0.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:normal;font-weight:500;font-display:swap;src:url(/assets/LatoLatin-Medium-DrcMemHa.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:italic;font-weight:500;font-display:swap;src:url(/assets/LatoLatin-MediumItalic-2QGLZId0.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:normal;font-weight:600;font-display:swap;src:url(/assets/LatoLatin-Semibold-Dbk81p2D.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:italic;font-weight:600;font-display:swap;src:url(/assets/LatoLatin-SemiboldItalic-BRdgDgK3.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/LatoLatin-Bold-Cnbkhawh.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:italic;font-weight:700;font-display:swap;src:url(/assets/LatoLatin-BoldItalic-DwCqm7F2.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:normal;font-weight:800;font-display:swap;src:url(/assets/LatoLatin-Heavy-CE7DnQ7S.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:italic;font-weight:800;font-display:swap;src:url(/assets/LatoLatin-HeavyItalic-Bxnibf_d.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:normal;font-weight:900;font-display:swap;src:url(/assets/LatoLatin-Black-DqG0QbHo.woff2) format("woff2")}
+    @font-face{font-family:Lato;font-style:italic;font-weight:900;font-display:swap;src:url(/assets/LatoLatin-BlackItalic-BH1Bi-fk.woff2) format("woff2")}
+
+<body>
+  <div class="container py-8">
+    
+    <!-- Header / Corporate Identity -->
+    <header class="mb-8 border-b border-gray-200 pb-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <span class="text-xs font-semibold tracking-wider text-cyan-600 uppercase">Master IP Declaration & Audit Portal</span>
+          <h1 class="text-3xl font-bold text-gray-900 mt-1" style="font-family: Lato, sans-serif;">10839477 Canada Inc.</h1>
+        </div>
+        <div class="text-right">
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+            <i class="fa-solid fa-shield-halved mr-1.5"></i> Verified Active
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Corporate Metadata & Control Manifest -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <div class="bg-white p-5 border border-gray-200 shadow-sm">
+        <span class="text-xs text-gray-500 uppercase font-semibold">Corporation Number</span>
+        <p class="text-lg font-bold text-gray-800 mt-1">1083947-7</p>
+      </div>
+      <div class="bg-white p-5 border border-gray-200 shadow-sm">
+        <span class="text-xs text-gray-500 uppercase font-semibold">Business Number (BN)</span>
+        <p class="text-lg font-bold text-gray-800 mt-1">749810883RC0001</p>
+      </div>
+      <div class="bg-white p-5 border border-gray-200 shadow-sm">
+        <span class="text-xs text-gray-500 uppercase font-semibold">Control Status</span>
+        <p class="text-lg font-bold text-gray-800 mt-1">100% Individual Control</p>
+      </div>
+    </section>
+
+    <!-- Audit Logs & ISO 20022 / Interledger Data Pipelines -->
+    <main class="space-y-6">
+      <div class="bg-white border border-gray-200 p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <i class="fa-solid fa-file-invoice-dollar mr-2 text-cyan-600"></i> Financial Audit & Interledger Log Stream
+        </h2>
+        
+        <!-- Slack-Style Attachment Component Example -->
+        <div class="attachment_compat compat_group">
+          <div class="message_column column_border" style="background-color: #03b2cb;"></div>
+          <div class="message_column column_content">
+            <div class="message_row inline_attachment">
+              <div class="compat_title">ISO 20022 Schema & STREAM Ledger Settlement</div>
+              <p class="text-sm text-gray-600 mt-1">
+                Cryptographic audit anchor verified via local Python pipeline. Multi-institution prospectus records consolidated successfully.
+              </p>
+              <div class="mt-3 flex items-center text-xs text-gray-400 space-x-4">
+                <span><i class="fa-solid fa-fingerprint mr-1"></i> UUID: c7a4-889b-f112</span>
+                <span><i class="fa-solid fa-clock mr-1"></i> Synchronized</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Secure Verification & Communication Hub -->
+      <div class="bg-white border border-gray-200 p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <i class="fa-solid fa-address-book mr-2 text-cyan-600"></i> Secure Communications & Verification Routing
+        </h2>
+        <p class="text-sm text-gray-600 mb-4">
+          Integrated VoIP and mobile gateway configuration utilizing verified authentication parameters.
+        </p>
+        
+        <!-- Phone Input Mockup Container -->
+        <div class="max-w-md p-3 border border-gray-300 rounded bg-gray-50 flex items-center">
+          <div class="PhoneInput w-full">
+            <span class="text-sm text-gray-500 mr-2">+1 (Edmonton Node)</span>
+            <input type="text" class="PhoneInputInput bg-transparent focus:outline-none text-gray-800" placeholder="Enter secure routing number..." />
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+        <section class="gvt-card" style="margin-top: 20px; padding: 20px; background: var(--card); border: 1px solid var(--border); border-radius: 8px;">
+            <h3 style="color: var(--heading);">Sovereign Corporate Hierarchy & Entity Mapping</h3>
+            <p style="color: var(--text); font-size: 13px;">Authenticated via GVT Framework | Primary BN: 749810883RC0001</p>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: var(--text); text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border);">
+                            <th style="padding: 8px;">Node ID</th>
+                            <th style="padding: 8px;">Entity Name</th>
+                            <th style="padding: 8px;">Business Number</th>
+                            <th style="padding: 8px;">Status</th>
+                            <th style="padding: 8px;">Contracts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><code>GVT-PARENT-01</code></td>
+            <td><strong>Jujita Fermin Stairs / Master Sovereign</strong></td>
+            <td>N/A</td>
+            <td><span class="badge">Active Master Node</span></td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td><code>CORP-10839477</code></td>
+            <td><strong>10839477 Canada Inc.</strong></td>
+            <td>749810883RC0001</td>
+            <td><span class="badge">Active Primary Operating</span></td>
+            <td>CW2321555, CW2123555</td>
+        </tr>
+        
+        <tr>
+            <td><code>CORP-10811467</code></td>
+            <td><strong>10811467 Canada Inc.</strong></td>
+            <td>Pending</td>
+            <td><span class="badge">IP Global Declaration Integration</span></td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td><code>INST-17996829</code></td>
+            <td><strong>17996829 Canada Institute</strong></td>
+            <td>Pending</td>
+            <td><span class="badge">Deferred / Floating Shell</span></td>
+            <td>N/A</td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        </body>
+        
+
+<body>
+  <div class="container py-8">
+    
+    <!-- Header / Corporate Identity -->
+    <header class="mb-8 border-b border-gray-200 pb-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-semibold tracking-wider text-cyan-600 uppercase">Master IP Declaration & Financial Audit Portal</span>
+          <h1 class="text-3xl font-bold text-gray-900 mt-1" style="font-family: Lato, sans-serif;">10839477 Canada Inc.</h1>
+        </div>
+        <div class="flex items-center space-x-3">
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+            <i class="fa-solid fa-shield-halved mr-1.5"></i> Active Control
+          </span>
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-100 text-cyan-800">
+            <i class="fa-solid fa-node mr-1.5"></i> Edmonton Node
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1: Corporate Identity & Control Manifest -->
+    <section class="mb-8">
+      <div class="bg-white border border-gray-200 p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <i class="fa-solid fa-building-columns mr-2 text-cyan-600"></i> Corporate Identity & Control Manifest
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-4 bg-gray-50 border border-gray-200">
+            <span class="text-xs text-gray-500 uppercase font-semibold">Legal Entity Name</span>
+            <p class="text-sm font-bold text-gray-800 mt-1">10839477 Canada Inc.</p>
+          </div>
+          <div class="p-4 bg-gray-50 border border-gray-200">
+            <span class="text-xs text-gray-500 uppercase font-semibold">Corporation Number</span>
+            <p class="text-sm font-bold text-gray-800 mt-1">1083947-7</p>
+          </div>
+          <div class="p-4 bg-gray-50 border border-gray-200">
+            <span class="text-xs text-gray-500 uppercase font-semibold">Business Number (BN)</span>
+            <p class="text-sm font-bold text-gray-800 mt-1">749810883RC0001</p>
+          </div>
+          <div class="p-4 bg-gray-50 border border-gray-200">
+            <span class="text-xs text-gray-500 uppercase font-semibold">Individual Control</span>
+            <p class="text-sm font-bold text-gray-800 mt-1">100% Sole Control</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Financial Audit & Interledger / ISO 20022 Data Pipeline Logs -->
+    <section class="space-y-6">
+      <div class="bg-white border border-gray-200 p-6 shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold text-gray-800 flex items-center">
+            <i class="fa-solid fa-file-invoice-dollar mr-2 text-cyan-600"></i> Financial Audit & Interledger Stream Logs
+          </h2>
+          <span class="text-xs text-gray-500 font-mono">Pipeline: Python / SQLite / ISO 20022</span>
+        </div>
+        
+        <div class="space-y-4">
+          <!-- Log Entry 1: ISO 20022 -->
+          <div class="attachment_compat compat_group">
+            <div class="message_column column_border" style="background-color: #03b2cb;"></div>
+            <div class="message_column column_content">
+              <div class="message_row inline_attachment">
+                <div class="compat_title">ISO 20022 Schema & Legacy SWIFT Field Harmonization</div>
+                <p class="text-sm text-gray-600 mt-1">
+                  Cross-institutional prospectus filings consolidated successfully via local Python audit script. Ledger anchors synchronized across payment nodes.
+                </p>
+                <div class="mt-3 flex flex-wrap items-center text-xs text-gray-400 gap-4">
+                  <span><i class="fa-solid fa-fingerprint mr-1"></i> UUID: c7a4-889b-f112-901e</span>
+                  <span><i class="fa-solid fa-database mr-1"></i> SQLite Ledger: Active</span>
+                  <span><i class="fa-solid fa-circle-check text-green-600 mr-1"></i> Verified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Log Entry 2: Interledger Protocol -->
+          <div class="attachment_compat compat_group">
+            <div class="message_column column_border" style="background-color: #10b981;"></div>
+            <div class="message_column column_content">
+              <div class="message_row inline_attachment">
+                <div class="compat_title">Interledger Protocol (ILP) & STREAM Streaming Royalties</div>
+                <p class="text-sm text-gray-600 mt-1">
+                  Open-payment mobile architecture operational for real-time intellectual property royalty streaming and cryptographic proof generation.
+                </p>
+                <div class="mt-3 flex flex-wrap items-center text-xs text-gray-400 gap-4">
+                  <span><i class="fa-solid fa-fingerprint mr-1"></i> UUID: 44bf-291a-cc88-410a</span>
+                  <span><i class="fa-solid fa-network-wired mr-1"></i> Protocol: STREAM</span>
+                  <span><i class="fa-solid fa-circle-check text-green-600 mr-1"></i> Synchronized</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Secure Communication & Verification Hub -->
+    <section class="mt-6">
+      <div class="bg-white border border-gray-200 p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <i class="fa-solid fa-address-book mr-2 text-cyan-600"></i> Secure Communications & Verification Routing
+        </h2>
+        <p class="text-sm text-gray-600 mb-4">
+          Configured VoIP account recovery and virtual communication endpoints for institutional authentication.
+        </p>
+        
+        <div class="max-w-md p-3 border border-gray-300 rounded bg-gray-50 flex items-center">
+          <div class="PhoneInput w-full">
+            <span class="text-sm font-semibold text-gray-700 mr-2">+1 (Edmonton Node)</span>
+            <input type="text" class="PhoneInputInput bg-transparent focus:outline-none text-gray-800 text-sm" placeholder="Fongo VoIP verification channel..." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+        <section class="gvt-card" style="margin-top: 20px; padding: 20px; background: var(--card); border: 1px solid var(--border); border-radius: 8px;">
+            <h3 style="color: var(--heading);">Sovereign Corporate Hierarchy & Entity Mapping</h3>
+            <p style="color: var(--text); font-size: 13px;">Authenticated via GVT Framework | Primary BN: 749810883RC0001</p>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: var(--text); text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border);">
+                            <th style="padding: 8px;">Node ID</th>
+                            <th style="padding: 8px;">Entity Name</th>
+                            <th style="padding: 8px;">Business Number</th>
+                            <th style="padding: 8px;">Status</th>
+                            <th style="padding: 8px;">Contracts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><code>GVT-PARENT-01</code></td>
+            <td><strong>Jujita Fermin Stairs / Master Sovereign</strong></td>
+            <td>N/A</td>
+            <td><span class="badge">Active Master Node</span></td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td><code>CORP-10839477</code></td>
+            <td><strong>10839477 Canada Inc.</strong></td>
+            <td>749810883RC0001</td>
+            <td><span class="badge">Active Primary Operating</span></td>
+            <td>CW2321555, CW2123555</td>
+        </tr>
+        
+        <tr>
+            <td><code>CORP-10811467</code></td>
+            <td><strong>10811467 Canada Inc.</strong></td>
+            <td>Pending</td>
+            <td><span class="badge">IP Global Declaration Integration</span></td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td><code>INST-17996829</code></td>
+            <td><strong>17996829 Canada Institute</strong></td>
+            <td>Pending</td>
+            <td><span class="badge">Deferred / Floating Shell</span></td>
+            <td>N/A</td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        </body>
+        
+<body>
+  <div class="container py-8">
+    
+    <!-- Header / Corporate Identity -->
+    <header class="mb-8 border-b border-gray-200 pb-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-semibold tracking-wider text-cyan-600 uppercase">Master IP Declaration & Financial Audit Portal</span>
+          <h1 class="text-3xl font-bold text-gray-900 mt-1" style="font-family: Lato, sans-serif;">10839477 Canada Inc.</h1>
+        </div>
+        <div class="flex items-center space-x-3">
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+            <i class="fa-solid fa-shield-halved mr-1.5"></i> Active Control
+          </span>
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-100 text-cyan-800">
+            <i class="fa-solid fa-node mr-1.5"></i> Edmonton Node
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1: Corporate Identity & Control Manifest -->
+    <section class="mb-8">
+      <div class="bg-white border border-gray-200 p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <i class="fa-solid fa-building-columns mr-2 text-cyan-600"></i> Corporate Identity & Control Manifest
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-4 bg-gray-50 border border-gray-200">
+            <span class="text-xs text-gray-500 uppercase font-semibold">Legal Entity Name</span>
+            <p class="text-sm font-bold text-gray-800 mt-1">10839477 Canada Inc.</p>
+          </div>
+          <div class="p-4 bg-gray-50 border border-gray-200">
+            <span class="text-xs text-gray-500 uppercase font-semibold">Corporation Number</span>
+            <p class="text-sm font-bold text-gray-800 mt-1">1083947-7</p>
+          </div>
+          <div class="p-4 bg-gray-50 border border-gray-200">
+            <span class="text-xs text-gray-500 uppercase font-semibold">Business Number (BN)</span>
+            <p class="text-sm font-bold text-gray-800 mt-1">749810883RC0001</p>
+          </div>
+          <div class="p-4 bg-gray-50 border border-gray-200">
+            <span class="text-xs text-gray-500 uppercase font-semibold">Individual Control</span>
+            <p class="text-sm font-bold text-gray-800 mt-1">100% Sole Control</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Financial Audit & Interledger / ISO 20022 Data Pipeline Logs -->
+    <section class="space-y-6">
+      <div class="bg-white border border-gray-200 p-6 shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold text-gray-800 flex items-center">
+            <i class="fa-solid fa-file-invoice-dollar mr-2 text-cyan-600"></i> Financial Audit & Interledger Stream Logs
+          </h2>
+          <span class="text-xs text-gray-500 font-mono">Pipeline: Python / SQLite / ISO 20022</span>
+        </div>
+        
+        <div class="space-y-4">
+          <!-- Log Entry 1: ISO 20022 -->
+          <div class="attachment_compat compat_group">
+            <div class="message_column column_border" style="background-color: #03b2cb;"></div>
+            <div class="message_column column_content">
+              <div class="message_row inline_attachment">
+                <div class="compat_title">ISO 20022 Schema & Legacy SWIFT Field Harmonization</div>
+                <p class="text-sm text-gray-600 mt-1">
+                  Cross-institutional prospectus filings consolidated successfully via local Python audit script. Ledger anchors synchronized across payment nodes.
+                </p>
+                <div class="mt-3 flex flex-wrap items-center text-xs text-gray-400 gap-4">
+                  <span><i class="fa-solid fa-fingerprint mr-1"></i> UUID: c7a4-889b-f112-901e</span>
+                  <span><i class="fa-solid fa-database mr-1"></i> SQLite Ledger: Active</span>
+                  <span><i class="fa-solid fa-circle-check text-green-600 mr-1"></i> Verified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Log Entry 2: Interledger Protocol -->
+          <div class="attachment_compat compat_group">
+            <div class="message_column column_border" style="background-color: #10b981;"></div>
+            <div class="message_column column_content">
+              <div class="message_row inline_attachment">
+                <div class="compat_title">Interledger Protocol (ILP) & STREAM Streaming Royalties</div>
+                <p class="text-sm text-gray-600 mt-1">
+                  Open-payment mobile architecture operational for real-time intellectual property royalty streaming and cryptographic proof generation.
+                </p>
+                <div class="mt-3 flex flex-wrap items-center text-xs text-gray-400 gap-4">
+                  <span><i class="fa-solid fa-fingerprint mr-1"></i> UUID: 44bf-291a-cc88-410a</span>
+                  <span><i class="fa-solid fa-network-wired mr-1"></i> Protocol: STREAM</span>
+                  <span><i class="fa-solid fa-circle-check text-green-600 mr-1"></i> Synchronized</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Secure Communication & Verification Hub -->
+    <section class="mt-6">
+      <div class="bg-white border border-gray-200 p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <i class="fa-solid fa-address-book mr-2 text-cyan-600"></i> Secure Communications & Verification Routing
+        </h2>
+        <p class="text-sm text-gray-600 mb-4">
+          Configured VoIP account recovery and virtual communication endpoints for institutional authentication.
+        </p>
+        
+        <div class="max-w-md p-3 border border-gray-300 rounded bg-gray-50 flex items-center">
+          <div class="PhoneInput w-full">
+            <span class="text-sm font-semibold text-gray-700 mr-2">+1 (Edmonton Node)</span>
+            <input type="text" class="PhoneInputInput bg-transparent focus:outline-none text-gray-800 text-sm" placeholder="Fongo VoIP verification channel..." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+        <section class="gvt-card" style="margin-top: 20px; padding: 20px; background: var(--card); border: 1px solid var(--border); border-radius: 8px;">
+            <h3 style="color: var(--heading);">Sovereign Corporate Hierarchy & Entity Mapping</h3>
+            <p style="color: var(--text); font-size: 13px;">Authenticated via GVT Framework | Primary BN: 749810883RC0001</p>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: var(--text); text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border);">
+                            <th style="padding: 8px;">Node ID</th>
+                            <th style="padding: 8px;">Entity Name</th>
+                            <th style="padding: 8px;">Business Number</th>
+                            <th style="padding: 8px;">Status</th>
+                            <th style="padding: 8px;">Contracts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><code>GVT-PARENT-01</code></td>
+            <td><strong>Jujita Fermin Stairs / Master Sovereign</strong></td>
+            <td>N/A</td>
+            <td><span class="badge">Active Master Node</span></td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td><code>CORP-10839477</code></td>
+            <td><strong>10839477 Canada Inc.</strong></td>
+            <td>749810883RC0001</td>
+            <td><span class="badge">Active Primary Operating</span></td>
+            <td>CW2321555, CW2123555</td>
+        </tr>
+        
+        <tr>
+            <td><code>CORP-10811467</code></td>
+            <td><strong>10811467 Canada Inc.</strong></td>
+            <td>Pending</td>
+            <td><span class="badge">IP Global Declaration Integration</span></td>
+            <td>N/A</td>
+        </tr>
+        
+        <tr>
+            <td><code>INST-17996829</code></td>
+            <td><strong>17996829 Canada Institute</strong></td>
+            <td>Pending</td>
+            <td><span class="badge">Deferred / Floating Shell</span></td>
+            <td>N/A</td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        </body>
+        
+

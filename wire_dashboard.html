@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISO 20022 Wire Monitoring Dashboard</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 20px; background: #f4f6f9; }
+        .header { background: #1a2530; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .cards { display: flex; gap: 15px; margin-bottom: 20px; }
+        .card { flex: 1; background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .card h3 { margin: 0; color: #6c757d; font-size: 14px; }
+        .card p { margin: 10px 0 0; font-size: 28px; font-weight: bold; color: #212529; }
+        .card.rejected p { color: #dc3545; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        th { background: #e9ecef; text-align: left; padding: 12px; color: #495057; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>ISO 20022 Wire Monitoring Dashboard</h2>
+    </div>
+    <div class="cards">
+        <div class="card"><h3>Total Wires</h3><p>5</p></div>
+        <div class="card"><h3>Available</h3><p>1</p></div>
+        <div class="card"><h3>In Transit</h3><p>2</p></div>
+        <div class="card rejected"><h3>Rejected Alerts</h3><p>2</p></div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Tx ID</th>
+                <th>ISO Status</th>
+                <th>Amount</th>
+                <th>SWIFT UETR UUID</th>
+                <th>Sender BIC</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">WIRE12345678</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;"><span style="background-color:#d4edda;color:#155724;padding:4px 8px;border-radius:4px;font-weight:bold;">ACCC (Available)</span></td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">0.00 CAD</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;font-family:monospace;">N/A</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">N/A</td>
+        </tr>
+        
+        <tr>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">WIRE87654321</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;"><span style="background-color:#fff3cd;color:#856404;padding:4px 8px;border-radius:4px;font-weight:bold;">ACSP (In Transit)</span></td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">0.00 CAD</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;font-family:monospace;">N/A</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">N/A</td>
+        </tr>
+        
+        <tr>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">WIRE99887766</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;"><span style="background-color:#fff3cd;color:#856404;padding:4px 8px;border-radius:4px;font-weight:bold;">ACSP (In Transit)</span></td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">0.00 CAD</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;font-family:monospace;">8da7fcc7-38be-4e63-8299-fb3fd32eeb96</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">BOFMCAM2XXX</td>
+        </tr>
+        
+        <tr>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">BB77A1B2</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;"><span style="background-color:#f8d7da;color:#721c24;padding:4px 8px;border-radius:4px;font-weight:bold;">RJCT (REJECTED)</span></td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">1500.00 CAD</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;font-family:monospace;">uetr-9988-7766-5544</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">N/A</td>
+        </tr>
+        
+        <tr>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">BB77C3D4</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;"><span style="background-color:#f8d7da;color:#721c24;padding:4px 8px;border-radius:4px;font-weight:bold;">RJCT (REJECTED)</span></td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">50000.00 CAD</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;font-family:monospace;">uetr-1122-3344-5566</td>
+            <td style="padding:12px;border-bottom:1px solid #ddd;">N/A</td>
+        </tr>
+        
+        </tbody>
+    </table>
+</body>
+</html>

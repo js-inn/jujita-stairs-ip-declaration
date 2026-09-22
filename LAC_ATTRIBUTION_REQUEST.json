@@ -1,0 +1,11 @@
+{
+    "target_institution": "Library and Archives Canada (LAC)",
+    "request_type": "Creator Attribution & Name Authority Update",
+    "legal_entity": "10839477 Canada Inc.",
+    "primary_creator": "Jujita Fermin Stairs",
+    "creator_uuid": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
+    "cryptographic_anchor_uuid": "3d9f8a21-c5e7-4b6a-9128-f0d3e2a1b9c7",
+    "timestamp": "2026-09-15T18:32:11.279373+00:00",
+    "declaration_reference": "IP_CLAIM.md",
+    "repository_manifest": "MANIFEST.json"
+}

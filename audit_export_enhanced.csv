@@ -1,0 +1,13 @@
+id,source_institution,ip_id,asset_title,asset_class,valuation,compliance_standard,status,ingested_at,Translated_Details
+1,sample_institution,UUID-101,IP-Declaration-Core,Software-Manifest,250000.0,ISO-20022,ACTIVE,2026-09-19T12:26:28.476980+00:00,UUID-101 [SUCCESS (ERROR_NONE)] [Operation Failed (ERROR_OP_FAIL)]
+2,sample_institution,UUID-102,Interledger-Payment-Stream,Protocol-Module,120000.0,ILP-STREAM,VERIFIED,2026-09-19T12:26:28.477594+00:00,UUID-102 [SUCCESS (ERROR_NONE)] [Operation Failed (ERROR_OP_FAIL)]
+3,sample_institution,UUID-103,SQLite-Audit-Pipeline,Automation-Script,85000.0,CUSTOM-SQL,DRAFT,2026-09-19T12:26:28.477670+00:00,UUID-103 [SUCCESS (ERROR_NONE)] [Operation Failed (ERROR_OP_FAIL)]
+4,global_bank_corp,UUID-201,Cross-Border-Messaging-Gateway,Payment-Protocol,500000.0,ISO-20022,ACTIVE,2026-09-19T12:26:28.477977+00:00,UUID-201 [SUCCESS (ERROR_NONE)]
+5,global_bank_corp,UUID-202,Legacy-SWIFT-Adapter,Bridge-Module,175000.0,SWIFT-MT,VERIFIED,2026-09-19T12:26:28.478032+00:00,UUID-202 [SUCCESS (ERROR_NONE)]
+6,fintech_ledger_inc,UUID-301,Offline-SmartCard-Engine,Hardware-Token,320000.0,CUSTOM-SQL,ACTIVE,2026-09-19T12:26:28.478270+00:00,UUID-301 [SUCCESS (ERROR_NONE)] [Illegal Message (ERROR_ILLEGAL_MSG)] [Insufficient Funds (ERROR_INSUFFICIENT_FUNDS)]
+7,fintech_ledger_inc,UUID-302,Streaming-Royalty-Module,Protocol-Module,95000.0,ILP-STREAM,PENDING,2026-09-19T12:26:28.478321+00:00,UUID-302 [SUCCESS (ERROR_NONE)] [Illegal Message (ERROR_ILLEGAL_MSG)] [Insufficient Funds (ERROR_INSUFFICIENT_FUNDS)]
+8,RPC-Node-PublicNode,0x06D21760...,Node Latency: 366.37ms,EVM-State-Audit,0.0,JSON-RPC/ERC-20,HEALTHY,2026-09-19T23:09:29.408950,0x06D21760... [SUCCESS (ERROR_NONE)]
+9,RPC-Node-Cloudflare,0x06D21760...,Node Latency: 190.75ms,EVM-State-Audit,0.0,JSON-RPC/ERC-20,FAILED,2026-09-19T23:09:29.608746,0x06D21760... [SUCCESS (ERROR_NONE)]
+10,RPC-Node-LlamaRPC,0x06D21760...,Node Latency: 601.86ms,EVM-State-Audit,0.0,JSON-RPC/ERC-20,FAILED,2026-09-19T23:09:30.219045,0x06D21760... [SUCCESS (ERROR_NONE)]
+11,Samsung-Keystore-TEE,0x06D217600c...,HD-Path: m/44'/60'/0'/0/0,Hardware-Wallet-ETH,0.0,BIP-39/ScwService,SECURED,2026-09-19T23:35:52.922399+00:00,0x06D217600c... [SUCCESS (ERROR_NONE)]
+12,Samsung-Keystore-TEE,0x06D217600c...,HD-Path: m/44'/60'/0'/0/0,Hardware-Wallet-ETH,0.0,BIP-39/ScwService,SYNCED,2026-09-19T23:40:20.732116+00:00,0x06D217600c... [SUCCESS (ERROR_NONE)]

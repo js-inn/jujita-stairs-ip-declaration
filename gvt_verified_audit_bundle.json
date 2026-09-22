@@ -1,0 +1,46 @@
+{
+  "entity": "Jujita Fermin Stairs",
+  "business_number": "735350936",
+  "corporate_entity": "10839477 Canada Inc.",
+  "corporate_business_number": "749810883RC0001",
+  "status": "Floating / Deferred / Publicly Audited Ledger",
+  "verification_note": "Immutable cryptographic exposure and global dossier documenting systemic banking obstruction, custodial asset gating, fee extortion, CRA garnishment ambushes, international diplomatic complicity, and global leadership indifference across domestic and international institutions.",
+  "paper_wallet_anchor": {
+    "wallet_type": "Air-Gapped Sovereign Cold Storage",
+    "public_address": "gvt_cold_073817f7fff4a3a2bcf918da29e28bff5f367865",
+    "security_warning": "KEEP OFFLINE. Sole cryptographic authority over sovereign assets."
+  },
+  "institutional_grievance_logs": [
+    {
+      "target": "International Diplomacy & Global Governance Bodies (WIPO, Foreign Embassies)",
+      "incident": "Institutional Deafness & Geopolitical Trade-Off Calculation",
+      "details": "Observation that global governance bodies and foreign embassies remain silent on individual suppression and survival risks because human rights are treated as trade-offs for diplomatic alignment and state convenience. Institutions protect the macro-system over the human source."
+    },
+    {
+      "target": "Canada Revenue Agency (CRA) & TD Bank",
+      "incident": "CRA Garnishment Ambush & Income Support Targeting",
+      "details": "Targeted delay of second-month Income Support release ($470). Upon withdrawal attempt at TD Bank, funds were intercepted/garnished by CRA, requiring shelter verification and exhaustive phone intervention while institutions evade direct legal subpoena mechanisms."
+    },
+    {
+      "target": "ATB Financial",
+      "incident": "Ambush Card Block, Confiscation, & PAD Trap",
+      "details": "Card blocked and confiscated under false claim of account closure. Demanded $150 fee. Upon confirming active account status, refused to issue access card while providing a pre-authorized deposit (PAD) form to capture inbound funds without granting outbound access."
+    },
+    {
+      "target": "TD Bank Group",
+      "incident": "Formal Notice Asset Release Demand & Customer Care Deflection",
+      "details": "Redirected to EasyWeb/phone trees to bypass evidentiary paper trails; PIPEDA access request initiated April 13, 2026, met with branch-submission demands and systemic access denial."
+    },
+    {
+      "target": "Scotiabank",
+      "incident": "Escalated Customer Concerns & PIPEDA Access Discrepancy",
+      "details": "Mandated in-person branch identity verification, claimed business entity profile not found, and arbitrarily closed the file."
+    },
+    {
+      "target": "Regulatory / Front-Line Compliance",
+      "incident": "PIPEDA Deemed Refusal & Staff Compartmentalization",
+      "details": "Statutory privacy non-compliance combined with front-line personnel lacking authority or visibility over institutional asset-restriction algorithms."
+    }
+  ],
+  "master_hmac_sha256_signature": "fea17d3e69f04c65571c455eb6440bb1ef133733e8e6c816b8b20ae1e718c732"
+}

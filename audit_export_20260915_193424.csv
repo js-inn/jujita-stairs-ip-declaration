@@ -1,0 +1,2 @@
+submission_ref,transmitter_name,contact_email,payor_name,payor_account_num,tax_code,tax_description,jurisdiction,authority,total_slips,total_amount,payload_hash,created_at
+CRA-T550-2026-001,Systems & Integration Corp,alex@example.com,Enterprise Logistics Ltd,ACC-9988776655,FED_CORP_TAX,Federal – Corporation Tax Payments,Federal,CRA,2,350.5,de19e22604b2ec37405c77ec79bc5e8d64b28a8c714a509c25a5e769fa90add4,2026-09-16 00:50:33

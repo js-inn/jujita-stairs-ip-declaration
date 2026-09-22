@@ -1,0 +1,18 @@
+[
+  {
+    "submission_ref": "CRA-T550-2026-001",
+    "transmitter_name": "",
+    "contact_email": "",
+    "payor_name": "N/A",
+    "payor_account_num": "000000000000000",
+    "tax_code": "FED_CORP_TAX",
+    "tax_description": "Federal \u2013 Corporation Tax Payments",
+    "jurisdiction": "Federal",
+    "authority": "CRA",
+    "total_slips": 0,
+    "total_amount": 0.0,
+    "payload_hash": "de19e22604b2ec37405c77ec79bc5e8d64b28a8c714a509c25a5e769fa90add4",
+    "created_at": "2026-09-16 03:31:46",
+    "slips": []
+  }
+]
