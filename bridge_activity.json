@@ -1,72 +1,11 @@
-[
-  {
-    "timestamp": "2026-09-17 23:20:11Z",
-    "tx_hash": "0x427613f4fc92d7980f75aee09002fd7cc3fa43df9cf2f99eefcc8d4cd5056f40",
-    "amount_usd": 98.99,
-    "source_network": "Address 0x0b65...",
-    "target_network": "Address 0x19b1..."
-  },
-  {
-    "timestamp": "2026-09-17 23:19:35Z",
-    "tx_hash": "0xad2a2ef3201f9a583369bf40835ee3bc0e7020df3517ccd76fcb55e43c4389fe",
-    "amount_usd": 99.0,
-    "source_network": "Paxos 4",
-    "target_network": "Address 0x0b65..."
-  },
-  {
-    "timestamp": "2026-09-16 23:13:59Z",
-    "tx_hash": "0xb741e6a7c98ed0dff92584f2d45ba86fb343f694d3f8b0c69ce702beba428967",
-    "amount_usd": 45.55,
-    "source_network": "Address 0x0b65...",
-    "target_network": "Address 0x19b1..."
-  },
-  {
-    "timestamp": "2026-09-16 23:05:23Z",
-    "tx_hash": "0x30a58c4b532f1af29c5f39a7a4bc98ed1c7f98edc95a09b60c08e7b9547f3a75",
-    "amount_usd": 45.56,
-    "source_network": "Paxos 4",
-    "target_network": "Address 0x0b65..."
-  },
-  {
-    "timestamp": "2026-09-11 19:12:35Z",
-    "tx_hash": "0xe8e711557b796292c1734694930cc22d249e0ee9bd659297b6474f461873abb5",
-    "amount_usd": 38.06,
-    "source_network": "Address 0x0b65...",
-    "target_network": "Address 0x19b1..."
-  },
-  {
-    "timestamp": "2026-09-11 19:11:35Z",
-    "tx_hash": "0x9c272a232fddaf1ff8f1e1485350c957e5a1e4eb7281dbd29018c4859502fb94",
-    "amount_usd": 38.08,
-    "source_network": "Paxos 4",
-    "target_network": "Address 0x0b65..."
-  },
-  {
-    "timestamp": "2026-09-08 14:34:47Z",
-    "tx_hash": "0x61bee4c89a48170a1f316b6f344f3d6b630a744e4c6a80a5e8bfe5194a229e85",
-    "amount_usd": 53.67,
-    "source_network": "Address 0x0b65...",
-    "target_network": "Address 0x19b1..."
-  },
-  {
-    "timestamp": "2026-09-08 14:33:11Z",
-    "tx_hash": "0x266af157e8af354cd3989ef5e3c97ebcfe6c3f2eb97c5177d134e24e40fb7f9f",
-    "amount_usd": 53.72,
-    "source_network": "Paxos 4",
-    "target_network": "Address 0x0b65..."
-  },
-  {
-    "timestamp": "2026-09-01 01:35:11Z",
-    "tx_hash": "0xc9ceb9ffe4b744d38ab26d1ded657e41075f4d548b8e49afa770bead5ce1ad7b",
-    "amount_usd": 88.63,
-    "source_network": "Address 0x0b65...",
-    "target_network": "Address 0x19b1..."
-  },
-  {
-    "timestamp": "2026-09-01 01:34:35Z",
-    "tx_hash": "0xa833aa407e2e121a506676de4dddf4d7a9c04c8cfa3f5d5a56db09c5d1a5d606",
-    "amount_usd": 88.64,
-    "source_network": "Paxos 4",
-    "target_network": "Address 0x0b65..."
-  }
-]
+{
+  "bridge_id": "brg-fe19c840-6e76-4c99-9396-c40caf350bed",
+  "status": "active",
+  "last_updated": "2026-09-22T13:46:55.397616",
+  "events": [
+    {
+      "event": "Pipeline Initialized",
+      "time": "2026-09-22T13:46:55.397616"
+    }
+  ]
+}

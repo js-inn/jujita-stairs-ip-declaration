@@ -1,22 +1,6 @@
 {
-    "corporate_entity": {
-        "name": "10839477 Canada Inc.",
-        "creator_uuid": "e4f1b2a7-6d3c-4902-8a5e-9f7b6c5d4e1a",
-        "jurisdiction": "Canada / Alberta"
-    },
-    "redemption_node": {
-        "outlet_name": "CANADA-POST-EDMONTON-MAIN",
-        "city": "Edmonton",
-        "province": "AB",
-        "country": "Canada"
-    },
-    "transaction_details": {
-        "ledger_block": 8,
-        "timestamp_utc": "2026-09-15T20:58:51.654487+00:00",
-        "source_card": "VCARD-JUJITA-STAIRS-A9A55F37",
-        "amount_cad": 25.0,
-        "currency": "CAD",
-        "block_sha256": "bdf41a5f59f25a41a1fb03674c90da2f3a7d2cc0801bc8d2a9ec23c35722633d"
-    },
-    "instructions": "Present this manifest along with authorized corporate identification for 10839477 Canada Inc. at any participating Canada Post retail counter configured for corporate cash-out disbursement."
+  "manifest_id": "post-9dba9686-330c-47d3-9a2a-219563fa40b3",
+  "routing_layer": "Postal Network Cash Disbursement",
+  "last_updated": "2026-09-22T13:46:55.397616",
+  "payout_batches": []
 }
