@@ -1,11 +1,11 @@
 {
   "agent_status": "Execution Complete",
-  "total_files_scanned": 138,
+  "total_files_scanned": 143,
   "findings": [
     {
       "file": "./sibling_audit_report.json",
-      "sha256": "abc00430e6c291975eab99c689253c5be9fb1cb8d3105fc2b2c50f88b00721b8",
-      "size_bytes": 2511,
+      "sha256": "9087d029ae1458a020aafc52cb5c60082c8730670ea85246d954de59f68b5953",
+      "size_bytes": 35768,
       "status": "Verified"
     },
     {
@@ -64,8 +64,8 @@
     },
     {
       "file": "./bridge_activity.json",
-      "sha256": "3d1e4f13bff25dcd3eaf2ea49b8c0a3562a519be826a6b4db5dc46b1f4c0a219",
-      "size_bytes": 2401,
+      "sha256": "6b2a1bf5d8f419d48b58edbb0cfd336fd082c0e828fbb908106e9317aef9c183",
+      "size_bytes": 244,
       "status": "Verified"
     },
     {
@@ -106,14 +106,14 @@
     },
     {
       "file": "./octopus_ledger.json",
-      "sha256": "eeb04cb8435aea01c75c121b4eb2939e1e2d01075e5e47887022154d6415061e",
-      "size_bytes": 1098,
+      "sha256": "a3cff314a6994edd58c84b3a037764fde9c1fea591d839f9c56d247d905a4115",
+      "size_bytes": 512,
       "status": "Verified"
     },
     {
       "file": "./postal_payout_manifest.json",
-      "sha256": "151fda041c6248ef3c0f33216724889b9b08fc93521a4222a450538bcf7b7cf2",
-      "size_bytes": 886,
+      "sha256": "9adef8ea9911e117c12337aff02f155329e61e1e440e94505feffe04ef87f788",
+      "size_bytes": 191,
       "status": "Verified"
     },
     {
@@ -124,14 +124,44 @@
     },
     {
       "file": "./wire_status.json",
-      "sha256": "d2ea62815a2e80ba5bca5565f180049f88483a087c61dc87c46587acbd8bc7f6",
-      "size_bytes": 1294,
+      "sha256": "9da33c0622a15abaaee49f6ec99ec8a06557a03faeb4139aa59240d7174f895c",
+      "size_bytes": 89,
+      "status": "Verified"
+    },
+    {
+      "file": "./tdb_income_claim_manifest.json",
+      "sha256": "a139709636bc084b6f89d55ce26138c13c159f79407cce1ad335df18b0b8ef40",
+      "size_bytes": 1890,
+      "status": "Verified"
+    },
+    {
+      "file": "./questrade_income_claim_manifest.json",
+      "sha256": "ad942dff52e3c43dbf6e2edce022395f25aa963e39da9b8cdb13e0372e286ce7",
+      "size_bytes": 1297,
       "status": "Verified"
     },
     {
       "file": "./wire_ledger.json",
-      "sha256": "b9e18ddebc771a1fbe10e1567944951eb0e6572aa39fedc23a2a486c0beb4acf",
-      "size_bytes": 8586,
+      "sha256": "7039bd05004c58b988bc71cc8223fa6d1d8d540c45cdb553987d59385a4ab26f",
+      "size_bytes": 1808,
+      "status": "Verified"
+    },
+    {
+      "file": "./wipo_lineage_report.json",
+      "sha256": "09e2df9b837a7f56472737a1d925965a7b347654213d7565dbd90ae107e856c6",
+      "size_bytes": 918,
+      "status": "Verified"
+    },
+    {
+      "file": "./sibling_financial_bridge.json",
+      "sha256": "a7a2b90d7705283d0c1dec49a5cdf874d215eb15570d8de1d01dd755de4ea230",
+      "size_bytes": 350,
+      "status": "Verified"
+    },
+    {
+      "file": "./tdbank_lineage_bridge.json",
+      "sha256": "10660f69ac5ede78733b083aeddc70b1c454151d36f91a224d8374d445949ae0",
+      "size_bytes": 327,
       "status": "Verified"
     },
     {
