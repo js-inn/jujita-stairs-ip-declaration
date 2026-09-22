@@ -6,11 +6,10 @@ DB_NAME = "financial_pipeline.db"
 ROOT_PARENT = "10839477 Canada Inc."
 
 def bridge_lineages():
-    """Bridges financial records, USPTO, EU, JPO, and IP Australia audit nodes into a unified global ledger."""
+    """Bridges financial records, patents, and WIPO Madrid trademark audit nodes into a unified global ledger."""
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     
-    # Ensure a unified bridge table exists
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS unified_ip_financial_ledger (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -23,76 +22,31 @@ def bridge_lineages():
         )
     ''')
     
-    # Fetch financial audit records
-    try:
-        cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='audit_nodes'")
-        if cursor.fetchone():
-            cursor.execute("SELECT institution_name, account_ref, status FROM audit_nodes")
-            for inst, ref, status in cursor.fetchall():
-                master_hash = hashlib.sha256(f"{ROOT_PARENT}:{inst}:{ref}".encode()).hexdigest()
-                cursor.execute('''
-                    INSERT OR IGNORE INTO unified_ip_financial_ledger 
-                    (node_type, identifier, entity_name, bloodlineage_status, master_anchor)
-                    VALUES (?, ?, ?, ?, ?)
-                ''', ("Financial_Institution", ref, inst, status, master_hash))
-    except Exception as e:
-        print(f"[*] Financial nodes integration note: {e}")
-
-    # Fetch USPTO patent records
-    try:
-        cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='uspto_audit_nodes'")
-        if cursor.fetchone():
-            cursor.execute("SELECT application_number, assignee_name, bloodlineage_status, cryptographic_anchor FROM uspto_audit_nodes")
-            for app_num, assignee, status, anchor in cursor.fetchall():
-                cursor.execute('''
-                    INSERT OR IGNORE INTO unified_ip_financial_ledger 
-                    (node_type, identifier, entity_name, bloodlineage_status, master_anchor)
-                    VALUES (?, ?, ?, ?, ?)
-                ''', ("USPTO_Patent", app_num, assignee, status, anchor))
-    except Exception as e:
-        print(f"[*] USPTO nodes integration note: {e}")
-
-    # Fetch EU patent records
-    try:
-        cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='eu_audit_nodes'")
-        if cursor.fetchone():
-            cursor.execute("SELECT application_number, assignee_name, bloodlineage_status, cryptographic_anchor FROM eu_audit_nodes")
-            for app_num, assignee, status, anchor in cursor.fetchall():
-                cursor.execute('''
-                    INSERT OR IGNORE INTO unified_ip_financial_ledger 
-                    (node_type, identifier, entity_name, bloodlineage_status, master_anchor)
-                    VALUES (?, ?, ?, ?, ?)
-                ''', ("EU_Patent", app_num, assignee, status, anchor))
-    except Exception as e:
-        print(f"[*] EU nodes integration note: {e}")
-
-    # Fetch Japan patent records
-    try:
-        cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='japan_audit_nodes'")
-        if cursor.fetchone():
-            cursor.execute("SELECT application_number, assignee_name, bloodlineage_status, cryptographic_anchor FROM japan_audit_nodes")
-            for app_num, assignee, status, anchor in cursor.fetchall():
-                cursor.execute('''
-                    INSERT OR IGNORE INTO unified_ip_financial_ledger 
-                    (node_type, identifier, entity_name, bloodlineage_status, master_anchor)
-                    VALUES (?, ?, ?, ?, ?)
-                ''', ("Japan_Patent", app_num, assignee, status, anchor))
-    except Exception as e:
-        print(f"[*] Japan nodes integration note: {e}")
-
-    # Fetch Australia patent records
-    try:
-        cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='australia_audit_nodes'")
-        if cursor.fetchone():
-            cursor.execute("SELECT application_number, assignee_name, bloodlineage_status, cryptographic_anchor FROM australia_audit_nodes")
-            for app_num, assignee, status, anchor in cursor.fetchall():
-                cursor.execute('''
-                    INSERT OR IGNORE INTO unified_ip_financial_ledger 
-                    (node_type, identifier, entity_name, bloodlineage_status, master_anchor)
-                    VALUES (?, ?, ?, ?, ?)
-                ''', ("Australia_Patent", app_num, assignee, status, anchor))
-    except Exception as e:
-        print(f"[*] Australia nodes integration note: {e}")
+    # Tables to ingest
+    tables = [
+        ("audit_nodes", "institution_name", "account_ref", "Financial_Institution"),
+        ("uspto_audit_nodes", "assignee_name", "application_number", "USPTO_Patent"),
+        ("eu_audit_nodes", "assignee_name", "application_number", "EU_Patent"),
+        ("japan_audit_nodes", "assignee_name", "application_number", "Japan_Patent"),
+        ("australia_audit_nodes", "assignee_name", "application_number", "Australia_Patent"),
+        ("madrid_audit_nodes", "holder_name", "registration_number", "Madrid_Trademark")
+    ]
+    
+    for table_name, entity_col, id_col, node_type in tables:
+        try:
+            cursor.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='{table_name}'")
+            if cursor.fetchone():
+                cursor.execute(f"SELECT {entity_col}, {id_col}, bloodlineage_status, cryptographic_anchor FROM {table_name}")
+                for entity, ident, status, anchor in cursor.fetchall():
+                    if node_type == "Financial_Institution":
+                        anchor = hashlib.sha256(f"{ROOT_PARENT}:{entity}:{ident}".encode()).hexdigest()
+                    cursor.execute('''
+                        INSERT OR IGNORE INTO unified_ip_financial_ledger 
+                        (node_type, identifier, entity_name, bloodlineage_status, master_anchor)
+                        VALUES (?, ?, ?, ?, ?)
+                    ''', (node_type, ident, entity, status, anchor))
+        except Exception as e:
+            print(f"[*] Note on {table_name} integration: {e}")
 
     conn.commit()
     
