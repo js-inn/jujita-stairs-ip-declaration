@@ -1,0 +1,148 @@
+{
+    "payload": {
+        "manifest_metadata": {
+            "title": "Sovereign Institutional and Intellectual Property Audit Manifest",
+            "issuer": "10839477 Canada Inc.",
+            "author": "Jujita Fermin Stairs",
+            "jurisdiction": "Edmonton, Alberta, Canada",
+            "timestamp": "2026-09-23T13:42:26.215115",
+            "schema_version": "1.0.0"
+        },
+        "hierarchies": [
+            {
+                "parent_entity": "10839477 Canada Inc.",
+                "child_entity": "Jujita Canada Operations Node",
+                "relationship_type": "Primary Operating Subsidiary",
+                "jurisdiction": "Canada",
+                "timestamp": "2026-09-23T13:06:55.982881",
+                "hierarchy_anchor": "62c3cba897ee81b6e615cc46ec3a3a9df1747eb227b24d54aa4200907c8828ba"
+            },
+            {
+                "parent_entity": "Alphabet Inc.",
+                "child_entity": "Google LLC",
+                "relationship_type": "Holding Company Subsidiary",
+                "jurisdiction": "United States",
+                "timestamp": "2026-09-23T13:06:55.982926",
+                "hierarchy_anchor": "259645cc3421917157afb3946c7c455de76c49d108014d4a3ceb74fc15b6d3e0"
+            },
+            {
+                "parent_entity": "Alphabet Inc.",
+                "child_entity": "Google DeepMind",
+                "relationship_type": "AI Research Subsidiary",
+                "jurisdiction": "United Kingdom",
+                "timestamp": "2026-09-23T13:06:55.982931",
+                "hierarchy_anchor": "c357f7cb4aadfeb9d2a20a5f07cf7562f483de8aeeb6774cb762008709a2120f"
+            },
+            {
+                "parent_entity": "Amazon.com, Inc.",
+                "child_entity": "Amazon Web Services (AWS)",
+                "relationship_type": "Cloud Computing Division",
+                "jurisdiction": "United States",
+                "timestamp": "2026-09-23T13:06:55.982934",
+                "hierarchy_anchor": "a48b6b387dbf110980b0a618551c6e9a2ac98f11b0c49f58f770ac7e3c31122f"
+            },
+            {
+                "parent_entity": "Amazon.com, Inc.",
+                "child_entity": "Whole Foods Market",
+                "relationship_type": "Acquired Subsidiary",
+                "jurisdiction": "United States",
+                "timestamp": "2026-09-23T13:06:55.982938",
+                "hierarchy_anchor": "7a824b2bd65469072e70d30497e4bc2eab969cf7ca2c867331b2179e413603ec"
+            },
+            {
+                "parent_entity": "Space Exploration Technologies Corp. (SpaceX)",
+                "child_entity": "Starlink",
+                "relationship_type": "Operating Division & Brand",
+                "jurisdiction": "United States",
+                "timestamp": "2026-09-23T13:11:01.397322",
+                "hierarchy_anchor": "30c97acb1074d1475fb65041551d083bf4be6e1d8c5587ed80e4b6544255b878"
+            },
+            {
+                "parent_entity": "SpaceX",
+                "child_entity": "Starlink Services, LLC",
+                "relationship_type": "Telecommunications Subsidiary",
+                "jurisdiction": "United States",
+                "timestamp": "2026-09-23T13:11:01.397338",
+                "hierarchy_anchor": "c2460eef862867276fb1dc2dc682e48bcb21e6bc6191737ca281d9bd5dbb6e26"
+            },
+            {
+                "parent_entity": "Starlink Services, LLC",
+                "child_entity": "Starlink Gateway Network (LEO Constellation)",
+                "relationship_type": "Satellite Ground Station & IP Corridor",
+                "jurisdiction": "Global / Multi-Jurisdictional",
+                "timestamp": "2026-09-23T13:11:01.397341",
+                "hierarchy_anchor": "fcae924f1aa030692336e28eac0db522af0e1571b7736755ed1ab3f5ac7402cc"
+            },
+            {
+                "parent_entity": "United States Federal Government",
+                "child_entity": "Department of Defense (DoD)",
+                "relationship_type": "Executive Department",
+                "jurisdiction": "United States",
+                "timestamp": "2026-09-23T13:13:23.087313",
+                "hierarchy_anchor": "fd1f786161c17a239ca9873ee9e03ac573937592ee71d3974dc7ea0ae72a9adb"
+            },
+            {
+                "parent_entity": "Department of Defense (DoD)",
+                "child_entity": "Defense Advanced Research Projects Agency (DARPA)",
+                "relationship_type": "Research & Development Agency",
+                "jurisdiction": "United States",
+                "timestamp": "2026-09-23T13:13:23.087337",
+                "hierarchy_anchor": "1af449aeaf854847811228dc127407efeabb659992271b2ef632c3b0180d7f90"
+            },
+            {
+                "parent_entity": "United States Federal Government",
+                "child_entity": "National Aeronautics and Space Administration (NASA)",
+                "relationship_type": "Independent Federal Agency",
+                "jurisdiction": "United States",
+                "timestamp": "2026-09-23T13:13:23.087340",
+                "hierarchy_anchor": "378afcb1084b4e377ab598337e3aa19004259fdefaa3a58f5128ac1c0dce7c9e"
+            },
+            {
+                "parent_entity": "United States Federal Government",
+                "child_entity": "Central Intelligence Agency (CIA)",
+                "relationship_type": "Independent Intelligence Agency",
+                "jurisdiction": "United States",
+                "timestamp": "2026-09-23T13:13:23.087342",
+                "hierarchy_anchor": "1a2871d8fb3110716ebb86ffeaa09e24f1ba44c50db231a7964424ab1f507fff"
+            },
+            {
+                "parent_entity": "United States Federal Government",
+                "child_entity": "Federal Bureau of Investigation (FBI)",
+                "relationship_type": "Law Enforcement & Intelligence Agency",
+                "jurisdiction": "United States",
+                "timestamp": "2026-09-23T13:13:23.087345",
+                "hierarchy_anchor": "a00e97bb3cb7d278d26c947f889566fb974c08ba7e303fc4c55be81bedc62d6e"
+            },
+            {
+                "parent_entity": "Government of the Russian Federation",
+                "child_entity": "Ministry of Defense of the Russian Federation",
+                "relationship_type": "Federal Executive Ministry",
+                "jurisdiction": "Russian Federation",
+                "timestamp": "2026-09-23T13:15:02.348007",
+                "hierarchy_anchor": "6ae0009db21d51ba19fd2435b84ecd438f602257a0857a92b2dc082405110804"
+            },
+            {
+                "parent_entity": "Ministry of Defense of the Russian Federation",
+                "child_entity": "General Staff of the Armed Forces of the Russian Federation",
+                "relationship_type": "Military Command Body",
+                "jurisdiction": "Russian Federation",
+                "timestamp": "2026-09-23T13:15:02.348025",
+                "hierarchy_anchor": "76bd2a5f220cdeef49f3948ddd78d54cd79fdf949c9c93a8cec6ffee36360ef9"
+            },
+            {
+                "parent_entity": "General Staff of the Armed Forces of the Russian Federation",
+                "child_entity": "Main Directorate of the General Staff (GRU / GU)",
+                "relationship_type": "Foreign Military Intelligence Agency",
+                "jurisdiction": "Russian Federation",
+                "timestamp": "2026-09-23T13:15:02.348028",
+                "hierarchy_anchor": "6d541babbbc781f300376f8ad5cddb372d08ad51fabe29fb2a691a8fec7277b4"
+            }
+        ],
+        "academic_citations": [],
+        "gateways": []
+    },
+    "cryptographic_proof": {
+        "algorithm": "HMAC-SHA256",
+        "root_signature": "57bdb1c51c4bad7ed571f1fde40fc2696905a7bb98dec27c9811b3543f4da4f6"
+    }
+}
