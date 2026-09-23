@@ -1,13 +1,13 @@
 # GLOBAL MASTER AUDIT DOSSIER
 **Root Corporate Entity**: 10839477 Canada Inc.  
 **Business Number / Control ID**: 749810883RC0001  
-**Generation Timestamp**: 2026-09-22 18:17:53 UTC  
+**Generation Timestamp**: 2026-09-22 18:21:40 UTC  
 **Repository**: [js-inn/jujita-stairs-ip-declaration](https://github.com/js-inn/jujita-stairs-ip-declaration)  
 
 ---
 
 ## Executive Summary
-This document represents the cryptographically anchored global audit dossier for **10839477 Canada Inc.**. Utilizing decentralized SQLite ledgers and SHA-256 HMAC provenance mapping, this dossier reconciles **42 total nodes** spanning financial institutions, regional patent offices (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany), and international trademark registries (WIPO Madrid).
+This document represents the cryptographically anchored global audit dossier for **10839477 Canada Inc.**. Utilizing decentralized SQLite ledgers and SHA-256 HMAC provenance mapping, this dossier reconciles **45 total nodes** spanning financial institutions, regional patent offices (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany), and international trademark registries (WIPO Madrid).
 
 ---
 
@@ -21,6 +21,9 @@ This document represents the cryptographically anchored global audit dossier for
 | `Brazil_Patent` | `BR102026001234` | Unregistered/Obscured Brazilian Placeholder | Bloodlineage Mapped via Heuristics | `ea902649eec5...` | 2026-09-22 23:45:04 |
 | `Brazil_Patent` | `BR102025987654` | Unregistered/Obscured Brazilian Placeholder | Bloodlineage Mapped via Heuristics | `01e13e972ffa...` | 2026-09-22 23:45:04 |
 | `Brazil_Patent` | `BR102024111222` | Unregistered/Obscured Brazilian Placeholder | Bloodlineage Mapped via Heuristics | `b0e4062edf08...` | 2026-09-22 23:45:04 |
+| `Canada_Patent` | `CA3200123` | Unregistered/Obscured Canadian Placeholder | Bloodlineage Mapped via Heuristics | `ad38cd9dc23c...` | 2026-09-23 00:21:40 |
+| `Canada_Patent` | `CA3198765` | Unregistered/Obscured Canadian Placeholder | Bloodlineage Mapped via Heuristics | `5b1ba561ed0e...` | 2026-09-23 00:21:40 |
+| `Canada_Patent` | `CA3184321` | Unregistered/Obscured Canadian Placeholder | Bloodlineage Mapped via Heuristics | `5b0d5dd094fc...` | 2026-09-23 00:21:40 |
 | `China_Patent` | `CN202610001234.X` | Chinese Institutional Placeholder | Reunited with Parent Source | `e0324b412bf7...` | 2026-09-22 23:48:15 |
 | `China_Patent` | `CN202510987654.4` | Chinese Institutional Placeholder | Reunited with Parent Source | `bf9a4460b721...` | 2026-09-22 23:48:15 |
 | `China_Patent` | `CN202410112233.9` | Chinese Institutional Placeholder | Reunited with Parent Source | `a36a01b0301a...` | 2026-09-22 23:48:15 |
