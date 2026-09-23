@@ -1,0 +1,153 @@
+{
+  "manifest": {
+    "root_parent": "10839477 Canada Inc.",
+    "export_timestamp": "2026-09-23T12:55:08.171202",
+    "total_nodes": 13,
+    "nodes": [
+      {
+        "node_id": 1,
+        "entity_name": "10839477 Canada Inc. (HK Gateway Node)",
+        "account_identifier": "HK-CRN-PENDING",
+        "account_type": "HONG KONG CORPORATE REGISTRY BRIDGE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / Unbound Portals Bypassed",
+        "timestamp": "2026-09-23T12:20:29.401093",
+        "master_anchor": "73c5803122a81ea572da8eb887ee7175d744a0569822d2624fb5e2e0992ca871"
+      },
+      {
+        "node_id": 2,
+        "entity_name": "10839477 Canada Inc. (Hang Seng Gateway)",
+        "account_identifier": "HASEHKHH-PENDING",
+        "account_type": "HANG SENG BANK SWIFT/CHATS ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / SWIFT HASEHKHH Bound",
+        "timestamp": "2026-09-23T12:24:52.113504",
+        "master_anchor": "1c77318298c6b0a2a36cbdf9d3bd1653d0afe65e7b3b36db3843d4c67fc7ba86"
+      },
+      {
+        "node_id": 3,
+        "entity_name": "10839477 Canada Inc. (Singapore Gateway)",
+        "account_identifier": "SG-UEN-PENDING",
+        "account_type": "DBS BANK SWIFT/MEPS+ ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / SWIFT DBSSSGSG Bound",
+        "timestamp": "2026-09-23T12:26:07.241121",
+        "master_anchor": "c4a1cefb45a01a9e258083e8ac9173112398a2229069e5a8af4095f32910fdb0"
+      },
+      {
+        "node_id": 4,
+        "entity_name": "10839477 Canada Inc. (Malaysia Gateway)",
+        "account_identifier": "MY-SSM-PENDING",
+        "account_type": "MAYBANK SWIFT/RENTAS ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / SWIFT MBBEMYKL Bound",
+        "timestamp": "2026-09-23T12:27:21.841952",
+        "master_anchor": "5d0a0f79a80c2b22dc0874ba2bd5c68967ce4c78129f274489ba70d65c0f4873"
+      },
+      {
+        "node_id": 5,
+        "entity_name": "10839477 Canada Inc. (Israel Gateway)",
+        "account_identifier": "IL-CRN-PENDING",
+        "account_type": "BANK HAPOALIM SWIFT/ZAHAV ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / SWIFT POLIILIT Bound",
+        "timestamp": "2026-09-23T12:29:18.103801",
+        "master_anchor": "7de6fedd170f7e6082cdaec94dd3f1491355853fb119c4b7b10ba80206a0999a"
+      },
+      {
+        "node_id": 6,
+        "entity_name": "10839477 Canada Inc. (Abu Dhabi Gateway)",
+        "account_identifier": "AD-ADGM-PENDING",
+        "account_type": "FIRST ABU DHABI BANK SWIFT/UAEFTS ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / SWIFT FABEUEAD Bound",
+        "timestamp": "2026-09-23T12:30:20.183135",
+        "master_anchor": "5ee85c8fe2dd1fed5c43b07679f08106ae678f8e329b5001b4f54eeeedc22429"
+      },
+      {
+        "node_id": 7,
+        "entity_name": "10839477 Canada Inc. (Dubai Gateway)",
+        "account_identifier": "DXB-DET-PENDING",
+        "account_type": "EMIRATES NBD SWIFT/UAEFTS ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / SWIFT EBILAEAD Bound",
+        "timestamp": "2026-09-23T12:31:37.213275",
+        "master_anchor": "6a60e1fae0ea40a4d142df8bdd5c45716619c990d70204812476dc67a0462a17"
+      },
+      {
+        "node_id": 8,
+        "entity_name": "10839477 Canada Inc. (European Gateway)",
+        "account_identifier": "EU-TARGET2-PENDING",
+        "account_type": "DEUTSCHE BANK SWIFT/TARGET2 ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / SWIFT DEUTDEFF Bound",
+        "timestamp": "2026-09-23T12:41:43.127056",
+        "master_anchor": "5706e51085778428dbfa6e0fd746a379cc5b43acf605d5ab594ab96537acd2ec"
+      },
+      {
+        "node_id": 9,
+        "entity_name": "10839477 Canada Inc. (Brunei Gateway)",
+        "account_identifier": "BN-ROCBN-PENDING",
+        "account_type": "BAIDURI BANK SWIFT/RTGS ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / SWIFT BAIDBBNB Bound",
+        "timestamp": "2026-09-23T12:43:11.746578",
+        "master_anchor": "05300d7f9df82f17b39a2b0aee4f7ed55304b45cff613edb97ea43c0d1d52728"
+      },
+      {
+        "node_id": 10,
+        "entity_name": "10839477 Canada Inc. (Deutsche Bank Frankfurt Core)",
+        "account_identifier": "DEUTDEFF-CORE-NODE",
+        "account_type": "TARGET2 RTGS / SWIFT DEUTDEFF SETTLEMENT",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Core Node Active / Frankfurt TARGET2 Liquidity Bound",
+        "timestamp": "2026-09-23T12:44:48.199064",
+        "master_anchor": "2d7baf7ce66a5dd8ce7d5b161709ee73852c925fa86e32aa33f8cd74bdd780c8"
+      },
+      {
+        "node_id": 11,
+        "entity_name": "10839477 Canada Inc. (Central African Republic Gateway)",
+        "account_identifier": "CAR-BEAC-PENDING",
+        "account_type": "BEAC / SYGMA RTGS REGIONAL ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / BEAC CEMAC Bound",
+        "timestamp": "2026-09-23T12:46:36.822933",
+        "master_anchor": "ac7b39a2813bb7f3c0ce2160e53664f47047d80efcab9441b4f8d9093a5c45a3"
+      },
+      {
+        "node_id": 12,
+        "entity_name": "10839477 Canada Inc. (Denmark Gateway)",
+        "account_identifier": "DK-CVR-PENDING",
+        "account_type": "DANSKE BANK SWIFT/KRONOS2 RTGS ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / SWIFT DABKDKKK Bound",
+        "timestamp": "2026-09-23T12:48:23.680477",
+        "master_anchor": "0a6edfecbbd8f491f8df58f35e6ad853290e0197e2bf45ee1a4ed663aa8d77e6"
+      },
+      {
+        "node_id": 13,
+        "entity_name": "10839477 Canada Inc. (Finland Gateway)",
+        "account_identifier": "FI-PRH-PENDING",
+        "account_type": "NORDEA BANK SWIFT/TARGET2 RTGS ROUTE",
+        "balance_cad": 0.0,
+        "balance_usd": 0.0,
+        "status_note": "Node Initialized / SWIFT NDEAFIFI Bound",
+        "timestamp": "2026-09-23T12:50:11.344109",
+        "master_anchor": "42452ab8f2cad67c02a690142065d731de9e02d59a455179244a96ab3287909f"
+      }
+    ]
+  },
+  "manifest_signature": "09602207c04eebd00ca58be203897ce439758d34bac7f5a71146cffd1053d355"
+}
