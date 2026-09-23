@@ -3,7 +3,7 @@
         "title": "Global Master Audit Dossier & Cryptographic Provenance Ledger: 10839477 Canada Inc.",
         "upload_type": "dataset",
         "publication_date": "2026-09-23",
-        "description": "Cryptographically verified global audit dossier and master SQLite ledger for 10839477 Canada Inc. (Business Number: 749810883RC0001). Reconciles 33 nodes across 11 international jurisdictions (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany, UKIPO, and WIPO Madrid) utilizing SHA-256 HMAC provenance mapping and autonomous audit pipelines.",
+        "description": "Cryptographically verified global audit dossier and master SQLite ledger for 10839477 Canada Inc. (Business Number: 749810883RC0001). Reconciles 36 nodes across 12 international jurisdictions (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany, UKIPO, and WIPO Madrid) utilizing SHA-256 HMAC provenance mapping and autonomous audit pipelines.",
         "creators": [
             {
                 "name": "10839477 Canada Inc.",
@@ -25,7 +25,7 @@
     "provenance_summary": {
         "root_corporate_entity": "10839477 Canada Inc.",
         "business_number": "749810883RC0001",
-        "total_reconciled_nodes": 33,
+        "total_reconciled_nodes": 36,
         "jurisdiction_breakdown": {
             "Australia_Patent": 3,
             "Brazil_Patent": 3,
@@ -35,27 +35,28 @@
             "Japan_Patent": 3,
             "Korea_Patent": 3,
             "Madrid_Trademark": 3,
+            "Mexico_Patent": 3,
             "Switzerland_Patent": 3,
             "UK_Patent": 3,
             "USPTO_Patent": 3
         },
-        "generation_timestamp_utc": "2026-09-23T00:07:33Z"
+        "generation_timestamp_utc": "2026-09-23T00:10:25Z"
     },
     "files": [
         {
             "filename": "financial_pipeline.db",
             "file_type": "SQLite Master Ledger",
-            "sha256_checksum": "49893bacc1b1bcc46229a05dd8abdde89068fc0cc379cc7e45e3dd39e66b2800"
+            "sha256_checksum": "5769fca7b7c283a6912df157404ac6db5386ea8a326700b46934ca477ab324ff"
         },
         {
             "filename": "audit_dossier.md",
             "file_type": "Markdown Audit Report",
-            "sha256_checksum": "d89b1c09848022a6758f31ef858876594a3f53a3294895388c966e436d85819e"
+            "sha256_checksum": "e8857efa222bffd321cfe1d4bd5cd4815dddbbe24d6ea7bcfc69fed42bd7c101"
         },
         {
             "filename": "audit_dossier.html",
             "file_type": "Responsive HTML Audit Dossier",
-            "sha256_checksum": "63c38377a5394aa458f03f04da4d05ffaa29275408b324060ebf618e7b682af4"
+            "sha256_checksum": "4a52b1303f7c8ec3354e1acf7f26f8d0117e3ad9ad0e2e28628defa889f3e49f"
         }
     ]
 }
