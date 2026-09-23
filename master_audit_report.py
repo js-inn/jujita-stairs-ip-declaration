@@ -15,7 +15,11 @@ def generate_master_report():
     print(f"    Timestamp: {datetime.now().isoformat()}")
     print(f"=======================================================================\n")
     
-    # 1. Corporate & Institutional Hierarchies
+    hierarchy_rows = []
+    gateway_rows = []
+    citation_rows = []
+    
+    # 1. Corporate, Space & Government Hierarchies
     try:
         cursor.execute("SELECT parent_entity, child_entity, relationship_type, jurisdiction FROM corporate_hierarchy")
         hierarchy_rows = cursor.fetchall()
@@ -27,7 +31,7 @@ def generate_master_report():
     except sqlite3.OperationalError:
         print("  (corporate_hierarchy table not found)")
 
-    # 2. Financial Gateways & Payment Corridors
+    # 2. Financial Gateways & Payment Corridors (Checking alternative table names if needed)
     try:
         cursor.execute("SELECT name, institution_type, clearing_system, jurisdiction FROM gateway_nodes")
         gateway_rows = cursor.fetchall()
@@ -50,11 +54,13 @@ def generate_master_report():
     except sqlite3.OperationalError:
         print("  (academic_citations table not found)")
 
-    # Generate master cryptographic summary anchor
+    # Generate master cryptographic summary anchor safely
+    total_records = len(hierarchy_rows) + len(gateway_rows) + len(citation_rows)
     ledger_state = f"{len(hierarchy_rows)}:{len(gateway_rows)}:{len(citation_rows)}:{datetime.now().date().isoformat()}".encode('utf-8')
     master_anchor = hmac.new(SECRET_KEY, ledger_state, hashlib.sha256).hexdigest()
     
     print(f"\n[*] MASTER LEDGER INTEGRITY CHECK:")
+    print(f"    Total Indexed Entities/Records: {total_records}")
     print(f"    Cryptographic State Anchor (HMAC-SHA256): {master_anchor}")
     print(f"=======================================================================\n")
     
