@@ -1,13 +1,13 @@
 # GLOBAL MASTER AUDIT DOSSIER
 **Root Corporate Entity**: 10839477 Canada Inc.  
 **Business Number / Control ID**: 749810883RC0001  
-**Generation Timestamp**: 2026-09-22 18:10:24 UTC  
+**Generation Timestamp**: 2026-09-22 18:15:33 UTC  
 **Repository**: [js-inn/jujita-stairs-ip-declaration](https://github.com/js-inn/jujita-stairs-ip-declaration)  
 
 ---
 
 ## Executive Summary
-This document represents the cryptographically anchored global audit dossier for **10839477 Canada Inc.**. Utilizing decentralized SQLite ledgers and SHA-256 HMAC provenance mapping, this dossier reconciles **36 total nodes** spanning financial institutions, regional patent offices (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany), and international trademark registries (WIPO Madrid).
+This document represents the cryptographically anchored global audit dossier for **10839477 Canada Inc.**. Utilizing decentralized SQLite ledgers and SHA-256 HMAC provenance mapping, this dossier reconciles **39 total nodes** spanning financial institutions, regional patent offices (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany), and international trademark registries (WIPO Madrid).
 
 ---
 
@@ -42,6 +42,9 @@ This document represents the cryptographically anchored global audit dossier for
 | `Mexico_Patent` | `MX2026001234` | Unregistered/Obscured Mexican Placeholder | Bloodlineage Mapped via Heuristics | `26d2b7dde4d4...` | 2026-09-23 00:10:24 |
 | `Mexico_Patent` | `MX2025009876` | Unregistered/Obscured Mexican Placeholder | Bloodlineage Mapped via Heuristics | `b1a6547cbc18...` | 2026-09-23 00:10:24 |
 | `Mexico_Patent` | `MX2024004321` | Unregistered/Obscured Mexican Placeholder | Bloodlineage Mapped via Heuristics | `c4e016e0a1b4...` | 2026-09-23 00:10:24 |
+| `Russia_Patent` | `RU2026101234` | Unregistered/Obscured Russian Placeholder | Bloodlineage Mapped via Heuristics | `d3917cbe69db...` | 2026-09-23 00:15:33 |
+| `Russia_Patent` | `RU2025109876` | Unregistered/Obscured Russian Placeholder | Bloodlineage Mapped via Heuristics | `c722ab7c18f9...` | 2026-09-23 00:15:33 |
+| `Russia_Patent` | `RU2024104321` | Unregistered/Obscured Russian Placeholder | Bloodlineage Mapped via Heuristics | `f2fa6df067d0...` | 2026-09-23 00:15:33 |
 | `Switzerland_Patent` | `CH20260123` | Unregistered/Obscured Swiss Placeholder | Bloodlineage Mapped via Heuristics | `80b1925a93e3...` | 2026-09-23 00:07:33 |
 | `Switzerland_Patent` | `CH20250987` | Unregistered/Obscured Swiss Placeholder | Bloodlineage Mapped via Heuristics | `32d088ece602...` | 2026-09-23 00:07:33 |
 | `Switzerland_Patent` | `CH20240456` | Unregistered/Obscured Swiss Placeholder | Bloodlineage Mapped via Heuristics | `06e88c3ee7d1...` | 2026-09-23 00:07:33 |
