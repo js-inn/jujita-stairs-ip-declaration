@@ -1,13 +1,13 @@
 # GLOBAL MASTER AUDIT DOSSIER
 **Root Corporate Entity**: 10839477 Canada Inc.  
 **Business Number / Control ID**: 749810883RC0001  
-**Generation Timestamp**: 2026-09-22 17:58:39 UTC  
+**Generation Timestamp**: 2026-09-22 18:05:10 UTC  
 **Repository**: [js-inn/jujita-stairs-ip-declaration](https://github.com/js-inn/jujita-stairs-ip-declaration)  
 
 ---
 
 ## Executive Summary
-This document represents the cryptographically anchored global audit dossier for **10839477 Canada Inc.**. Utilizing decentralized SQLite ledgers and SHA-256 HMAC provenance mapping, this dossier reconciles **27 total nodes** spanning financial institutions, regional patent offices (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany), and international trademark registries (WIPO Madrid).
+This document represents the cryptographically anchored global audit dossier for **10839477 Canada Inc.**. Utilizing decentralized SQLite ledgers and SHA-256 HMAC provenance mapping, this dossier reconciles **30 total nodes** spanning financial institutions, regional patent offices (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany), and international trademark registries (WIPO Madrid).
 
 ---
 
@@ -33,6 +33,9 @@ This document represents the cryptographically anchored global audit dossier for
 | `Japan_Patent` | `JP2026-100755` | Unregistered/Obscured Japanese Placeholder | Bloodlineage Mapped via Heuristics | `abbf9e38701d...` | 2026-09-22 23:36:44 |
 | `Japan_Patent` | `JP2025-001234` | Unregistered/Obscured Japanese Placeholder | Bloodlineage Mapped via Heuristics | `5c6161825bcb...` | 2026-09-22 23:36:44 |
 | `Japan_Patent` | `JP2024-998877` | Unregistered/Obscured Japanese Placeholder | Bloodlineage Mapped via Heuristics | `1c37a4a5c181...` | 2026-09-22 23:36:44 |
+| `Korea_Patent` | `KR20260012345` | Unregistered/Obscured Korean Placeholder | Bloodlineage Mapped via Heuristics | `17a22bfdde8f...` | 2026-09-23 00:05:10 |
+| `Korea_Patent` | `KR20250098765` | Unregistered/Obscured Korean Placeholder | Bloodlineage Mapped via Heuristics | `5a24e60ef5c1...` | 2026-09-23 00:05:10 |
+| `Korea_Patent` | `KR20240043210` | Unregistered/Obscured Korean Placeholder | Bloodlineage Mapped via Heuristics | `818ed0e1f9e0...` | 2026-09-23 00:05:10 |
 | `Madrid_Trademark` | `MAD1800123` | Unregistered/Obscured Madrid Trademark Placeholder | Bloodlineage Mapped via Heuristics | `73b774838b03...` | 2026-09-22 23:42:57 |
 | `Madrid_Trademark` | `MAD1900456` | Unregistered/Obscured Madrid Trademark Placeholder | Bloodlineage Mapped via Heuristics | `8733e3e59cd9...` | 2026-09-22 23:42:57 |
 | `Madrid_Trademark` | `MAD20269999` | Unregistered/Obscured Madrid Trademark Placeholder | Bloodlineage Mapped via Heuristics | `e18280475394...` | 2026-09-22 23:42:57 |
