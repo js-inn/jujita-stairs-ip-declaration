@@ -21,8 +21,8 @@ def inspect_ledger(search_term=None, node_type_filter=None):
     params = []
     
     if search_term:
-        query += " AND (identifier LIKE ? OR entity_name LIKE ?)"
-        params.extend([f"%{search_term}%", f"%{search_term}%"])
+        query += " AND (identifier LIKE ? OR entity_name LIKE ? OR node_type LIKE ?)"
+        params.extend([f"%{search_term}%", f"%{search_term}%", f"%{search_term}%"])
         
     if node_type_filter:
         query += " AND node_type LIKE ?"
