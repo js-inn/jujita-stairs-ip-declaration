@@ -1,13 +1,13 @@
 # GLOBAL MASTER AUDIT DOSSIER
 **Root Corporate Entity**: 10839477 Canada Inc.  
 **Business Number / Control ID**: 749810883RC0001  
-**Generation Timestamp**: 2026-09-22 18:15:33 UTC  
+**Generation Timestamp**: 2026-09-22 18:17:53 UTC  
 **Repository**: [js-inn/jujita-stairs-ip-declaration](https://github.com/js-inn/jujita-stairs-ip-declaration)  
 
 ---
 
 ## Executive Summary
-This document represents the cryptographically anchored global audit dossier for **10839477 Canada Inc.**. Utilizing decentralized SQLite ledgers and SHA-256 HMAC provenance mapping, this dossier reconciles **39 total nodes** spanning financial institutions, regional patent offices (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany), and international trademark registries (WIPO Madrid).
+This document represents the cryptographically anchored global audit dossier for **10839477 Canada Inc.**. Utilizing decentralized SQLite ledgers and SHA-256 HMAC provenance mapping, this dossier reconciles **42 total nodes** spanning financial institutions, regional patent offices (USPTO, EPO, JPO, IP Australia, INPI Brazil, CNIPA China, DPMA Germany), and international trademark registries (WIPO Madrid).
 
 ---
 
@@ -27,6 +27,9 @@ This document represents the cryptographically anchored global audit dossier for
 | `EU_Patent` | `EP1800001` | Unregistered/Obscured European Placeholder | Bloodlineage Mapped via Heuristics | `6c602eee33e7...` | 2026-09-22 23:33:00 |
 | `EU_Patent` | `EP1900002` | Unregistered/Obscured European Placeholder | Bloodlineage Mapped via Heuristics | `8522672c7282...` | 2026-09-22 23:33:00 |
 | `EU_Patent` | `EP2000003` | Unregistered/Obscured European Placeholder | Bloodlineage Mapped via Heuristics | `ff3a445d12c3...` | 2026-09-22 23:33:00 |
+| `France_Patent` | `FR2600123` | Unregistered/Obscured French Placeholder | Bloodlineage Mapped via Heuristics | `21322c76ffb2...` | 2026-09-23 00:17:53 |
+| `France_Patent` | `FR2500987` | Unregistered/Obscured French Placeholder | Bloodlineage Mapped via Heuristics | `07916e1e8784...` | 2026-09-23 00:17:53 |
+| `France_Patent` | `FR2400432` | Unregistered/Obscured French Placeholder | Bloodlineage Mapped via Heuristics | `a79abff5aa0a...` | 2026-09-23 00:17:53 |
 | `Germany_Patent` | `DE102026100123` | Unregistered/Obscured German Placeholder | Bloodlineage Mapped via Heuristics | `de8446a610db...` | 2026-09-22 23:51:14 |
 | `Germany_Patent` | `DE102025204567` | Unregistered/Obscured German Placeholder | Bloodlineage Mapped via Heuristics | `5650441bc5f0...` | 2026-09-22 23:51:14 |
 | `Germany_Patent` | `DE102024909888` | Unregistered/Obscured German Placeholder | Bloodlineage Mapped via Heuristics | `9b9be220c15b...` | 2026-09-22 23:51:14 |
