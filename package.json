@@ -1,0 +1,35 @@
+{
+  "name": "jujita-stairs-ip-declaration",
+  "version": "1.0.0",
+  "description": "A decentralized, audit-ready asset provenance and multi-node verification architecture designed for mobile environments (Termux / Android). This repository bridges hardware-isolated cryptographic key management (Samsung Blockchain Keystore TEE) with persistent local SQLite ledgering and multi-node JSON-RPC failover.",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-inn/jujita-stairs-ip-declaration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/js-inn/jujita-stairs-ip-declaration/issues"
+  },
+  "homepage": "https://github.com/js-inn/jujita-stairs-ip-declaration#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.1.0",
+    "ethers": "^6.17.0",
+    "hardhat": "^3.17.0"
+  },
+  "dependencies": {
+    "@nomicfoundation/solidity-analyzer": "^0.1.2",
+    "@openzeppelin/contracts": "^5.6.1",
+    "@themartiancompany/solidity-analyzer-android-arm64": "^0.1.2",
+    "solc": "^0.8.37"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
