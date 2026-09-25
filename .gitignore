@@ -12,3 +12,5 @@ __pycache__/
 *.pyc
 google-services.json
 app/
+node_modules/
+node_modules/
