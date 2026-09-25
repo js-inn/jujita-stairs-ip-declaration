@@ -1,0 +1,27 @@
+{
+  "master_manifest_hash": "353311d88ede6ed1cd23e9b67d08836215669682bcb9c4537e168c9f5550a789",
+  "system": "10839477 Canada Inc. - Master Corporate Identity & Financial Attestation",
+  "export_timestamp": 1790370508.7416666,
+  "legal_entity_owner": "Jujita Fermin Stairs",
+  "corporation_name": "10839477 Canada Inc.",
+  "corporation_number": "10839477-7",
+  "business_numbers": [
+    "749810883RC0001",
+    "735350936"
+  ],
+  "federal_contract_reference": "CW2321555",
+  "registered_address": "9827 159 St. NW, Edmonton, AB, T5P 2Z6",
+  "total_liquid_and_treasury_cash_cad": 5000910.25,
+  "total_investment_market_value_cad": 1575.0,
+  "consolidated_net_worth_cad": 5002485.25,
+  "node_breakdown_cad": {
+    "Bank of Montreal (BMO)": 1204.5,
+    "Questrade Brokerage": -1500.0,
+    "Wealthsimple Invest": 250.0,
+    "Royal Bank of Canada (RBC)": -120.0,
+    "ATB Financial": -89.25,
+    "Bank of Nova Scotia (Scotiabank)": -35.0,
+    "Toronto-Dominion Bank (TD)": 1200.0,
+    "10839477 Canada Inc. (TD Institutional Treasury)": 5000000.0
+  }
+}
