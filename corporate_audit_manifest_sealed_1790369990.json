@@ -1,0 +1,18 @@
+{
+  "master_manifest_hash": "b272c5342647669569193df55496550db7f3ec9b70938015ca9cd393870b3421",
+  "system": "10839477 Canada Inc. - Master Institutional Balance Sheet",
+  "export_timestamp": 1790369990.092575,
+  "total_liquid_and_treasury_cash_cad": 5000910.25,
+  "total_investment_market_value_cad": 1575.0,
+  "consolidated_net_worth_cad": 5002485.25,
+  "node_breakdown_cad": {
+    "Bank of Montreal (BMO)": 1204.5,
+    "Questrade Brokerage": -1500.0,
+    "Wealthsimple Invest": 250.0,
+    "Royal Bank of Canada (RBC)": -120.0,
+    "ATB Financial": -89.25,
+    "Bank of Nova Scotia (Scotiabank)": -35.0,
+    "Toronto-Dominion Bank (TD)": 1200.0,
+    "10839477 Canada Inc. (TD Institutional Treasury)": 5000000.0
+  }
+}
