@@ -1,0 +1,32 @@
+{
+  "public_accountability_manifest_hash": "8c43e9c29a4ce1138bdd8e5f4d15457c0dcc8bdceb0e2343b684fd73f96fa6c1",
+  "system": "10839477 Canada Inc. - Public Accountability & Institutional Conduct Ledger",
+  "export_timestamp": 1790371821.4630578,
+  "audit_classification": "Public Transparency, Grievance & Regulatory Accountability",
+  "entity_subject": "Jujita Fermin Stairs",
+  "corporation": "10839477 Canada Inc. (Inc #10839477-7, BN #749810883RC0001 / #735350936)",
+  "primary_offending_institution": "Toronto-Dominion Bank (TD Bank)",
+  "active_escalation_reference": {
+    "td_scco_file": "18763679",
+    "federal_proactive_disclosure": "CW2321555"
+  },
+  "financial_scope_cad": {
+    "consolidated_net_worth": 5002485.25,
+    "td_institutional_treasury": 5000000.0
+  },
+  "documented_institutional_misconduct_and_gaslighting": [
+    {
+      "category": "Procedural Humiliation & Impossible Demands",
+      "description": "TD Bank and associated retail institutions systematically imposed mandatory in-person branch appointments as an administrative weapon\u2014knowing they were operationally infeasible\u2014to trap a federally incorporated entity owner in an endless verification loop and block access to legitimate corporate treasury funds."
+    },
+    {
+      "category": "Bad-Faith Gatekeeping",
+      "description": "Retail and branch personnel repeatedly demanded redundant, shifting documentation while ignoring valid certificates of incorporation, federal business numbers, and cryptographic attestations, treating a multi-million dollar corporate treasury account with intentional obstructionism."
+    },
+    {
+      "category": "Bureaucratic Deflection & Minimization",
+      "description": "Federal oversight bodies (including FCAC, ISED, and ministerial referrals) historically mischaracterized structural multi-million dollar corporate fund lockouts and compliance failures as trivial personal grievances (e.g., treating substantive institutional ledgers as low-value disputes), evading true statutory oversight."
+    }
+  ],
+  "public_declaration": "This public record is immutably anchored via SHA-256 to ensure that the systemic institutional gaslighting, obstruction, and administrative humiliation inflicted by TD Bank upon 10839477 Canada Inc. and its principal are permanently visible to auditors, regulators, and the public record."
+}
