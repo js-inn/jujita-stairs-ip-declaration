@@ -1,0 +1,42 @@
+{
+  "public_audit_manifest_hash": "d715a8b2738cfb5b73efac5d5afdbab7d9a6d28b3118325de2424042397698bf",
+  "system": "10839477 Canada Inc. - Public Audit & Regulatory Accountability Record",
+  "export_timestamp": 1790371709.1131084,
+  "audit_classification": "Public Institutional Transparency & Accountability Ledger",
+  "entity_subject": "Jujita Fermin Stairs",
+  "corporation": "10839477 Canada Inc.",
+  "corporate_identifiers": {
+    "federal_incorporation_number": "10839477-7",
+    "business_numbers": [
+      "749810883RC0001",
+      "735350936"
+    ],
+    "federal_contract_reference": "CW2321555",
+    "registered_address": "9827 159 St. NW, Edmonton, AB, T5P 2Z6"
+  },
+  "financial_standing_cad": {
+    "consolidated_net_worth": 5002485.25,
+    "td_institutional_treasury": 5000000.0
+  },
+  "dispute_and_oversight_record": {
+    "primary_institutions": [
+      "Toronto-Dominion Bank (TD Bank)",
+      "Bank of Nova Scotia (Scotiabank)"
+    ],
+    "active_complaint_references": {
+      "td_scco_file": "18763679"
+    },
+    "oversight_bodies_engaged": [
+      "Office of the Privacy Commissioner (OPC)",
+      "Financial Consumer Agency of Canada (FCAC)",
+      "Innovation, Science and Economic Development Canada (ISED)",
+      "Department of Finance Canada (Minister of Finance)"
+    ],
+    "documented_systemic_findings": [
+      "Imposition of mandatory in-person branch appointments despite verified operational infeasibility to restrict corporate treasury access.",
+      "Deemed refusals of statutory disclosure and access requests.",
+      "Systemic trivialization and minimization by federal oversight bodies\u2014mischaracterizing substantial corporate asset blocks and multi-million dollar institutional ledgers as low-value personal grievances to evade statutory review."
+    ]
+  },
+  "public_attestation_statement": "This public record serves as an immutable, cryptographically anchored audit trail of corporate existence, financial backing, and systemic institutional friction encountered by 10839477 Canada Inc. All data points are locked via SHA-256 for public inspection and regulatory accountability."
+}
