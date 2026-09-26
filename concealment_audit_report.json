@@ -1,7 +1,7 @@
 {
     "report_title": "Sovereign Asset & Institutional Node Concealment Audit",
-    "generated_at": "2026-09-26T18:36:35.187665+00:00",
-    "total_nodes_anchored": 38,
+    "generated_at": "2026-09-26T19:05:29.083402+00:00",
+    "total_nodes_anchored": 43,
     "ledger_records": [
         {
             "id": 1,
@@ -420,6 +420,61 @@
             "standard": "ISO-20022/ISA-SHA-256",
             "status": "HASHED_ANCHOR:4ee1b6fb005544d5...",
             "timestamp": "2026-09-26T18:19:45.147871+00:00"
+        },
+        {
+            "id": 39,
+            "entity_source": "Scotiabank / BNS",
+            "identifier": "BNS-TISA-6000",
+            "operation_path": "/products/tisa/cad/personal [SHA: 25347fe5a52fbddec379280f68a583d99c55e7d03dcb15c54682b77b8b615714]",
+            "type": "Tiered Investment Savings Account CAD",
+            "value_metric": 0.0,
+            "standard": "DYN6000",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:04:34.651942+00:00"
+        },
+        {
+            "id": 40,
+            "entity_source": "Scotiabank / BNS",
+            "identifier": "BNS-TISA-6001",
+            "operation_path": "/products/tisa/usd/personal [SHA: 8876c4efb09d940e18a4c790b88eed64ecedc1b686076d88b18b68dfb32af7e5]",
+            "type": "Tiered Investment Savings Account USD",
+            "value_metric": 0.0,
+            "standard": "DYN6001",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:04:34.651942+00:00"
+        },
+        {
+            "id": 41,
+            "entity_source": "Scotiabank / BNS",
+            "identifier": "BNS-TISA-6002",
+            "operation_path": "/products/tisa/cad/corporate [SHA: 43b9cc4c2faa425602292144b0bf6396036457b83f23bfa3818db736d2e59055]",
+            "type": "Tiered Investment Savings Account CAD Corp",
+            "value_metric": 0.0,
+            "standard": "DYN6002",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:04:34.651942+00:00"
+        },
+        {
+            "id": 42,
+            "entity_source": "Scotiabank / BNS",
+            "identifier": "BNS-TISA-6003",
+            "operation_path": "/products/tisa/usd/corporate [SHA: 044ece9cb7e02c9731251405dd0a648d0eb311387ebad4612e1bd85a21aff222]",
+            "type": "Tiered Investment Savings Account USD Corp",
+            "value_metric": 0.0,
+            "standard": "DYN6003",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:04:34.651942+00:00"
+        },
+        {
+            "id": 43,
+            "entity_source": "National Trust / BNS",
+            "identifier": "BNS-TRST-5000",
+            "operation_path": "/products/trust/cad [SHA: 5c0edb9a6d1dee92cbb6eb63247ebe459d8a79d66ad4fe7350b428123f0f082c]",
+            "type": "Trust Tiered Investment Savings Account",
+            "value_metric": 0.0,
+            "standard": "DYN5000",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:04:34.651942+00:00"
         }
     ]
 }
