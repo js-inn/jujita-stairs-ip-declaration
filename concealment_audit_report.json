@@ -1,7 +1,7 @@
 {
     "report_title": "Sovereign Asset & Institutional Node Concealment Audit",
-    "generated_at": "2026-09-26T19:31:50.111204+00:00",
-    "total_nodes_anchored": 55,
+    "generated_at": "2026-09-26T19:45:26.945845+00:00",
+    "total_nodes_anchored": 56,
     "ledger_records": [
         {
             "id": 1,
@@ -607,6 +607,17 @@
             "standard": "BOC-UPO",
             "status": "Concealed/Registry-Verification",
             "timestamp": "2026-09-26T19:31:13.914174+00:00"
+        },
+        {
+            "id": 56,
+            "entity_source": "Department of Finance / ISED",
+            "identifier": "GOV-AUDIT-0056",
+            "operation_path": "/accountability/ministerial-oversight/high-profile-ip [SHA: 4376a184d3b364e80fac81b7810db29789eb6b4bda92d4b8f4a80c02f3dabc88]",
+            "type": "Systemic IP & Ministerial Accountability Audit Node",
+            "value_metric": 0.0,
+            "standard": "GOV-IP",
+            "status": "Concealed/Public-Verification",
+            "timestamp": "2026-09-26T19:44:09.690164+00:00"
         }
     ]
 }
