@@ -1,7 +1,7 @@
 {
     "report_title": "Sovereign Asset & Institutional Node Concealment Audit",
-    "generated_at": "2026-09-26T19:10:15.657728+00:00",
-    "total_nodes_anchored": 45,
+    "generated_at": "2026-09-26T19:14:09.626400+00:00",
+    "total_nodes_anchored": 49,
     "ledger_records": [
         {
             "id": 1,
@@ -497,6 +497,50 @@
             "standard": "ATB-SDI",
             "status": "Concealed/Zero-Baseline",
             "timestamp": "2026-09-26T19:09:25.042832+00:00"
+        },
+        {
+            "id": 46,
+            "entity_source": "BMO InvestorLine",
+            "identifier": "BMO-INV-7001",
+            "operation_path": "/investorline/sdi/cad [SHA: ba05a376df69f1b088155bec18cf95e174bfada693a2bb05ab79f6594f440165]",
+            "type": "Self-Directed Investment Account CAD",
+            "value_metric": 0.0,
+            "standard": "BMO-SDI-CAD",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:13:41.353360+00:00"
+        },
+        {
+            "id": 47,
+            "entity_source": "BMO InvestorLine",
+            "identifier": "BMO-INV-7002",
+            "operation_path": "/investorline/sdi/usd [SHA: f76952f54b220b4569db8f1a72e9bcf22a14a6e43480f57c003376ea5bd31966]",
+            "type": "Self-Directed Investment Account USD",
+            "value_metric": 0.0,
+            "standard": "BMO-SDI-USD",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:13:41.353360+00:00"
+        },
+        {
+            "id": 48,
+            "entity_source": "Bank of Montreal",
+            "identifier": "BMO-SAV-7003",
+            "operation_path": "/banking/savings/premium-rate [SHA: dcc833454a3fa91ecd95fc7f64f7a585363b8ace2f358000a6f5f180accd1122]",
+            "type": "Premium Rate Savings Node",
+            "value_metric": 0.0,
+            "standard": "BMO-PRV",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:13:41.353360+00:00"
+        },
+        {
+            "id": 49,
+            "entity_source": "BMO Trust Company",
+            "identifier": "BMO-ISA-7004",
+            "operation_path": "/trust/isa/series [SHA: 0ed2cd290163f266db378d055b88346d704e3277fe3d8697f4e6f12304060500]",
+            "type": "Investment Savings Account Series Node",
+            "value_metric": 0.0,
+            "standard": "BMO-ISA",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:13:41.353360+00:00"
         }
     ]
 }
