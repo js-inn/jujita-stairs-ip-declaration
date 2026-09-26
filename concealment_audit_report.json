@@ -1,7 +1,7 @@
 {
     "report_title": "Sovereign Asset & Institutional Node Concealment Audit",
-    "generated_at": "2026-09-26T19:05:29.083402+00:00",
-    "total_nodes_anchored": 43,
+    "generated_at": "2026-09-26T19:10:15.657728+00:00",
+    "total_nodes_anchored": 45,
     "ledger_records": [
         {
             "id": 1,
@@ -475,6 +475,28 @@
             "standard": "DYN5000",
             "status": "Concealed/Zero-Baseline",
             "timestamp": "2026-09-26T19:04:34.651942+00:00"
+        },
+        {
+            "id": 44,
+            "entity_source": "ATB Wealth / ATBIM",
+            "identifier": "ATB-WLT-9001",
+            "operation_path": "/wealth/compass/series-a [SHA: fbc132585e16b380124db34de5bc0bed356aa6ac667b6c11b95eb033c6bbdf95]",
+            "type": "Compass Portfolio Management Node",
+            "value_metric": 0.0,
+            "standard": "COMPASS-A",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:09:25.042832+00:00"
+        },
+        {
+            "id": 45,
+            "entity_source": "ATB Securities",
+            "identifier": "ATB-WLT-9002",
+            "operation_path": "/wealth/sdi/registered-tfsa [SHA: 9925a249d95ab43a0d5c40d979582124288ab3c825542d3f14bd27682f500b66]",
+            "type": "Self-Directed Registered Account Node",
+            "value_metric": 0.0,
+            "standard": "ATB-SDI",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:09:25.042832+00:00"
         }
     ]
 }
