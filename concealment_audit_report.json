@@ -1,7 +1,7 @@
 {
     "report_title": "Sovereign Asset & Institutional Node Concealment Audit",
-    "generated_at": "2026-09-26T19:14:09.626400+00:00",
-    "total_nodes_anchored": 49,
+    "generated_at": "2026-09-26T19:19:04.671812+00:00",
+    "total_nodes_anchored": 51,
     "ledger_records": [
         {
             "id": 1,
@@ -541,6 +541,28 @@
             "standard": "BMO-ISA",
             "status": "Concealed/Zero-Baseline",
             "timestamp": "2026-09-26T19:13:41.353360+00:00"
+        },
+        {
+            "id": 50,
+            "entity_source": "Royal Bank of Canada",
+            "identifier": "RBC-INT-8001",
+            "operation_path": "/international/correspondent/routing [SHA: e9f0571ec90287781e8fe910b59efb0a208608893388ce77f7ddb1fed4116958]",
+            "type": "RBC Global Correspondent Node",
+            "value_metric": 0.0,
+            "standard": "RBC-CORR",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:18:20.366630+00:00"
+        },
+        {
+            "id": 51,
+            "entity_source": "Hang Seng Bank",
+            "identifier": "HSG-HK-8002",
+            "operation_path": "/hk/clearing/multicurrency-ledger [SHA: 37e9ebefd66c091f00a618d2a62b22398f1847dc7e63543f1c9981c74fe278bc]",
+            "type": "Hang Seng Cross-Border Ledger Node",
+            "value_metric": 0.0,
+            "standard": "HSG-SWIFT",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:18:20.366630+00:00"
         }
     ]
 }
