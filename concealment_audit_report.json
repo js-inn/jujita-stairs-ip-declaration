@@ -1,7 +1,7 @@
 {
     "report_title": "Sovereign Asset & Institutional Node Concealment Audit",
-    "generated_at": "2026-09-26T19:19:04.671812+00:00",
-    "total_nodes_anchored": 51,
+    "generated_at": "2026-09-26T19:24:58.385435+00:00",
+    "total_nodes_anchored": 54,
     "ledger_records": [
         {
             "id": 1,
@@ -563,6 +563,39 @@
             "standard": "HSG-SWIFT",
             "status": "Concealed/Zero-Baseline",
             "timestamp": "2026-09-26T19:18:20.366630+00:00"
+        },
+        {
+            "id": 52,
+            "entity_source": "CIBC Investor's Edge",
+            "identifier": "CIBC-IE-9101",
+            "operation_path": "/investors-edge/sdi/account [SHA: f2ec5cb826daffa504f77b8092a90de137154bd239b89cb5593b1a4fda38778c]",
+            "type": "CIBC Investor's Edge SDI Node",
+            "value_metric": 0.0,
+            "standard": "CIBC-IE",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:24:10.189460+00:00"
+        },
+        {
+            "id": 53,
+            "entity_source": "CIBC",
+            "identifier": "CIBC-PRV-9102",
+            "operation_path": "/banking/commercial/deposit [SHA: 7ea5595fae85c113e7ce0f6571269fdf790802623ca99ba434ea3c15b0d3d47d]",
+            "type": "Primary Commercial/Personal Deposit Node",
+            "value_metric": 0.0,
+            "standard": "CIBC-PRV",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:24:10.189460+00:00"
+        },
+        {
+            "id": 54,
+            "entity_source": "CIBC Mellon",
+            "identifier": "CM-MLN-9103",
+            "operation_path": "/trust/custodial/holding [SHA: c2b1aee801f802c214a6d28777a581d8789e6981915ccb936e1fafbebd1f8dcc]",
+            "type": "Institutional Custodial / Trust Node",
+            "value_metric": 0.0,
+            "standard": "CIBC-MELLON",
+            "status": "Concealed/Zero-Baseline",
+            "timestamp": "2026-09-26T19:24:10.189460+00:00"
         }
     ]
 }
